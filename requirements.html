@@ -201,7 +201,7 @@
 <section>
   <h2>Luminance and Color</h2>
   <p>[<em>brief</em> section intro]</p>
-  <h3>Luminance Overall</h3>
+  <section><h3>Luminance Overall</h3>
   <p>Bright light from a screen or other sources prevents some people with low vision (including those with photophobia and with reading disabilities such as dyslexia) from reading and causes pain for some people. Some people turn down the brightness of their screen or use an overlay.</p>
   <div class="userrequire">
     <h4>User Requirement:</h4>
@@ -211,8 +211,8 @@
     <h4>LVTF notes</h4>
     <p>How much is this a hardware issue verses an O/S issues versus a content and/or user agent issue? It's important enough that we probably want to include it as a user requirement, even if it doesn't turn out to be a SC for content or user agent.</p>
     <p>Source: several, TAdER <a href="http://www.tader.info/baddisplay.html"> When Text is Not Displayed Well</a>, <a href="http://www.tader.info/users-angelita.html"> Angelita user experience</a>&quot;very photophobic (bright lights hurt my eyes and make it impossible for me to see).&quot;</p>
-  </div>
-  <h3>Text Contrast</h3>
+  </div></section>
+  <section><h3>Text Contrast</h3>
   <p>As mentioned in the [Luminance Overall] section, some people need low luminance, especially for backgrounds. Some people who need low luminance for backgrounds also need low luminance overall and thus need low luminance text.</p>
   <p>Other people need high contrast between text and background, including many older people who lose contrast sensitivity from ageing. Some read better with dark text on light background.</p>
   <p>For some people, common color combinations or colors from a limited color palette work fine, for example, black text on white background or the inverse with white text on black background. Other people need to select more specific background and text colors. For example, people who need low luminance overall, need to select the specific background and text colors that provide sufficient contrast for them yet not too high luminance. Readable and optimal color combinations differs vastly among individuals and can even vary for one individual depending on conditions such as fatigue and lighting.</p>
@@ -231,8 +231,8 @@
     <p>Source: [Erich UC-3], [Laura UC-8], [Laura UC-9], [Wayne UC-2], TAdER <a href="http://www.tader.info/users.html"> User Experiences</a> (&quot;I really need to be able to set the colours myself, presets don't work. Someone else's idea is useless.&quot;)</p>
     <p>''comment'': perhaps this needs to be broader. Foreground/background are two elements. There may be many other elements on the page with color that needs to be adjusted. <br />
       Users can set the background color and the text color from the full color spectrum on all elements.{jim}</p>
-  </div>
-  <h3>Contrast Adjacent</h3>
+  </div></section>
+  <section><h3>Contrast Adjacent</h3>
   <p>Sometimes adjacent colors need to be distinguished, for example, colors next to each other in a pie chart. Such colors should have sufficient contrast and be distinguishable by people who are color blind and have reduced contrast sensitivity.</p>
   <div class="userrequire">
     <h4>User Requirement:</h4>
@@ -243,12 +243,12 @@
     <p>&quot;Therefore, in the recommendation, the contrast is calculated in such a way that color is not a key factor so that people who have a color vision deficit will also have adequate contrast between the text and the background.&quot; <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html"> Understanding 1.4.6</a><br/>
       So we don't need to explicitly include colorblindness.</p>
     <p>Source: [Laura UC-6], TAdER</p>
-  </div>
+  </div></section>
 </section>
 <section>
   <h2>Tracking </h2>
-  <p>[<em>breif</em> section intro]</p>
-  <h3>Rewrap for one direction scrolling</h3>
+  <p>[<em>brief</em> section intro]</p>
+  <section><h3>Rewrap for one direction scrolling</h3>
   <p>For many people, with and without disabilities, it is difficult to read when they have to scroll back and forth to read a line of text. When people with low vision increase the text size and the text doesn't &quot;reflow&quot;, they sometimes have to scroll horizontally several screens to read a single line of text. Additionally, the scrollbar and cursor is harder to find for some. Getting from the end of a line of text, scrolling back left, and then finding the beginning of the next line can take considerable attention. This degrades reading flow and comprehension, sometimes significantly enough that effective reading is not possible when horizontal scrolling is required.</p>
   <div class="userrequire">
     <h4>User Requirement:</h4>
@@ -259,8 +259,8 @@
     <p>Script direction: Above and below is written for left-right and right-left scripts for now for simplicity. We should check with I18N folks on making this generic to apply also to vertically top-to-bottom scripts. Although we don't want to complicate it unnecessarily. <a href="http://www.i18nguy.com/temp/rtl.html"> reference for background</a> says &quot;Languages don't have a direction. Scripts have a writing direction&quot;.</p>
     <p>Horizontal only: Interestingly, if *only* horizontal scrolling is needed to read a block of text, that is usually OK. But in practice, that's rarely a viable option in user interfaces.</p>
     <p>Source: [Wayne UC-1], [Wayne UC-4], TAdER <a href="http://www.tader.info/scrolling.html">scrolling</a></p>
-  </div>
-  <h3>Reflow to single column</h3>
+  </div></section>
+  <section><h3>Reflow to single column</h3>
   <p>For many people, with and without disabilities, it is more difficult to read when they have to scroll from the bottom of a column of text to the top of another column. For some people with low vision, with multiple columns, they have to scroll up several screens to get from the bottom of one column to the top of the next. Additionally, the scrollbar and cursor is harder to find for some. Getting from the bottom of a column and finding the top of the next column can take considerable attention. This degrades reading flow and comprehension, sometimes significantly.</p>
   <div class="userrequire">
     <h4>User Requirement:</h4>
@@ -271,8 +271,8 @@
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_1813"> UAAG 1.8.13</a> Multi-Column Text Reflow: The user can specify that recognized multi-column text blocks each be reflowed into a single column. (Level AA)</p>
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_1815"> UAAG 1.8.15</a> Linearize Content: The user can have recognized content rendered as a single column, overriding author-specified formatting of columns, tables, and positioning. (Level AA)</p>
     <p>Source: [Alan Smith UC-1], TAdER</p>
-  </div>
-  <h3>Flexible text areas</h3>
+  </div></section>
+  <section><h3>Flexible text areas</h3>
   <p>When people increase text size, increase leading, or change other text display aspects, content that is poorly designed can become unusable. For example, in web pages (especially when text is changed through text-only zoom or text settings) sometimes columns and sections overlap, the space between lines disappears, lines of text become too long, or text disappears.</p>
   <p>[Figure: Two screen captures show that when text size is increased, the heading overlaps the main text, the main text overlaps the sidebar text; and the sidebar text is cut off at the bottom. <a href="http://www.w3.org/WAI/images/easychecks/zoom-100.png"> non-zoomed</a>, <a href="http://www.w3.org/WAI/images/easychecks/zoom-overlap.png"> zoomed</a> ]</p>
   <p>See also [scroll bars].</p>
@@ -285,8 +285,8 @@
     <p><a href="http://www.w3.org/WAI/eval/preliminary.html#resize"> Resize text in Easy Checks</a> has images</p>
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_1814"> UAAG 1.8.14</a> Ignore Fixed Unit Dimensions: The user can have the user agent override author-specified unit dimensions. (Level AA)</p>
     <p>Source: TAdER</p>
-  </div>
-  <h3>Line length</h3>
+  </div></section>
+  <section><h3>Line length</h3>
   <p>For many people, with and without disabilities, it is harder to read very long lines of text than shorter lines. For people with a small field of vision, it can be even more difficult to read long lines of text, and from the end of a line of text, to find the beginning of the next line.</p>
   <p>People with good visual acuity yet small field of vision might want to set the text size small and the text area narrow so they can get more characters in their field of vision.</p>
   <div class="userrequire">
@@ -297,8 +297,8 @@
     <h4>LVTF notes</h4>
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_188"> UAAG 1.8.8</a> Allow Viewport Resize:  The user can resize viewports within restrictions imposed by the platform, overriding any values specified by the author. (Level AA)</p>
     <p>Source: TAdER</p>
-  </div>
-  <h3>Justification</h3>
+  </div></section>
+  <section><h3>Justification</h3>
   <p>Justification or alignment options usually include: left, right, full/both, centered.</p>
   <p>Sometimes full justification makes reading more difficult because extra space between words causes &quot;<a href="http://en.wikipedia.org/wiki/River_(typography)">rivers of white</a>&quot; making it difficult to track along a line of text, or less space between words makes it difficult to distinguish separate words. Some people find it easier to track from the end of one line to the next with full justification, and others prefer left justification (for left-to-right scripts [languages]).</p>
   <div class="userrequire">
@@ -310,8 +310,8 @@
     <p>Justification also relates to Reading (Spacing), and from there we should point to here.</p>
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config"> UAAG 1.4</a> Provide text configuration</p>
     <p>Source: TAdER</p>
-  </div>
-  <h3>Hyphenation</h3>
+  </div></section>
+  <section><h3>Hyphenation</h3>
   <p>For some people it is especially difficult to understand words that are hyphenated. While primarily a cognitive issue, it becomes more of an issue when text size is increased, thus it is also related to low vision. Some people with very large text may prefer hyphenation so there is less wasted space at the end of lines.</p>
   <div class="userrequire">
     <h4>User Requirement:</h4>
@@ -322,14 +322,14 @@
     <p>This doesn't fit great under tracking, but I'm not sure it fits better elsewhere, so I just put it here for now.</p>
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
     <p>Source: TAdER</p>
-  </div>
-  <h3>Leading</h3>
+  </div></section>
+  <section><h3>Leading</h3>
   <p>Leading (also called line space and line height) is also related to tracking. It is addressed in the @@ section.</p>
-</section>
+</section></section>
 <section>
   <h2>Perceiving (Letter Characteristics) </h2>
   <p>[<em>breif</em> section intro]</p>
-  <h3>Text Size</h3>
+  <section><h3>Text Size</h3>
   <p>Some people need larger text in order to perceive letters. @@text only vs. zoom</p>
   <p>Example issues:</p>
   <ul>
@@ -346,8 +346,8 @@
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_185"> UAAG 1.8.5 Zoom</a></p>
     <p>Source: [JimA UC-2], [Alan Smith UC-2], TAdER</p>
-  </div>
-  <h3>Font</h3>
+  </div></section>
+  <section><h3>Font</h3>
   <p>Some fonts/typefaces are more readable than others. For example, some people cannot read fonts with sub-pixel rendering.</p>
   <div class="userrequire">
     <h4>User Requirement:</h4>
@@ -358,8 +358,8 @@
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
     <p>Note to tool developers: When providing users a list of fonts to choose from, present the font name in the font itself — e.g., Times, Veranda, Courier — so users can tell what each font looks like before choosing it.</p>
     <p>Source: TAdER, <a href="http://www.w3.org/WAI/RD/2012/text-customization/p7.html"> sub-pixel rendering</a></p>
-  </div>
-  <h3>Style</h3>
+  </div></section>
+  <section><h3>Style</h3>
   <p>For some people, bold text is easier to read. For some people, it is difficult to read blocks of text that is all underlined or italicized.</p>
   <div class="userrequire">
     <h4>User Requirement:</h4>
@@ -369,8 +369,8 @@
     <h4>LVTF notes</h4>
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
     <p>Source: TAdER</p>
-  </div>
-  <h3>Capitalization</h3>
+  </div></section>
+  <section><h3>Capitalization</h3>
   <p>Text in all capital letters is more difficult to read for most people, with and without disabilities.</p>
   <div class="userrequire">
     <h4>User Requirement:</h4>
@@ -381,7 +381,7 @@
     <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
     <p>Source: TAdER</p>
   </div>
-</section>
+</section></section>
 <section>
   <h2>Spacing for Reading </h2>
   <p>[<em>breif</em> section intro]</p>
