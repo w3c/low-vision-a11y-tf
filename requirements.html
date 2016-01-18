@@ -93,16 +93,16 @@
       };
     </script>
     </head>
-<body>
+    <body>
 <section id='abstract'>
       <p>@@EDIT before FPWD@@ This document provides details about the accessibility requirements of users with low vision impairments collected by the Low Vision Task Force.</p>
     </section>
 <section id='sotd'>
-      <p> @@EDIT before FPWD@@ This document is an incomplete rough draft.  We are happy to receive comments, @@ but the content of this document is under active revision and should not be regarded as stable. </p>
+      <p> @@EDIT before FPWD@@ This document is an incomplete rough draft.  We are happy to receive comments, @@ but the content of this document is under active revision and should not be regarded as stable.</p>
     </section>
 <section>
       <h2>Introduction</h2>
-      <p>This document describes what people with low vision need for web content, tools, and technologies to be accessible. It includes an overview of low vision, describes specific user requirements, and includes an appendix with details on visual conditions and their impact on web use.</p>
+      <p>This document describes what people with low vision need for web content, tools, and technologies to be accessible. It includes an overview of low vision, describes specific user requirements, and links to additional  details on visual conditions and their impact on web use. It does not set priorities on issues, and does not specify which user needs should be met by hardware, operating systems, user agents, or content.</p>
       <p>This document is intended to provide the background for developing guidelines and techniques for making content, tools, and technologies accessible to people with low vision.</p>
     </section>
 <section>
@@ -117,11 +117,14 @@
       <section>
     <h3>Incidence</h3>
     <p>The World Health Organization (WHO) <a href="http://www.who.int/mediacentre/factsheets/fs282/en/">estimates that there are 246 million people worldwide who have low vision and 39 million people are blind</a>, indicating that 86% of the people with visual impairments have low vision. @@(keep the ref?  add at end?)[references: http://www.who.int/mediacentre/factsheets/fs282/en/ , http://www.who.int/blindness/data_maps/VIFACTSHEETGLODAT2010full.pdf]</p>
-    <p>{lvtf note: WHO includes correctable &amp; non-correctable. perhaps want to include #s in region(s) where correction more available?}</p>
+    <div class="lvtfnotes">
+          <h4>LVTF notes</h4>
+          <p>WHO includes correctable &amp; non-correctable. Do we want to include statistics  in region(s) where correction is more available? Is there are stat that goes across regions, not just one country?</p>
+        </div>
   </section>
       <section>
     <h3>Cause and Progression of Low Vision</h3>
-    <p>Most low vision is caused by eye diseases and health conditions such as cataracts, glaucoma, and diabetes. These are more prevalent in older people. Some low vision is from birth defects or injuries. Appendix [X@@] provides information on specific causes of low vision.</p>
+    <p>Most low vision is caused by eye diseases and health conditions such as cataracts, glaucoma, and diabetes. These are more prevalent in older people. Some low vision is from birth defects or injuries. Information on specific causes of low vision is in [Low Vision Resources (W3C WAI pages)].</p>
     <p>Low vision encompasses a wide and variable range of issues across people, and even a single individual may experience multiple separate issues. Many eye diseases cause progressively worsening vision, and it is not uncommon for a person&rsquo;s vision to deteriorate from good vision to blindness over several years. Some causes of low vision can be improved through surgery or medication, and it is not uncommon for someone to have deteriorating vision over several months, and then experience improved vision after treatment.</p>
     <p>Starting around age 40, most people have &ldquo;normal&rdquo; declining vision that is not caused by disease, including decreasing ability to focus on text that is close, decreasing color perception, decreasing contrast sensitivity, and more. Some of this is &ldquo;correctable&rdquo; with glasses or more lighting, and some is not. Many people with decreased vision due to aging do not consider themselves as having a disability.</p>
   </section>
@@ -135,39 +138,48 @@
           <li>Perceptual area</li>
           <li>Color vision </li>
         </ul>
+    <div class="lvtfnotes">
+          <h4>LVTF notes</h4>
+          <p>discuss terminology:</p>
+          <ul>
+        <li>visual acuity, clarity, sharpness, blurry vision</li>
+        <li>visual field, perceptual area, field loss, tunnel vision</li>
+        <li>color vision deficiencies, color blindness</li>
+        <li>&quot;low vision users&quot; is not people first language</li>
+      </ul>
+        </div>
     <section id="visacu">
           <h3>Visual Acuity</h3>
           <p>Visual acuity is the clarity or sharpness of vision. It is generally dependent on the functioning of the retina part of the eye and of the interpretation of the brain. Measurement of distance visual acuity is based on a normal of 20/20 (6/6 in metric).</p>
-          <p>Some low visual acuity can be corrected with glasses, contact lenses, or surgery – and some cannot. [@@  say more]</p>
+          <p>Some low visual acuity can be corrected with glasses, contact lenses, or surgery – and some cannot. [@@SLH  say more]</p>
           <p>User needs related to visual acuity are addressed in the following sections:</p>
           <ul>
-        <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#perceiving-letter-characteristics">2.3 Perceiving (Letter Characteristics)</a> - text size, font, style, capitalization</li>
-        <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#spacing-for-reading">2.4 Spacing for Reading</a> - leading, letter spacing, word spacing</li>
-        <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#distinguishing">2.5 Distinguishing\Identifying Elements</a> - element-level customization, proportional text increase, margins, borders, indentation <em>(@@SLH to change grouping and order of those things)</em></li>
+        <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#perceiving-letter-characteristics">3.3 Perceiving</a> - text size, font, style, capitalization, size of all elements</li>
+        <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#spacing-for-reading">3.4 Spacing for Reading</a> - leading, letter spacing, word spacing, justification, margins and borders, spacing between elements</li>
+        <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#identifying-elements">3.5 Identifying Elements</a> - element-level customization, proportional text increase</li>
       </ul>
         </section>
     <section>
           <h3>Light Sensitivity</h3>
-          <p>Some people are sensitive to light, and "normal" brightness (or <em>luminance</em>) can cause pain and make it diffcult or impossible to see. People have different levels of light sensitivity and ...<br>
-            [@@ update with some of new info from https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Overview_of_Low_Vision#Contrast_and_Light_Sensitivity ]
-          </p>
+          <p>Some people are sensitive to light, and "normal" brightness (or <em>luminance</em>) can cause pain and make it difficult or impossible to see. People have different levels of light sensitivity and ...<br>
+        [@@ update with some of new info from https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Overview_of_Low_Vision#Contrast_and_Light_Sensitivity ] </p>
           <p>User needs related to light sensitivity are addressed in the following section:</p>
           <ul>
-        <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#luminance-and-color">2.1 Luminance and Color</a></li>
+        <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#luminance-and-color">3.1 Luminance and Color</a></li>
       </ul>
         </section>
     <section>
           <h3>Contrast Sensitivity</h3>
           <p>Contrast sensitivity is the ability to distinguish bright and dim areas of images, for example, to discern colored text on a colored background. A person with low contrast sensitivity cannot see text when there is not sufficient <em>luminosity</em> contrast between the text and the background, for example, light gray text on a light background.<br>
-          [@@ update with some of new info from https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Overview_of_Low_Vision#Contrast_and_Light_Sensitivity ]          </p>
+        [@@ update with some of new info from https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Overview_of_Low_Vision#Contrast_and_Light_Sensitivity ] </p>
           <p>User needs related to contrast sensitivity are addressed in the following section:</p>
           <ul>
-        <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#luminance-and-color">2.1 Luminance and Color</a></li>
+        <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#luminance-and-color">3.1 Luminance and Color</a></li>
       </ul>
         </section>
     <section id="visfie">
           <h3>Perceptual Area (Visual Field)</h3>
-          <p> The area from which a person&rsquo;s eye is able to gather visual information wen looking straight ahead is referred to as the perceptual area, field of vision, or visual field.  People generally have a visual field of approximately 180 degrees from left to right and 150 degrees up and down, with the sharpest vision in the central 5 degrees and color vision in the central 20 degrees. Some people have a smaller perceptual area and are often regarded as experiencing a field loss. Examples of conditions that cause visual field loss are in Appendix [X@@].</p>
+          <p> The area from which a person&rsquo;s eye is able to gather visual information wen looking straight ahead is referred to as the perceptual area, field of vision, or visual field.  People generally have a visual field of approximately 180 degrees from left to right and 150 degrees up and down, with the sharpest vision in the central 5 degrees and color vision in the central 20 degrees. Some people have a smaller perceptual area and are often regarded as experiencing a field loss. Examples of conditions that cause visual field loss are in [Low Vision Resources (W3C WAI pages)].</p>
           <p> Types of field loss can be grouped as follows:</p>
           <ul>
         <li>Central field loss: Vision is reduced or absent in the middle of people&rsquo;s vision.</li>
@@ -184,15 +196,15 @@
         </section>
     <section>
           <h3>Color Vision</h3>
-          <p>Some people cannot see certain colors well or at all, usually because of deficiencies in the cone receptors of their eyes which are responsible for color perception. This is often called <em>color blindness</em>, even though most people who are color blind can see most colors. It is rare that  people cannot  see any color at all. Globally, 1 in 12 men (8%) and 1 in 200 women have  color vision deficiencies. [source: <a href="http://www.colourblindawareness.org/colour-blindness/">colourblindawareness.org</a> @@some sources say higher] Color vision deficiencies are  not classified as &ldquo;low vision&rdquo; or disabilities in many contexts. Additional information is in Appendix [X@@] under <a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#color-vision-deficiencies-details">Color Vision Deficiencies Details</a>.</p>
+          <p>Some people cannot see certain colors well or at all, usually because of deficiencies in the cone receptors of their eyes which are responsible for color perception. This is often called <em>color blindness</em>, even though most people who are color blind can see most colors. It is rare that  people cannot  see any color at all. Globally, 1 in 12 men (8%) and 1 in 200 women have  color vision deficiencies. [source: <a href="http://www.colourblindawareness.org/colour-blindness/">colourblindawareness.org</a> @@some sources say higher] Color vision deficiencies are  not classified as &ldquo;low vision&rdquo; or disabilities in many contexts. Additional information is in [Low Vision Resources (W3C WAI pages)][which will include info such as is at https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Overview_of_Low_Vision#Color_Perception ].</p>
           <p>Simulated examples of color vision deficiencies:<br>
-            [@@ from https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Overview_of_Low_Vision#Simulated_Examples - with edits to descriptions:<br>
-&lt;gallery mode=&quot;nolines&quot; widths=135px heights=135px&gt;<br />
-File:full_color.png|Full color perception<br>
-File:protanopia.png|Red-green color blindness<br />
-File:tritanopia.png|Blue-yellow color blindness<br />
-File:achromatopsia.png|No color perception (rare)<br />
-&lt;/gallery&gt; </p>
+        [@@ from https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Overview_of_Low_Vision#Simulated_Examples - with edits to descriptions:<br>
+        &lt;gallery mode=&quot;nolines&quot; widths=135px heights=135px&gt;<br />
+        File:full_color.png|Full color perception<br>
+        File:protanopia.png|Red-green color blindness<br />
+        File:tritanopia.png|Blue-yellow color blindness<br />
+        File:achromatopsia.png|No color perception (rare)<br />
+        &lt;/gallery&gt;</p>
           User needs related to color vision deficiencies are addressed in the following section:
           <ul>
         <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#luminance-and-color">2.1 Luminance and Color</a></li>
@@ -211,7 +223,7 @@ File:achromatopsia.png|No color perception (rare)<br />
         <li>Lighting</li>
         <li>Glare</li>
         <li>Distance and angle</li>
-        <li>Movement, for example, reading on a train ''['''@@ LVTF question:''' Is this notably different for people low vision versus people with &ldquo;normal&rdquo; vision?]''</li>
+        <li>Movement, for example, reading on a train ''['''LVTF question:''' Is this notably different for people low vision versus people with &ldquo;normal&rdquo; vision?]''</li>
       </ul>
           <p>Sometimes people have control over environmental factors, for example, they can change the lighting in the room, set the brightness of the device, move to a shaded location, or change the angle of the display. Sometimes people have little or no control over the environment, for example, when using a public kiosk.</p>
           <p>Tasks may also impact a person&rsquo;s functional vision. For example, a person may be able to distinguish letters at a given point size on a vision test where they are  reading only one letter at a time, but they cannot actually read blocks of text at that same point size. This is the difference between <em>legibility</em> and <em>readability</em>. <strong>Legibility</strong> is related to perceiving text by distinguishing letters. <strong>Readability</strong> is related to reading and comprehending textual information. Thus text could be somewhat legible to a person, yet not functionally readable &ndash; with effort that user could distinguish one letter from another, but could not effectively read sentences.</p>
@@ -223,9 +235,9 @@ File:achromatopsia.png|No color perception (rare)<br />
     <p>Some low vision accessibility issues are directly related to functional vision and some are related to adaptations for visual impairments. For example, when a person with low visual acuity (and full visual field) uses zoom or magnification, they have some similar issues as people with peripheral field loss &mdash; as considerable information may be moved outside of their visual field as a result of their solution to reduced visual acuity.</p>
     <br>
   </section>
-</section>
+    </section>
 <section>
-  <h2>User Needs</h2>
+      <h2>User Needs</h2>
       <p>[@@ Low vision accessibility is largely about perceiving textual information.]</p>
       <p>[@@ blocks of text vs. things like field labels]
     <section> </section>
@@ -238,11 +250,11 @@ File:achromatopsia.png|No color perception (rare)<br />
       <ul>
     <li><a href="#luminance-and-color">Luminance and Color</a></li>
     <li><a href="#tracking">Tracking</a></li>
-    <li><a href="#perceiving-letter-characteristics">Perceiving (Letter Characteristics)</a></li>
-    <li><a href="#spacing-for-reading">Spacing for Reading</a></li>
-    <li><a href="#distinguishing">Distinguishing</a></li>
+    <li><a href="#perceiving-letter-characteristics">Perceiving</a></li>
+    <li><a href="#spacing">Spacing for Reading</a></li>
+    <li><a href="#distinguishing">Identifying Elements</a></li>
     <li><a href="#point-of-regard-and-proximity">Point of Regard and Proximity</a></li>
-    <li><a href="#printing">Printing</a></li>
+    <li><a href="#work-with-user-settings">Work with User Settings</a></li>
   </ul>
       <p>The user requirements that start with &ldquo;Users can...&rdquo;  indicates that a user can change a setting.</p>
       <section>
@@ -263,7 +275,6 @@ File:achromatopsia.png|No color perception (rare)<br />
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>How much is this a hardware issue verses an O/S issues versus a content and/or user agent issue? It&rsquo;s important enough that we probably want to include it as a user requirement, even if it doesn't turn out to be a SC for content or user agent.</p>
         <p>Source: several, TAdER <a href="http://www.tader.info/baddisplay.html"> When Text is Not Displayed Well</a>, <a href="http://www.tader.info/users-angelita.html"> Angelita user experience</a> &ldquo;very photophobic (bright lights hurt my eyes and make it impossible for me to see).&rdquo;</p>
       </div>
         </section>
@@ -290,8 +301,23 @@ File:achromatopsia.png|No color perception (rare)<br />
       </div>
         </section>
     <section>
+          <h3>@@</h3>
+          <p>...</p>
+          <div class="userrequire">
+        <h4>User Requirement:</h4>
+        <p>...</p>
+      </div>
+          <div class="lvtfnotes">
+        <h4>LVTF notes</h4>
+        <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">WCAG 1.4.1 Use of Color</a>: Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)</p>
+        <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html">WCAG 1.3.3 Sensory Characteristics</a>: Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound. (Level A)</p>
+      </div>
+        </section>
+    <section>
           <h3>Contrast Adjacent</h3>
           <p>Sometimes adjacent colors need to be distinguished, for example, colors next to each other in a pie chart. Such colors should have sufficient contrast and be distinguishable by people who are color blind and have reduced contrast sensitivity.</p>
+          <p>@@ can be labeled</p>
+          <p>@@ maybe don't need this since have not requiring color perception at all.</p>
           <div class="userrequire">
         <h4>User Requirement:</h4>
         <p>Users can distinguish between adjacent colors when needed for meaning.</p>
@@ -307,10 +333,11 @@ File:achromatopsia.png|No color perception (rare)<br />
       <section>
     <h2>Tracking </h2>
     <p>Tracking is following along lines of text, including getting from the end of one line to the beginning of the next line of text.</p>
+    <p>This section includes rewrap, reflow, text areas, line length,  and hyphenation. Leading and justification also impact tracking; they are included in the <a href="#spacing">Spacing</a> section. <a href="#margins-and-borders">Margins and Borders</a> can also impact tracking, especially when blocks of text are in columns or near other text.</p>
     <br>
     <section>
           <h3>Rewrap for one direction scrolling</h3>
-      <p>For many people, with and without disabilities, it is difficult to read when they have to scroll back and forth to read a line of text. When people with low vision increase the text size and the text doesn't &ldquo;reflow&rdquo;, they sometimes have to scroll horizontally several screens to read a single line of text. Additionally, the scrollbar and cursor is harder to find for some. Getting from the end of a line of text, scrolling back left, and then finding the beginning of the next line can take considerable attention. This degrades reading flow and comprehension, sometimes significantly enough that effective reading is not possible when horizontal scrolling is required.</p>
+          <p>For many people, with and without disabilities, it is difficult to read when they have to scroll back and forth to read a line of text. When people with low vision increase the text size and the text doesn't &ldquo;reflow&rdquo;, they sometimes have to scroll horizontally several screens to read a single line of text. Additionally, the scrollbar and cursor is harder to find for some. Getting from the end of a line of text, scrolling back left, and then finding the beginning of the next line can take considerable attention. This degrades reading flow and comprehension, sometimes significantly enough that effective reading is not possible when horizontal scrolling is required.</p>
           <div class="userrequire">
         <h4>User Requirement:</h4>
         <p>Blocks of text rewrap so that only one direction of scrolling is needed, e.g., for left-right and right-left scripts [languages], usually vertical scrolling and not horizontal scrolling.</p>
@@ -337,22 +364,6 @@ File:achromatopsia.png|No color perception (rare)<br />
       </div>
         </section>
     <section>
-          <h3>Flexible text areas</h3>
-          <p>When people increase text size, increase leading, or change other text display aspects, content that is poorly designed can become unusable. For example, in web pages (especially when text is changed through text-only zoom or text settings) sometimes columns and sections overlap, the space between lines disappears, lines of text become too long, or text disappears.</p>
-          <p>[Figure: Two screen captures show that when text size is increased, the heading overlaps the main text, the main text overlaps the sidebar text; and the sidebar text is cut off at the bottom. <a href="http://www.w3.org/WAI/images/easychecks/zoom-100.png"> non-zoomed</a>, <a href="http://www.w3.org/WAI/images/easychecks/zoom-overlap.png"> zoomed</a> ]</p>
-          <p>See also [scroll bars].</p>
-          <div class="userrequire">
-        <h4>User Requirement:</h4>
-        <p>Text areas resize to accommodate text. Often it is best for the text are to automatically resize, and for user to be able to change the text area size. When the areas cannot be resized to accommodate all content, a scrollbar is available. See also <em>Rewrap for one direction scrolling</em>.</p>
-      </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://www.w3.org/WAI/eval/preliminary.html#resize"> Resize text in Easy Checks</a> has images</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_1814"> UAAG 1.8.14</a> Ignore Fixed Unit Dimensions: The user can have the user agent override author-specified unit dimensions. (Level AA)</p>
-        <p>Source: TAdER</p>
-      </div>
-        </section>
-    <section>
           <h3>Line length</h3>
           <p>For many people, with and without disabilities, it is harder to read very long lines of text than shorter lines. For people with a small field of vision, it can be even more difficult to read long lines of text, and from the end of a line of text, to find the beginning of the next line.</p>
           <p>People with good visual acuity yet small field of vision might want to set the text size small and the text area narrow so they can get more characters in their field of vision.</p>
@@ -367,60 +378,42 @@ File:achromatopsia.png|No color perception (rare)<br />
       </div>
         </section>
     <section>
-          <h3>Justification</h3>
-          <p>Justification or alignment options usually include: left, right, full/both, centered.</p>
-          <p>Sometimes full justification makes reading more difficult because extra space between words causes &ldquo;<a href="http://en.wikipedia.org/wiki/River_(typography)">rivers of white</a>&rdquo; making it difficult to track along a line of text, or less space between words makes it difficult to distinguish separate words. Some people find it easier to track from the end of one line to the next with full justification, and others prefer left justification (for left-to-right scripts [languages]).</p>
-          <div class="userrequire">
-        <h4>User Requirement:</h4>
-        <p>Users can change the justification / alignment (left, right, full/both, centered) of blocks of text.</p>
-      </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p>Justification also relates to Reading (Spacing), and from there we should point to here.</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config"> UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: TAdER</p>
-      </div>
-        </section>
-    <section>
           <h3>Hyphenation</h3>
-          <p>For some people it is especially difficult to understand words that are hyphenated. While primarily a cognitive issue, it becomes more of an issue when text size is increased, thus it is also related to low vision. Some people with very large text may prefer hyphenation so there is less wasted space at the end of lines.</p>
+          <p>For some people it is especially difficult to understand words that are hyphenated, and they need to turn off hyphenation. While primarily an issue for people with cognitive impairments, hyphenation becomes more of an issue when text size is increased, thus it is also related to low vision. Some people with very large text may prefer hyphenation on so that more characters fit on a line of text.</p>
           <div class="userrequire">
         <h4>User Requirement:</h4>
         <p>Users can turn hyphenation on or off.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>This doesn't fit great under tracking, but I'm not sure it fits better elsewhere, so I just put it here for now.</p>
+        <p>Does hyphenation best fit under tracking, or is there a better place for it?</p>
+        <p>[Survey 18 Jan 2016]</p>
         <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
         <p>Source: TAdER</p>
       </div>
         </section>
-    <section>
-          <h3>Leading</h3>
-          <p>Leading (also called line space and line height) is also related to tracking. It is addressed in the @@ section.</p>
-        </section>
   </section>
       <section>
-    <h2>Perceiving (Letter Characteristics) </h2>
-    <p>Perceiving is being able to recognize individual letters based on their characteristics; it is legibility.</p>
+    <h2>Perceiving </h2>
+    <p>Perceiving includes being able to recognize individual letters based on their characteristics, which is legibility, and perceive non-text information and interface elements.</p>
+    <p>This section includes text size font, style, capitalization, and size of all elements. <a href="#spacing">Spacing</a> also impacts how hard it is to perceive letters.</p>
     <br>
     <section>
           <h3>Text Size</h3>
-          <p>Some people need larger text in order to perceive letters. @@text only vs. zoom</p>
+          <p>Some people need larger text in order to perceive letters. Although increasing size is most common, some people with tunnel vision and good visual acuity may prefer smaller letters so they can see more words at a time.</p>
           <p>Example issues:</p>
           <ul>
         <li>Text settings don't increase the text in tool-tip text and other pop-up text</li>
-        <li>Text settings don't increase the text in maps</li>
         <li>Text settings don't increase the text in images</li>
+        <li>Text settings don't increase the text in maps [@@ is this different from images?]</li>
       </ul>
           <div class="userrequire">
         <h4>User Requirement:</h4>
-        <p>Users can change the text size (font size) of all text.</p>
+        <p>Users can change the text size (font size) of all text, without zooming the entire interface.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
         <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_185"> UAAG 1.8.5 Zoom</a></p>
         <p>Source: [JimA UC-2], [Alan Smith UC-2], TAdER</p>
       </div>
         </section>
@@ -436,7 +429,7 @@ File:achromatopsia.png|No color perception (rare)<br />
         <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
         <p>Note to tool developers: When providing users a list of fonts to choose from, present the font name in the font itself — e.g., Times, Veranda, Courier — so users can tell what each font looks like before choosing it.</p>
         <p>Source: TAdER, <a href="http://www.w3.org/WAI/RD/2012/text-customization/p7.html"> sub-pixel rendering</a></p>
-        <p class="set-where">Can be changed by: author (stylesheet), browser (setting, extension), assistive technology (screen magnifier), platform (screen resolution). </p>
+        <p class="set-where">Can be changed by: author (stylesheet), browser (setting, extension), assistive technology (screen magnifier), platform (screen resolution).</p>
       </div>
         </section>
     <section>
@@ -465,10 +458,30 @@ File:achromatopsia.png|No color perception (rare)<br />
         <p>Source: TAdER</p>
       </div>
         </section>
+    <section>
+          <h3>Size of All Elements</h3>
+          <p>Some people need to increase the size of all interface elements in order to perceive information. Although increasing size is most common, some people with tunnel vision and good visual acuity may prefer to decrease the size so they can see more information at a time. For example, users need to:</p>
+          <ul>
+        <li>Zoom to make everything larger.</li>
+        <li>Increase the width of the text cursor, which is usually done at the operating system level.</li>
+        <li>Increase the size of the mouse pointer, which is usually done at the operating system level.</li>
+      </ul>
+          <div class="userrequire">
+        <h4>User Requirement:</h4>
+        <p>Users can change the size of all elements.</p>
+      </div>
+          <div class="lvtfnotes">
+        <h4>LVTF notes</h4>
+        <p>We have a separate point for increasing text size. This draft covers overall zoom/magnification, as well as some specifics: text cursor and mouse pointer. Are there other examples? Do we want these combined? Do we want these separated out, e.g., since we know that some are often provided by operating systems and others by browsers?</p>
+        <p>[Survey 18 Jan 2016]</p>
+        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_185"> UAAG 1.8.5 Zoom</a></p>
+      </div>
+        </section>
   </section>
       <section>
-    <h2>Spacing for Reading </h2>
+    <h2>Spacing for Reading</h2>
     <p>Space between lines and space between words impacts readability.</p>
+    <p>This section includes leading, letter spacing,  word spacing, and justification. Element spacing, margins, and indentation are related to spacing; they are covered in the Identifying Elements section.</p>
     <br>
     <section>
           <h3>Leading</h3>
@@ -510,43 +523,73 @@ File:achromatopsia.png|No color perception (rare)<br />
       </div>
         </section>
     <section>
-          <h3>Element spacing</h3>
-          <p>Having additional space between elements helps people group related information. For example, having more space above a heading and less space below it, helps associate the heading with the text below.</p>
+          <h3>Justification</h3>
+          <p>Justification or alignment options usually include: left, right, full/both, centered.</p>
+          <p>Justification impacts readability and tracking. Sometimes full justification makes reading more difficult because extra space between words causes &ldquo;<a href="http://en.wikipedia.org/wiki/River_(typography)">rivers of white</a>&rdquo; making it difficult to track along a line of text, or less space between words makes it difficult to distinguish separate words. Some people find it easier to track from the end of one line to the next with full justification, and others prefer left justification (for left-to-right scripts).</p>
           <div class="userrequire">
         <h4>User Requirement:</h4>
-        <p>Users can change the space between elements (e.g., space between paragraphs, or space above headings) for blocks of text.</p>
+        <p>Users can change the justification / alignment (left, right, full/both, centered) of blocks of text.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>@@question: Is this the same as element-level customization, or separate?</p>
-        <p>Source: TAdER </p>
+        <p>Justification also relates to Reading (Spacing), and from there we should point to here.</p>
+        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config"> UAAG 1.4</a> Provide text configuration</p>
+        <p>Source: TAdER</p>
       </div>
         </section>
     <section>
-          <h3>Margins</h3>
-          <p>Having wide margins around blocks of text helps focus on the text and not get distracted by surround text, images, etc.</p>
+          <h3>Margins and Borders</h3>
+          <p>Having wide margins around blocks of text helps some people focus on the text and not get distracted by surround text, images, etc. This is especially important for tracking when blocks of text are in columns or near other text.</p>
+          <p>For people who need very large text, wide margins could make  line length too short. For people with tunnel vision, side margins could make it hard to track text. Therefore, some people might need borders to separate clocks of text instead of, or in addition to, margins.</p>
           <div class="userrequire">
         <h4>User Requirement:</h4>
-        <p>Users can change the margins (blank space around blocks of text) around blocks of text.</p>
+        <p>Users can change the margins (blank space) and borders around blocks of text.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
+        <p>Does it make sense for these to be together, or would it be better to have them separate?</p>
+        <p>[Survey 18 Jan 2016]</p>
         <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
         <p>Source: TAdER, [there was one in UC about text against the left margin in GitHub, but I don't see it there anymore]</p>
       </div>
         </section>
+    <section>
+          <h3>Spacing Between Elements</h3>
+          <p>Having additional space between unrelated elements helps people group related information. For example, having more space above a heading and less space below it, helps associate the heading with the text below.</p>
+          <p>[image examples: equal space before &amp; after headings vs. more space above a heading and less space below it]</p>
+          <div class="userrequire">
+        <h4>User Requirement:</h4>
+        <p>Spacing groups related elements and separates less related elements.</p>
+      </div>
+          <div class="lvtfnotes">
+        <h4>LVTF notes</h4>
+        <p>Open issue for later: Other requirements address users being able to change the space (element-level customization), and having related things in close proximity. Let's see how those sections pan out and if spacing between elements is a separate point or fits with another point?</p>
+        <p>Source: TAdER</p>
+      </div>
+        </section>
   </section>
       <section>
-    <h2>Distinguishing | Identifying Elements</h2>
-    <p>Identifying elements is about distinguishing things like headings and lists.</p>
+    <h2>Identifying Elements</h2>
+    <p>Identifying elements is about distinguishing elements such as headings and lists.</p>
     <br>
     <section>
           <h3>Element-level customization</h3>
-          <p>Some people change the way certain elements are displayed to make it easier to distinguish types of text. For example, some people who need large text make headings smaller so that they take up less space and because they are usually shorter and easier to read than blocks of text.</p>
-          <p>[<a href="http://www.w3.org/WAI/RD/2012/text-customization/r14-w2.png"> example of element-level customization</a> has headings in a different font, indented, with borders, a different color, and dots preceding them based on the heading level]</p>
+          <p>Some people change the way certain elements are displayed to make it easier to distinguish types of text, such as headings. If all text is increased proportionally, headings can become very large and bigger than people need to read the main body text. So some people prefer for headings to be smaller and they use styling such as font, color, and indentation  to distinguish heading levels.</p>
+          <p>[<a href="https://www.w3.org/WAI/RD/2012/text-customization/r14-ss.png">example 1</a> with indentation and color to indicate heading levels; <a href="http://www.w3.org/WAI/RD/2012/text-customization/r14-w2.png">example 2 of element-level customization</a> has headings distinguished with different fonts, indented, with borders, a different color, and dots preceding them based on the heading level]</p>
           <div class="userrequire">
         <h4>User Requirement:</h4>
         <p>Users can customize text differently for specific elements, such as headings, lists, and paragraph text.</p>
+        <p>Users can set:</p>
+        <ul>
+              <li>Text size</li>
+              <li>Text color and background color</li>
+              <li>Font</li>
+              <li>Leading</li>
+              <li>Text style (that is, turn on or off underline, italic, bold)</li>
+              <li>Margins / indentation</li>
+              <li>Borders — including border line color, width, style</li>
+              <li>@@SLH other</li>
+            </ul>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
@@ -564,34 +607,16 @@ File:achromatopsia.png|No color perception (rare)<br />
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
+        <p>Perhaps this user need is sufficiently covered in other points:</p>
+        <ul>
+              <li>Zoom would provide proportional zoom.</li>
+              <li>Text size lets the user text an overall text size.</li>
+              <li>Element-level customization lets the user set size on headings.</li>
+            </ul>
+        <p>This was included in UAAG, but maybe we don't need a separate point for it?</p>
+        <p>[Survey 18 Jan 2016]</p>
         <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
         <p> <a href="http://w3c.github.io/UAAG/UAAG20/#sc_185"> UAAG 1.8.5 Zoom</a></p>
-        <p>Source: TAdER</p>
-      </div>
-        </section>
-    <section>
-          <h3>Borders</h3>
-          <p>Some people use borders to indicate headings, sections, and other elements. This takes up less space than increasing text size and spacing.</p>
-          <p> [<a href="http://www.w3.org/WAI/RD/2012/text-customization/r14-w2.png">examples borders</a> has different level headings with different color borders]</p>
-          <div class="userrequire">
-        <h4>User Requirement:</h4>
-        <p>Users can set borders around blocks of text — including border line color, width, style.</p>
-      </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: TAdER</p>
-      </div>
-        </section>
-    <section>
-          <h3>Indentation</h3>
-          <p>Some people use indentation to indicate headings, sections, and other elements. This takes up less space than increasing text size and spacing. Some people increase the indentation of paragraphs and lists to make them easier to distinguish.</p>
-          <div class="userrequire">
-        <h4>User Requirement:</h4>
-        <p>Users can change the indentation of blocks of text and of specific elements.</p>
-      </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
         <p>Source: TAdER</p>
       </div>
         </section>
@@ -633,31 +658,43 @@ File:achromatopsia.png|No color perception (rare)<br />
       </div>
         </section>
     <section>
-          <h3>Proximity of related information</h3>
-          <p>User experience: People with limited field of vision or screen magnification have little in their field of view at one time. They have difficulty if related information --  such as labels and controls, or matching tests in two columns, or feedback -- is not close together.</p>
+          <h3>Proximity of Related Information</h3>
+          <p>People with limited field of vision or screen magnification have little in their field of view at one time. They have difficulty if related information &mdash;  such as labels and controls, or matching tests in two columns, or feedback &mdash; is not close together.</p>
+          <p>Related information should be in close proximity, as feasible. Feedback should be in close proximity to the user&rsquo;s visual focus. Dialog boxes should appear over the users point of regard.</p>
           <div class="userrequire">
         <h4>User Requirement:</h4>
-        <p>Related information is in close proximity.</p>
-        <p>Feedback is in close proximity to the user&rsquo;s visual focus.</p>
+        <p>Users can find related information.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>@@ expand to dialog boxes?<br />
-              [is this covered sufficiently?: Fleeting messages that appear and then disappear that may appear outside the user&rsquo;s zoomed or magnified viewport. Currently would likely fail SC 2.2.1]</p>
+        <p> [is this covered sufficiently?: Fleeting messages that appear and then disappear that may appear outside the user&rsquo;s zoomed or magnified viewport. Currently would likely fail SC 2.2.1]</p>
         <p>Source: [Laura1], [Laura 2]</p>
       </div>
         </section>
-    <section>
-          <h3>Scrollbars</h3>
-          <p>@@</p>
-          <p>[in which category would this best fit?]</p>
-          <p>Related issue is dialog boxes having scrollbars when needed, but that&rsquo;s not a tracking issue, so let&rsquo;s see where it fits… There we might
-        also want to mention that some users set lower screen resolution. source: [JimA UC-1] </p>
-          <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_183"> UAAG 1.8.3</a> Provide Viewport Scrollbars: When the rendered content extends beyond the viewport dimensions, users can have graphical viewports include scrollbars, overriding any values specified by the author. (Level A)</p>
-        </section>
   </section>
       <section>
-    <h2> Printing </h2>
+    <h2>Work with  User Settings</h2>
+    <section>
+          <h3>Seeing All Interface Elements</h3>
+          <p>When people increase text size, increase leading, or change other text display aspects through text-only zoom or other text settings, content that is poorly designed can become unusable. For example, with text areas in web pages, sometimes columns and sections overlap, the space between lines disappears, lines of text become too long, or text disappears.<br>
+        [Figure: Two screen captures show that when text size is increased, the heading overlaps the main text, the main text overlaps the sidebar text; and the sidebar text is cut off at the bottom. <a href="http://www.w3.org/WAI/images/easychecks/zoom-100.png"> non-zoomed</a>, <a href="http://www.w3.org/WAI/images/easychecks/zoom-overlap.png"> zoomed</a> ]</p>
+          <p>Often it is best for  text areas to automatically resize to fit the text, and for users to be able to change the size of text areas. When the areas cannot be resized to accommodate all content, usually a a scrollbar should be available. See also the <a href="#rewrap-for-one-direction-scrolling">Rewrap for one direction scrolling</a> section.</p>
+          <p>When people use large fonts or  lower screen resolution,  it is not uncommon for dialog boxes to include information that is not in the viewport. In such cases, it is usually best practice for scrollbars to be provided for the dialog box.<br>
+        [Figure: example dialog box cut off]</p>
+          <p>Scrollbars generally provide the additional benefit of communicating where the user is is an interface.</p>
+          <div class="userrequire">
+        <h4>User Requirement:</h4>
+        <p>Users can see all  interface elements that are intended for users to see, including when users have changed display settings such as text size.</p>
+      </div>
+          <div class="lvtfnotes">
+        <h4>LVTF notes</h4>
+        <p>UAAG has a specific requirement for scrollbars, but in the <a href="https://www.w3.org/2016/01/13-lvtf-minutes#item06">13 Jan call</a>, we talked about making this more broad rather than specifically requiring scrollbars. Above is a rough draft idea combining this with the previous point &quot;flexible text areas&quot;. Should this be one point or more than one? Ideas for rewriting or polishing this?</p>
+        <p>[Survey 18 Jan 2016]</p>
+        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_183"> UAAG 1.8.3</a> Provide Viewport Scrollbars: When the rendered content extends beyond the viewport dimensions, users can have graphical viewports include scrollbars, overriding any values specified by the author. (Level A)</p>
+        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_1814">UAAG 1.8.14</a> Ignore Fixed Unit Dimensions: The user can have the user agent override author-specified unit dimensions. (Level AA)</p>
+        <p>Source: [JimA UC-1]</p>
+      </div>
+        </section>
     <section>
           <h3>Printing customized text</h3>
           <p>It is difficult for some people to read text on the computer; they need to be able to print electronic text on paper in order to read it. [say more here – could pull from <a href="http://www.tader.info/printing.html"> printing</a>]</p>
@@ -671,19 +708,30 @@ File:achromatopsia.png|No color perception (rare)<br />
         <p>Source: [Alan Smith UC-4], TAdER <a href="http://www.tader.info/printing.html"> printing</a></p>
       </div>
         </section>
+    <section>
+          <h3>Using User Settings</h3>
+          <p>Most operating systems allow users to set ...</p>
+          <p>Most browsers allow users to set ...</p>
+          <div class="userrequire">
+        <h4>User Requirement:</h4>
+        Content picks up user settings...</div>
+          <div class="lvtfnotes">
+        <h4>LVTF notes</h4>
+        <p>&nbsp;</p>
+      </div>
+        </section>
   </section>
       <section>
     <h2>[LVTF Notes Overall]</h2>
     <div class="lvtfnotes">
-          <h3> Issues not specific to low vision (and adequately covered by WCAG) </h3>
+          <h3>Specific issues – not sure best way to address?</h3>
           <h4>Captcha</h4>
           <p><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html"> Understanding&nbsp;SC&nbsp;1.1.1</a> … <b>CAPTCHA:&nbsp;</b>If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities. …</p>
           <p>Source: [Laura UC-10]</p>
           <h4>Background images</h4>
-          <p><a href="http://www.w3.org/TR/WCAG20-TECHS/F3.html"> WCAG Technique F3</a> Failure of Success Criterion 1.1.1 due to using CSS to include images that convey important information </p>
+          <p><a href="http://www.w3.org/TR/WCAG20-TECHS/F3.html"> WCAG Technique F3</a> Failure of Success Criterion 1.1.1 due to using CSS to include images that convey important information</p>
           <p>Sources: [Laura7], [<a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2015Oct/0062.html">1</a>]</p>
-          <h3> Specific issues – not sure best way to address? </h3>
-          <h4>Users agent functionality</h4>
+          <h3>Users agent functionality</h3>
           <p>User experience: @@A person uses magnification software attempts to return to a landing Web page from an interior Web page by using the browser back button but it is disabled in the product. Moreover, the tool&rsquo;s back button (and navigation) is outside the zoomed-in field of view. No other method of navigation within the set of Web pages is provided i.e., breadcrumbs. This makes it difficult to locate previous content.</p>
           <p>User requirement: Browser or other user agent functionality is not disabled.</p>
           <p>Source: [Laura3]</p>
@@ -701,11 +749,12 @@ File:achromatopsia.png|No color perception (rare)<br />
           <p>Use experience: Some inverted high contrast color schemes render photographic images as photo negatives.</p>
           <p>Source: [Erich2]</p>
           <h4>Bright images</h4>
-          <p>User experience:  A person using high contrast may experience difficulty accessing important content visually on a page if the content is placed near a decorative, non-essential element, like a picture or graphic, if these things render brightly in high contrast. </p>
+          <p>User experience:  A person using high contrast may experience difficulty accessing important content visually on a page if the content is placed near a decorative, non-essential element, like a picture or graphic, if these things render brightly in high contrast.</p>
           <p>Source: [Erich4]</p>
-          <h3>Misc Notes </h3>
+          <h3>Misc Notes</h3>
           <ul>
         <li>Not for this section, but for understanding low   vision users: Person wants to use mobile OS magnification. [John Rochford1],   Person using TTS, not a screen reader. [John Rochford2]</li>
+        <li><a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2016Jan/0001.html">contrast issues</a></li>
       </ul>
         </div>
   </section>
@@ -718,45 +767,9 @@ File:achromatopsia.png|No color perception (rare)<br />
   </ul>
     </section>
 <section class='appendix'>
-      <h2>Appendix X@@: Details on Low Vision Conditions</h2>
-      <p>[@@ Not comprehensive, just a handful of examples.]]</p>
-      <section>
-  <h3>Color Vision Deficiencies Details</h3>
-  <p>[@@ from https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Overview_of_Low_Vision#Color_Perception ] </p>
-
-  <!--
-  <p>Specialized cells known as cones that are located in the retina of the eye allow a person to see color. When these cells are absent or malfunctioning it can result in a decreased ability to see certain colors or a decreased ability to tell colors apart. This is commonly called &ldquo;color blindness&rdquo;.</p>
-  <p> Globally, 1 in 12 men (8%) and 1 in 200 women have color blindness. Source: <cite>[http://www.colourblindawareness.org/colour-blindness/ ]</cite> Red-green color blindness is the most common form. It affects 7 to 10% of men and virtually no women. Source: <cite>[http://www.colour-blindness.com/general/prevalence/ ]</cite> Blue-yellow color blindness affects males and females equally. It occurs in fewer than 1 in 10,000 people. Source: <cite>[http://www.nhs.uk/conditions/colour-vision-deficiency/pages/introduction.aspx]</cite> </p>
-  <p> Generally, 4 types of color blindness exist due to the inability to see red, green, blue, or all color. </p>
-  <ul>
-    <li>Red -  Protanopia is the inability to see red light. People with protanopia have difficulty distinguishing green and red as they have an absence of L (red) cones. Red, orange and yellow brightness is reduced. While protanopia is the inability to see red, protanomaly is reduced red sensitivity.</li>
-    <li>Green -  Deuteranopia is the inability to see green light. People with deuteranopia have an absence of (green) M-cones. Protanopia and deuteranopia are similar in that red and green are confused. While deuteranopia is the inability to see green, deuteranomaly is reduced green sensitivity. </li>
-    <li>Blue -  Tritanopia is an inability to see blue light. People with tritanopia have an absence of S-blue cones. They have difficulty distinguishing blue-green and yellow-violet. While tritanopia is the inability to see blue, tritanomaly is reduced blue sensitivity.</li>
-    <li>No Color - Achromatopsia or monochromacy is the inability to see any color because of cones that do not work. People with these conditions can only distinguish light, dark, and some shades of grey. This is rare. </li>
-  </ul>
-  <p>Simulated Examples:<br>
-    [@@ from https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Overview_of_Low_Vision#Simulated_Examples - with edits to descriptions:<br>
-    &lt;gallery mode=&quot;nolines&quot; widths=135px heights=135px&gt;<br />
-    File:full_color.png|Full color perception<br>
-    File:protanopia.png|Red-green color blindness<br />
-    File:tritanopia.png|Blue-yellow color blindness<br />
-    File:achromatopsia.png|No color perception<br />
-    &lt;/gallery&gt; </p>
-  <h4>Color Simulators</h4>
-  <ul>
-    <li><a href="http://colororacle.cartography.ch/">Color Oracle</a></li>
-    <li><a href="http://www.etre.com/tools/colourblindsimulator/">Colour Blindness Simulator</a></li>
-    <li><a href="https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl">NoCoffee Vision Simulator (Chrome extension)</a></li>
-    <li><a href="https://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a></li>
-    <li><a href="http://www.vischeck.com/vischeck/vischeckURL.php ">Vischeck</a></li>
-  </ul>
-  -->
-</section>
-    </section>
-<section class='appendix'>
       <h2>Acknowledgments</h2>
       <p>@@ LVTF participants</p>
       <p>@@ funders</p>
-</section>
+    </section>
 </body>
 </html>
