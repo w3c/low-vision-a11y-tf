@@ -119,7 +119,7 @@
     <p>The World Health Organization (WHO) <a href="http://www.who.int/mediacentre/factsheets/fs282/en/">estimates that there are 246 million people worldwide who have low vision and 39 million people are blind</a>, indicating that 86% of the people with visual impairments have low vision. @@(keep the ref?  add at end?)[references: http://www.who.int/mediacentre/factsheets/fs282/en/ , http://www.who.int/blindness/data_maps/VIFACTSHEETGLODAT2010full.pdf]</p>
     <div class="lvtfnotes">
           <h4>LVTF notes</h4>
-          <p>WHO includes correctable &amp; non-correctable. Do we want to include statistics  in region(s) where correction is more available? Is there are stat that goes across regions, not just one country?</p>
+          <p><a href="https://www.w3.org/2002/09/wbs/81151/LVTF18Jan2016/results#xq2">Survey 18 Jan</a>: WHO includes correctable &amp; non-correctable. Do we want to include statistics  in region(s) where correction is more available? Is there are stat that goes across regions, not just one country?</p>
         </div>
   </section>
       <section>
@@ -140,12 +140,15 @@
         </ul>
     <div class="lvtfnotes">
           <h4>LVTF notes</h4>
-          <p>discuss terminology:</p>
+          <p>@@OPEN: discuss terminology:</p>
           <ul>
         <li>visual acuity, clarity, sharpness, blurry vision</li>
         <li>visual field, perceptual area, field loss, tunnel vision</li>
         <li>color vision deficiencies, color blindness</li>
         <li>&quot;low vision users&quot; is not people first language</li>
+        <li>corrected</li>
+        <li>normal</li>
+        <li>&quot;user need&quot; vs &quot;user requirement&quot; in section heading and each point</li>
       </ul>
         </div>
     <section id="visacu">
@@ -223,17 +226,12 @@
         <li>Lighting</li>
         <li>Glare</li>
         <li>Distance and angle</li>
-        <li>Movement, for example, reading on a train ''['''LVTF question:''' Is this notably different for people low vision versus people with &ldquo;normal&rdquo; vision?]''</li>
+        <li>Movement, for example, reading on a train <em>[<a href="https://www.w3.org/2002/09/wbs/81151/LVTF18Jan2016/results#xq3">survey 18 Jan</a>: Is this notably different for people low vision versus people with &ldquo;normal&rdquo; vision?]</em></li>
       </ul>
           <p>Sometimes people have control over environmental factors, for example, they can change the lighting in the room, set the brightness of the device, move to a shaded location, or change the angle of the display. Sometimes people have little or no control over the environment, for example, when using a public kiosk.</p>
           <p>Tasks may also impact a person&rsquo;s functional vision. For example, a person may be able to distinguish letters at a given point size on a vision test where they are  reading only one letter at a time, but they cannot actually read blocks of text at that same point size. This is the difference between <em>legibility</em> and <em>readability</em>. <strong>Legibility</strong> is related to perceiving text by distinguishing letters. <strong>Readability</strong> is related to reading and comprehending textual information. Thus text could be somewhat legible to a person, yet not functionally readable &ndash; with effort that user could distinguish one letter from another, but could not effectively read sentences.</p>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p>comment in <a href="http://www.tader.info/survey1304.html">user research survey</a>: &ldquo;the smaller the print, the less willing my eyes are to READ. So, for example, I can read small print on a map (labels) but not small print in a news story.&rdquo;</p>
-      </div>
-        </section>
+    </section>
     <p>Some low vision accessibility issues are directly related to functional vision and some are related to adaptations for visual impairments. For example, when a person with low visual acuity (and full visual field) uses zoom or magnification, they have some similar issues as people with peripheral field loss &mdash; as considerable information may be moved outside of their visual field as a result of their solution to reduced visual acuity.</p>
-    <br>
   </section>
     </section>
 <section>
@@ -256,26 +254,16 @@
   </ul>
       <p>The user requirements that start with &ldquo;Users can...&rdquo;  indicates that a user can change a setting.</p>
       <section>
-    <div class="lvtfnotes">
-          <h4>LVTF notes</h4>
-          <p>Sources with [name UC-0] are from <a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/User_stories_-_use_cases"> https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/User_stories_-_use_cases</a></p>
-        </div>
-  </section>
-      <section>
     <h2>Luminance and Color</h2>
     <p>Luminance is basically brightness. It is explained more in the Light Sensitivity section above.</p>
     <section>
           <h3>Luminance Overall</h3>
           <p>Bright light from a screen or other sources prevents some people with low vision (including those with photophobia and with reading disabilities such as dyslexia) from reading and causes pain for some people. Some people turn down the brightness of their screen or use an overlay.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can set the luminance overall.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p>Source: several, TAdER <a href="http://www.tader.info/baddisplay.html"> When Text is Not Displayed Well</a>, <a href="http://www.tader.info/users-angelita.html"> Angelita user experience</a> &ldquo;very photophobic (bright lights hurt my eyes and make it impossible for me to see).&rdquo;</p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3>Text Contrast</h3>
           <p>As mentioned in the [Luminance Overall] section, some people need low luminance, especially for backgrounds. Some people who need low luminance for backgrounds also need low luminance overall and thus need low luminance text.</p>
@@ -283,7 +271,7 @@
           <p>For some people, common color combinations or colors from a limited color palette work fine, for example, black text on white background or the inverse with white text on black background. Other people need to select more specific background and text colors. For example, people who need low luminance overall, need to select the specific background and text colors that provide sufficient contrast for them yet not too high luminance. Readable and optimal color combinations differs vastly among individuals and can even vary for one individual depending on conditions such as fatigue and lighting.</p>
           <p>[images of color example color settings, e.g.,  middle of <a href="http://www.w3.org/WAI/RD/2012/text-customization/r14"> css paper</a></p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can set the background color and the text color from the full color spectrum.</p>
       </div>
           <div class="lvtfnotes">
@@ -302,7 +290,7 @@
           <h3>@@</h3>
           <p>...</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>...</p>
       </div>
           <div class="lvtfnotes">
@@ -317,7 +305,7 @@
           <p>@@ can be labeled</p>
           <p>@@ maybe don't need this since have not requiring color perception at all.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can distinguish between adjacent colors when needed for meaning.</p>
       </div>
           <div class="lvtfnotes">
@@ -337,57 +325,42 @@
           <h3>Rewrap for one direction scrolling</h3>
           <p>For many people, with and without disabilities, it is difficult to read when they have to scroll back and forth to read a line of text. When people with low vision increase the text size and the text doesn't &ldquo;reflow&rdquo;, they sometimes have to scroll horizontally several screens to read a single line of text. Additionally, the scrollbar and cursor is harder to find for some. Getting from the end of a line of text, scrolling back left, and then finding the beginning of the next line can take considerable attention. This degrades reading flow and comprehension, sometimes significantly enough that effective reading is not possible when horizontal scrolling is required.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Blocks of text rewrap so that only one direction of scrolling is needed, e.g., for left-right and right-left scripts [languages], usually vertical scrolling and not horizontal scrolling.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
         <p>Script direction: Above and below is written for left-right and right-left scripts for now for simplicity. We should check with I18N folks on making this generic to apply also to vertically top-to-bottom scripts. Although we don't want to complicate it unnecessarily. <a href="http://www.i18nguy.com/temp/rtl.html"> reference for background</a> says &ldquo;Languages don't have a direction. Scripts have a writing direction&rdquo;.</p>
-        <p>Horizontal only: Interestingly, if *only* horizontal scrolling is needed to read a block of text, that is usually OK. But in practice, that&rsquo;s rarely a viable option in user interfaces.</p>
-        <p>Source: [Wayne UC-1], [Wayne UC-4], TAdER <a href="http://www.tader.info/scrolling.html">scrolling</a></p>
+        <p>Horizontal only: Interestingly, if *only* horizontal scrolling is needed to read a block of text, that is usually OK. But in practice, that&rsquo;s rarely a viable option in user interfaces.      </p>
       </div>
         </section>
     <section>
           <h3>Reflow to single column</h3>
           <p>For many people, with and without disabilities, it is more difficult to read when they have to scroll from the bottom of a column of text to the top of another column. For some people with low vision, with multiple columns, they have to scroll up several screens to get from the bottom of one column to the top of the next. Additionally, the scrollbar and cursor is harder to find for some. Getting from the bottom of a column and finding the top of the next column can take considerable attention. This degrades reading flow and comprehension, sometimes significantly.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can set blocks of text in one continuous block, instead of in multiple columns.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_1813"> UAAG 1.8.13</a> Multi-Column Text Reflow: The user can specify that recognized multi-column text blocks each be reflowed into a single column. (Level AA)</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_1815"> UAAG 1.8.15</a> Linearize Content: The user can have recognized content rendered as a single column, overriding author-specified formatting of columns, tables, and positioning. (Level AA)</p>
-        <p>Source: [Alan Smith UC-1], TAdER</p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3>Line length</h3>
           <p>For many people, with and without disabilities, it is harder to read very long lines of text than shorter lines. For people with a small field of vision, it can be even more difficult to read long lines of text, and from the end of a line of text, to find the beginning of the next line.</p>
           <p>People with good visual acuity yet small field of vision might want to set the text size small and the text area narrow so they can get more characters in their field of vision.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can set the line length for blocks of text. Often the easiest way to do this (for developers, designers, and users) is for users to resize text areas and the text rewraps to change the line length.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_188"> UAAG 1.8.8</a> Allow Viewport Resize:  The user can resize viewports within restrictions imposed by the platform, overriding any values specified by the author. (Level AA)</p>
-        <p>Source: TAdER</p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3>Hyphenation</h3>
           <p>For some people it is especially difficult to understand words that are hyphenated, and they need to turn off hyphenation. While primarily an issue for people with cognitive impairments, hyphenation becomes more of an issue when text size is increased, thus it is also related to low vision. Some people with very large text may prefer hyphenation on so that more characters fit on a line of text.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can turn hyphenation on or off.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>Does hyphenation best fit under tracking, or is there a better place for it?</p>
-        <p>[Survey 18 Jan 2016]</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: TAdER</p>
+        <p><a href="https://www.w3.org/2002/09/wbs/81151/LVTF18Jan2016/results#xq5">Survey 18 Jan</a>: Does hyphenation best fit under tracking, or is there a better place for it?      </p>
       </div>
         </section>
   </section>
@@ -403,59 +376,42 @@
           <ul>
         <li>Text settings don't increase the text in tool-tip text and other pop-up text</li>
         <li>Text settings don't increase the text in images</li>
-        <li>Text settings don't increase the text in maps [@@ is this different from images?]</li>
+        <li>Text settings don't increase the text in maps <em>[@@LVTF: is this different from images?]</em></li>
       </ul>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can change the text size (font size) of all text, without zooming the entire interface.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: [JimA UC-2], [Alan Smith UC-2], TAdER</p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3>Font</h3>
           <p>Some fonts/typefaces are more readable than others. For example, some people cannot read fonts with sub-pixel rendering.</p>
+          <p>Note to tool developers: When providing users a list of fonts to choose from, present the font name in the font itself — e.g., Times, Veranda, Courier — so users can tell what each font looks like before choosing it.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can change the font face (also called font family or typeface) of all text, choosing from a wide range of fonts including serif and sans serif fonts.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p>Note to tool developers: When providing users a list of fonts to choose from, present the font name in the font itself — e.g., Times, Veranda, Courier — so users can tell what each font looks like before choosing it.</p>
-        <p>Source: TAdER, <a href="http://www.w3.org/WAI/RD/2012/text-customization/p7.html"> sub-pixel rendering</a></p>
-        <p class="set-where">Can be changed by: author (stylesheet), browser (setting, extension), assistive technology (screen magnifier), platform (screen resolution).</p>
-      </div>
+        <p><em><span class="set-where">[Jim: Is this a comment about size not font family?] </span></em><span class="set-where">Can be changed by: author (stylesheet), browser (setting, extension), assistive technology (screen magnifier), platform (screen resolution).</span> @@SLH look if want to note somthing about this at higher level -- maybe in User Needs intro.</p>
+        </div>
         </section>
     <section>
           <h3>Style</h3>
           <p>For some people, bold text is easier to read. For some people, it is difficult to read blocks of text that is all underlined or italicized.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can change the text style (underline, italic, bold) of blocks of text.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: TAdER</p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3>Capitalization</h3>
           <p>Text in all capital letters is more difficult to read for most people, with and without disabilities.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can change the capitalization (all capital letters, small capital letters, sentence style) of blocks of text.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: TAdER</p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3>Size of All Elements</h3>
           <p>Some people need to increase the size of all interface elements in order to perceive information. Although increasing size is most common, some people with tunnel vision and good visual acuity may prefer to decrease the size so they can see more information at a time. For example, users need to:</p>
@@ -465,16 +421,10 @@
         <li>Increase the size of the mouse pointer, which is usually done at the operating system level.</li>
       </ul>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can change the size of all elements.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p>We have a separate point for increasing text size. This draft covers overall zoom/magnification, as well as some specifics: text cursor and mouse pointer. Are there other examples? Do we want these combined? Do we want these separated out, e.g., since we know that some are often provided by operating systems and others by browsers?</p>
-        <p>[Survey 18 Jan 2016]</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_185"> UAAG 1.8.5 Zoom</a></p>
-      </div>
-        </section>
+    </section>
   </section>
       <section>
     <h2>Spacing for Reading</h2>
@@ -485,54 +435,37 @@
           <h3>Leading</h3>
           <p>Leading is the space between lines in a block of text. It is also called line spacing and line height. Some people need more space between lines to be able to read text. Leading also helps with tracking.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can change the leading (line spacing, line height) of blocks of text.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: [Wayne UC-3], TAdER</p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3>Letter spacing</h3>
           <p>Some people need more space between letters to read text.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can change the letter spacing (space between letters/characters) of blocks of text.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: TAdER</p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3>Word spacing</h3>
           <p>Some people need more space between words to read text.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can change the word spacing (space between words) of blocks of text.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: TAdER</p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3>Justification</h3>
           <p>Justification or alignment options usually include: left, right, full/both, centered.</p>
           <p>Justification impacts readability and tracking. Sometimes full justification makes reading more difficult because extra space between words causes &ldquo;<a href="http://en.wikipedia.org/wiki/River_(typography)">rivers of white</a>&rdquo; making it difficult to track along a line of text, or less space between words makes it difficult to distinguish separate words. Some people find it easier to track from the end of one line to the next with full justification, and others prefer left justification (for left-to-right scripts).</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can change the justification / alignment (left, right, full/both, centered) of blocks of text.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>Justification also relates to Reading (Spacing), and from there we should point to here.</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config"> UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: TAdER</p>
+        <p>Justification also relates to Reading (Spacing), and from there we should point to here. @@SLH (also update the summaries for the sections where you moved things)</p>
       </div>
         </section>
     <section>
@@ -540,15 +473,12 @@
           <p>Having wide margins around blocks of text helps some people focus on the text and not get distracted by surround text, images, etc. This is especially important for tracking when blocks of text are in columns or near other text.</p>
           <p>For people who need very large text, wide margins could make  line length too short. For people with tunnel vision, side margins could make it hard to track text. Therefore, some people might need borders to separate blocks of text instead of, or in addition to, margins.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can change the margins (blank space) and borders around blocks of text.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>Does it make sense for these to be together, or would it be better to have them separate?</p>
-        <p>[Survey 18 Jan 2016]</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p>Source: TAdER, [there was one in UC about text against the left margin in GitHub, but I don't see it there anymore]</p>
+        <p>@@SLH telecon resolution: Leaving it as a separate point in readability section (and leaving it as subpoint in identifying elements) and to be tweaked to make it more clear how it relates to readability. <a href="https://www.w3.org/2016/01/20-lvtf-minutes.html#item04">minutes on margins</a></p>
       </div>
         </section>
     <section>
@@ -556,13 +486,12 @@
           <p>Having additional space between unrelated elements helps people group related information. For example, having more space above a heading and less space below it, helps associate the heading with the text below.</p>
           <p>[image examples: equal space before &amp; after headings vs. more space above a heading and less space below it]</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Spacing groups related elements and separates less related elements.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
         <p>Open issue for later: Other requirements address users being able to change the space (element-level customization), and having related things in close proximity. Let's see how those sections pan out and if spacing between elements is a separate point or fits with another point?</p>
-        <p>Source: TAdER</p>
       </div>
         </section>
   </section>
@@ -575,7 +504,7 @@
           <p>Some people change the way certain elements are displayed to make it easier to distinguish types of text, such as headings. If all text is increased proportionally, headings can become very large and bigger than people need to read the main body text. So some people prefer for headings to be smaller and they use styling such as font, color, and indentation  to distinguish heading levels.</p>
           <p>[<a href="https://www.w3.org/WAI/RD/2012/text-customization/r14-ss.png">example 1</a> with indentation and color to indicate heading levels; <a href="http://www.w3.org/WAI/RD/2012/text-customization/r14-w2.png">example 2 of element-level customization</a> has headings distinguished with different fonts, indented, with borders, a different color, and dots preceding them based on the heading level]</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can customize text differently for specific elements, such as headings, lists, and paragraph text.</p>
         <p>Users can set:</p>
         <ul>
@@ -589,35 +518,7 @@
               <li>@@SLH other</li>
             </ul>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_142"> UAAG 1.4.2</a> Basic text formatting (by Element): The user can set all of the following characteristics of visually rendered text content for text element types including at least headings, input fields, and links … (Level AA)</p>
-        <p> <a href="http://w3c.github.io/UAAG/UAAG20/#gl-style-sheets-config">UAAG style sheets</a></p>
-        <p>Source: TAdER <a href="http://www.TAdER.info/element-level.html">element</a></p>
-      </div>
-        </section>
-    <section>
-          <h3>Proportional text increase</h3>
-          <p>Often text size is used to indicate heading levels. Often people want to increase text size and preserve the distinctions conveyed through different text size. However, sometimes headings become too big if they are increased proportionally.</p>
-          <div class="userrequire">
-        <h4>User Requirement:</h4>
-        <p>Users can choose whether or not all text increases proportionally.</p>
-      </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p>Perhaps this user need is sufficiently covered in other points:</p>
-        <ul>
-              <li>Zoom would provide proportional zoom.</li>
-              <li>Text size lets the user text an overall text size.</li>
-              <li>Element-level customization lets the user set size on headings.</li>
-            </ul>
-        <p>This was included in UAAG, but maybe we don't need a separate point for it?</p>
-        <p>[Survey 18 Jan 2016]</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p> <a href="http://w3c.github.io/UAAG/UAAG20/#sc_185"> UAAG 1.8.5 Zoom</a></p>
-        <p>Source: TAdER</p>
-      </div>
-        </section>
+    </section>
   </section>
       <section>
     <h2>Point of Regard and Proximity </h2>
@@ -635,7 +536,7 @@
         <li>Mouse hover changes point of regard, but is lost. Screen magnification user hovers over image, acronym, or other thing with pop-up. The pop-up is larger than their view. When the user scrolls to read it, it loses focus and disappears.</li>
       </ul>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>The point of regard remains visible within the viewport when the viewport is resized, when content is zoomed or scaled, or when content formatting is changed.</p>
       </div>
           <div class="lvtfnotes">
@@ -660,7 +561,7 @@
           <p>People with limited field of vision or screen magnification have little in their field of view at one time. They have difficulty if related information &mdash;  such as labels and controls, or matching tests in two columns, or feedback &mdash; is not close together.</p>
           <p>Related information should be in close proximity, as feasible. Feedback should be in close proximity to the user&rsquo;s visual focus. Dialog boxes should appear over the users point of regard.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can find related information.</p>
       </div>
           <div class="lvtfnotes">
@@ -681,41 +582,32 @@
         [Figure: example dialog box cut off]</p>
           <p>Scrollbars generally provide the additional benefit of communicating where the user is in an interface.</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can see all  interface elements that are intended for users to see, including when users have changed display settings such as text size.</p>
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>UAAG has a specific requirement for scrollbars, but in the <a href="https://www.w3.org/2016/01/13-lvtf-minutes#item06">13 Jan call</a>, we talked about making this more broad rather than specifically requiring scrollbars. Above is a rough draft idea combining this with the previous point &quot;flexible text areas&quot;. Should this be one point or more than one? Ideas for rewriting or polishing this?</p>
-        <p>[Survey 18 Jan 2016]</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_183"> UAAG 1.8.3</a> Provide Viewport Scrollbars: When the rendered content extends beyond the viewport dimensions, users can have graphical viewports include scrollbars, overriding any values specified by the author. (Level A)</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_1814">UAAG 1.8.14</a> Ignore Fixed Unit Dimensions: The user can have the user agent override author-specified unit dimensions. (Level AA)</p>
-        <p>Source: [JimA UC-1]</p>
+        <p>UAAG has a specific requirement for scrollbars, but in the <a href="https://www.w3.org/2016/01/13-lvtf-minutes#item06">13 Jan call</a>, we talked about making this more broad rather than specifically requiring scrollbars. Above is a rough draft idea combining this with the previous point &quot;flexible text areas&quot;. Should this be one point or more than one? Ideas for rewriting or polishing this?<br>
+          @@SLH To be tweaked based on input from <a href="https://www.w3.org/2016/01/20-lvtf-minutes.html#item02">minutes on seeing all</a>      </p>
       </div>
         </section>
     <section>
           <h3>Printing customized text</h3>
           <p>It is difficult for some people to read text on the computer; they need to be able to print electronic text on paper in order to read it. [say more here – could pull from <a href="http://www.tader.info/printing.html"> printing</a>]</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         <p>Users can print content after customizing how the text is displayed.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_144">UAAG 1.4.4</a> Configured and Reflowed Text Printing... (Level AA)</p>
-        <p>Source: [Alan Smith UC-4], TAdER <a href="http://www.tader.info/printing.html"> printing</a></p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3>Using User Settings</h3>
           <p>Most operating systems allow users to set ...</p>
           <p>Most browsers allow users to set ...</p>
           <div class="userrequire">
-        <h4>User Requirement:</h4>
+        <h4>User Need:</h4>
         Content picks up user settings...</div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>&nbsp;</p>
       </div>
         </section>
   </section>
@@ -743,13 +635,7 @@
           <p>Source: [Laura4]</p>
           <h4>Icon fonts</h4>
           <p>Icon fonts that when combined with custom fonts are browser/AT combinations like ZoomText and Firefox change to squares and are unrecognizable. Discussed in <a href="http://www.w3.org/2015/10/28-lvtf-minutes.html#agenda"> 28 Oct telecon</a>. Maybe issue for everyone and not sufficiently more of an issue for people with low vision?</p>
-          <h4>Inverted colors render images as negatives</h4>
-          <p>Use experience: Some inverted high contrast color schemes render photographic images as photo negatives.</p>
-          <p>Source: [Erich2]</p>
-          <h4>Bright images</h4>
-          <p>User experience:  A person using high contrast may experience difficulty accessing important content visually on a page if the content is placed near a decorative, non-essential element, like a picture or graphic, if these things render brightly in high contrast.</p>
-          <p>Source: [Erich4]</p>
-          <h3>Misc Notes - testing synch</h3>
+          <h3>Misc Notes</h3>
           <ul>
         <li>Not for this section, but for understanding low   vision users: Person wants to use mobile OS magnification. [John Rochford1],   Person using TTS, not a screen reader. [John Rochford2]</li>
         <li><a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2016Jan/0001.html">contrast issues</a></li>
@@ -758,7 +644,7 @@
   </section>
     </section>
 <section class='appendix'>
-      <h2>References</h2>
+  <h2>References</h2>
       <ul>
     <li><a href="http://unstats.un.org/unsd/disability/pdfs/ac.81-b4.pdf">International Classification of Functioning, Disability and Health (United Nations>(PDF, 730 kb)</a></li>
     <li><a href="https://www.nlm.nih.gov/medlineplus/encyclopedia.html">U.S. National Library of Medicine - Medline Plus - Medical Encyclopedia</a></li>
@@ -766,7 +652,7 @@
     </section>
 <section class='appendix'>
       <h2>Acknowledgments</h2>
-      <p>@@ LVTF participants</p>
+      <p>@@ LVTF participants, facilitators, contacts</p>
       <p>@@ funders</p>
     </section>
 </body>
