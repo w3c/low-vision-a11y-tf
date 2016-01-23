@@ -253,7 +253,7 @@
     <li><a href="#work-with-user-settings">Work with User Settings</a></li>
   </ul>
       <p>The user requirements that start with &ldquo;Users can...&rdquo;  indicates that a user can change a setting.</p>
-      <section>
+  <section>
     <h2>Luminance and Color</h2>
     <p>Luminance is basically brightness. It is explained more in the Light Sensitivity section above.</p>
     <section>
@@ -266,61 +266,35 @@
     </section>
     <section>
           <h3>Text Contrast</h3>
-          <p>As mentioned in the [Luminance Overall] section, some people need low luminance, especially for backgrounds. Some people who need low luminance for backgrounds also need low luminance overall and thus need low luminance text.</p>
-          <p>Other people need high contrast between text and background, including many older people who lose contrast sensitivity from ageing. Some read better with dark text on light background.</p>
+          <p>As mentioned in the <a href="#light-sensitivity">Light Sensitivity</a> section, some people need low luminance, especially for backgrounds. Some people who need low luminance for backgrounds also need low luminance overall and thus need low luminance text.</p>
+          <p>Other people need high contrast between text and background, including many older people who lose <a href="#contrast-sensitivity">contrast sensitivity</a> from ageing. Some read better with dark text on light background.</p>
           <p>For some people, common color combinations or colors from a limited color palette work fine, for example, black text on white background or the inverse with white text on black background. Other people need to select more specific background and text colors. For example, people who need low luminance overall, need to select the specific background and text colors that provide sufficient contrast for them yet not too high luminance. Readable and optimal color combinations differs vastly among individuals and can even vary for one individual depending on conditions such as fatigue and lighting.</p>
-          <p>[images of color example color settings, e.g.,  middle of <a href="http://www.w3.org/WAI/RD/2012/text-customization/r14"> css paper</a></p>
+          <p>[images of color example color settings, e.g.,  middle of <a href="http://www.w3.org/WAI/RD/2012/text-customization/r14"> css paper</a>]</p>
           <div class="userrequire">
         <h4>User Need:</h4>
         <p>Users can set the background color and the text color from the full color spectrum.</p>
       </div>
-          <div class="lvtfnotes">
+      <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>Related issues: Text in images – relates to other aspects of changing text, too, e.g., size, family, leading, etc.</p>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#gl-text-config">UAAG 1.4</a> Provide text configuration</p>
-        <p> <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html">Understanding WCAG 1.4.6</a> Contrast (Enhanced): The visual presentation of text and images of text has a contrast ratio of at least 7:1…</p>
+        <p>Related issues: Text in images – relates to other aspects of changing text, too, e.g., size, family, leading, etc. </p>
         <p>&ldquo;Therefore, in the recommendation, the contrast is calculated in such a way that color is not a key factor so that people who have a color vision deficit will also have adequate contrast between the text and the background.&rdquo;<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html">Understanding WCAG 1.4.6</a><br/>
-              So we don't need to explicitly include colorblindness.</p>
-        <p>Source: [Erich UC-3], [Laura UC-8], [Laura UC-9], [Wayne UC-2], TAdER <a href="http://www.tader.info/users.html"> User Experiences</a> (&ldquo;I really need to be able to set the colours myself, presets don't work. Someone else&rsquo;s idea is useless.&rdquo;)</p>
-        <p>''comment'': perhaps this needs to be broader. Foreground/background are two elements. There may be many other elements on the page with color that needs to be adjusted. <br />
-              Users can set the background color and the text color from the full color spectrum on all elements.{jim}</p>
+            So we don't need to explicitly include colorblindness.</p>
+        <p>Source: [Erich UC-3], [Laura UC-6], [Laura UC-8], [Laura UC-9], [Wayne UC-2], TAdER <a href="http://www.tader.info/users.html"> User Experiences</a> (&ldquo;I really need to be able to set the colours myself, presets don't work. Someone else&rsquo;s idea is useless.&rdquo;)      </p>
       </div>
-        </section>
+    </section>
     <section>
-          <h3>@@</h3>
-          <p>...</p>
-          <div class="userrequire">
+          <h3>Not Relying on Color</h3>
+          <p>Some people cannot distinguish colors...</p>
+      <div class="userrequire">
         <h4>User Need:</h4>
-        <p>...</p>
+        <p>Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">WCAG 1.4.1 Use of Color</a>: Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)</p>
-        <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html">WCAG 1.3.3 Sensory Characteristics</a>: Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound. (Level A)</p>
-      </div>
-        </section>
-    <section>
-          <h3>Contrast Adjacent</h3>
-          <p>Sometimes adjacent colors need to be distinguished, for example, colors next to each other in a pie chart. Such colors should have sufficient contrast and be distinguishable by people who are color blind and have reduced contrast sensitivity.</p>
-          <p>@@ can be labeled</p>
-          <p>@@ maybe don't need this since have not requiring color perception at all.</p>
-          <div class="userrequire">
-        <h4>User Need:</h4>
-        <p>Users can distinguish between adjacent colors when needed for meaning.</p>
-      </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p>&ldquo;Therefore, in the recommendation, the contrast is calculated in such a way that color is not a key factor so that people who have a color vision deficit will also have adequate contrast between the text and the background.&rdquo; <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html"> Understanding 1.4.6</a><br/>
-              So we don't need to explicitly include colorblindness.</p>
-        <p>Source: [Laura UC-6], TAdER</p>
-      </div>
-        </section>
+    </section>
   </section>
       <section>
     <h2>Tracking </h2>
     <p>Tracking is following along lines of text, including getting from the end of one line to the beginning of the next line of text.</p>
     <p>This section includes rewrap, reflow, text areas, line length,  and hyphenation. Leading and justification also impact tracking; they are included in the <a href="#spacing">Spacing</a> section. <a href="#margins-and-borders">Margins and Borders</a> can also impact tracking, especially when blocks of text are in columns or near other text.</p>
-    <br>
     <section>
           <h3>Rewrap for one direction scrolling</h3>
           <p>For many people, with and without disabilities, it is difficult to read when they have to scroll back and forth to read a line of text. When people with low vision increase the text size and the text doesn't &ldquo;reflow&rdquo;, they sometimes have to scroll horizontally several screens to read a single line of text. Additionally, the scrollbar and cursor is harder to find for some. Getting from the end of a line of text, scrolling back left, and then finding the beginning of the next line can take considerable attention. This degrades reading flow and comprehension, sometimes significantly enough that effective reading is not possible when horizontal scrolling is required.</p>
@@ -368,7 +342,6 @@
     <h2>Perceiving </h2>
     <p>Perceiving includes being able to recognize individual letters based on their characteristics, which is legibility, and perceive non-text information and interface elements.</p>
     <p>This section includes text size font, style, capitalization, and size of all elements. <a href="#spacing">Spacing</a> also impacts how hard it is to perceive letters.</p>
-    <br>
     <section>
           <h3>Text Size</h3>
           <p>Some people need larger text in order to perceive letters. Although increasing size is most common, some people with tunnel vision and good visual acuity may prefer smaller letters so they can see more words at a time.</p>
@@ -430,7 +403,6 @@
     <h2>Spacing for Reading</h2>
     <p>Space between lines and space between words impacts readability.</p>
     <p>This section includes leading, letter spacing,  word spacing, and justification. Element spacing, margins, and indentation are related to spacing; they are covered in the Identifying Elements section.</p>
-    <br>
     <section>
           <h3>Leading</h3>
           <p>Leading is the space between lines in a block of text. It is also called line spacing and line height. Some people need more space between lines to be able to read text. Leading also helps with tracking.</p>
@@ -498,7 +470,6 @@
       <section>
     <h2>Identifying Elements</h2>
     <p>Identifying elements is about distinguishing elements such as headings and lists.</p>
-    <br>
     <section>
           <h3>Element-level customization</h3>
           <p>Some people change the way certain elements are displayed to make it easier to distinguish types of text, such as headings. If all text is increased proportionally, headings can become very large and bigger than people need to read the main body text. So some people prefer for headings to be smaller and they use styling such as font, color, and indentation  to distinguish heading levels.</p>
