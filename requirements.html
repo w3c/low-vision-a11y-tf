@@ -276,10 +276,7 @@
       </div>
       <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>Related issues: Text in images – relates to other aspects of changing text, too, e.g., size, family, leading, etc. </p>
-        <p>&ldquo;Therefore, in the recommendation, the contrast is calculated in such a way that color is not a key factor so that people who have a color vision deficit will also have adequate contrast between the text and the background.&rdquo;<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html">Understanding WCAG 1.4.6</a><br/>
-            So we don't need to explicitly include colorblindness.</p>
-        <p>Source: [Erich UC-3], [Laura UC-6], [Laura UC-8], [Laura UC-9], [Wayne UC-2], TAdER <a href="http://www.tader.info/users.html"> User Experiences</a> (&ldquo;I really need to be able to set the colours myself, presets don't work. Someone else&rsquo;s idea is useless.&rdquo;)      </p>
+        <p><strong><a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/LVTF_Open_Issues#Contrast">Open Issues: Contrast</a></strong></p>
       </div>
     </section>
     <section>
@@ -366,7 +363,7 @@
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p><em><span class="set-where">[Jim: Is this a comment about size not font family?] </span></em><span class="set-where">Can be changed by: author (stylesheet), browser (setting, extension), assistive technology (screen magnifier), platform (screen resolution).</span> @@SLH look if want to note somthing about this at higher level -- maybe in User Needs intro.</p>
+        <p><em><span class="set-where">[Jim: Is this a comment about size not font family?] </span></em><span class="set-where">Can be changed by: author (stylesheet), browser (setting, extension), assistive technology (screen magnifier), platform (screen resolution).</span> @@SLH look if want to note something about this at higher level -- maybe in User Needs intro.</p>
         </div>
         </section>
     <section>
@@ -450,7 +447,7 @@
       </div>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
-        <p>@@SLH telecon resolution: Leaving it as a separate point in readability section (and leaving it as subpoint in identifying elements) and to be tweaked to make it more clear how it relates to readability. <a href="https://www.w3.org/2016/01/20-lvtf-minutes.html#item04">minutes on margins</a></p>
+        <p>@@SLH telecon resolution: Leaving it as a separate point in readability section (and leaving it as sub-point in identifying elements) and to be tweaked to make it more clear how it relates to readability. <a href="https://www.w3.org/2016/01/20-lvtf-minutes.html#item04">minutes on margins</a></p>
       </div>
         </section>
     <section>
@@ -493,12 +490,8 @@
   </section>
       <section>
     <h2>Point of Regard and Proximity </h2>
-    <p>The point of regard is the area that the user is viewing. (More info is available in: IndieUI wiki and UAAG 2.) Proximity is the space between items. In user interface generally, proximity is about using space to group related content and separate unrelated content.</p>
+    <p>The point of regard is the area that the user is viewing. (More info is available in: IndieUI wiki and <a href="https://www.w3.org/TR/UAAG20/#def-point-of-regard">UAAG 2 Glossary</a>.) Proximity is the space between items. In user interface generally, proximity is about using space to group related content and separate unrelated content.</p>
     <p>As discussed in the Perceptual Field section, some people with low vision see only a small amount of content and/or the user interface at a time.</p>
-    <div class="lvtfnotes">
-          <h4>LVTF notes</h4>
-          <p> <a href="http://w3c.github.io/UAAG/UAAG20/#def-point-of-regard">UAAG definition of point of regard</a></p>
-        </div>
     <section>
           <h3>Maintain Point of Regard</h3>
           <p>Sometimes people will be viewing content and need to change the display to read it better, for example, make the text larger. If the place where they are reading (called &ldquo;point of regard&rdquo;) changes much, they lose their place and, especially with a small visible area and large text, it can be very difficult to find their place again.</p>
@@ -506,41 +499,33 @@
           <ul>
         <li>Mouse hover changes point of regard, but is lost. Screen magnification user hovers over image, acronym, or other thing with pop-up. The pop-up is larger than their view. When the user scrolls to read it, it loses focus and disappears.</li>
       </ul>
-          <div class="userrequire">
+      <div class="userrequire">
         <h4>User Need:</h4>
         <p>The point of regard remains visible within the viewport when the viewport is resized, when content is zoomed or scaled, or when content formatting is changed.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p><a href="http://w3c.github.io/UAAG/UAAG20/#sc_186"> UAAG 1.8.6</a> Maintain Point of Regard</p>
-        <p>Source: [Erich UC-1], [Bruce Bailey UC-1], [JimA UC-33]</p>
-      </div>
-        </section>
+    </section>
     <section>
           <h3> [Others ?] </h3>
           <div class="lvtfnotes">
         <h4>LVTF notes</h4>
         <p>Are others particularly issues for people with low vision (as opposed to most users or other users with disabilities)? Can we generalize and group them so it&rsquo;s not too much or too detailed? See <a href="http://w3c.github.io/UAAG/UAAG20/#gl-viewport-orient"> UAAG Guideline 1.8</a> - Help users to orient within, and control, windows and viewports</p>
-        <p>@@ maybe others related to:</p>
-        <ul>
-              <li>For example, a user is tabbing through input   fields – the content that has focus is in the view port… <a href="http://w3c.github.io/UAAG/UAAG20/#sc_182"> UAAG 1.8.2</a> Move Viewport to Selection   and Focus: When a viewport&rsquo;s selection or input focus changes, the viewport&rsquo;s   content moves as necessary to ensure that the new selection or input focus   location is at least partially in the visible portion of the viewport. (Level   A)</li>
-            </ul>
+        <p>Maybe others related to: For example, a user is tabbing through input   fields – the content that has focus is in the view port… <a href="http://w3c.github.io/UAAG/UAAG20/#sc_182"> UAAG 1.8.2</a> Move Viewport to Selection   and Focus: When a viewport&rsquo;s selection or input focus changes, the viewport&rsquo;s   content moves as necessary to ensure that the new selection or input focus   location is at least partially in the visible portion of the viewport. (Level   A)</p>
       </div>
         </section>
     <section>
-          <h3>Proximity of Related Information</h3>
-          <p>People with limited field of vision or screen magnification have little in their field of view at one time. They have difficulty if related information &mdash;  such as labels and controls, or matching tests in two columns, or feedback &mdash; is not close together.</p>
-          <p>Related information should be in close proximity, as feasible. Feedback should be in close proximity to the user&rsquo;s visual focus. Dialog boxes should appear over the users point of regard.</p>
-          <div class="userrequire">
+      <h3>Proximity of Related Information</h3>
+      <p>People with limited field of vision or who use large text have little in their field of view at one time. If related information is not close together, they can have trouble knowing about it, seeing it, and using it. In most cases, it is best if:</p>
+      <ul>
+        <li>Related information &mdash;  such as labels and controls, or matching tests in two columns, or feedback &mdash; is in close proximity.</li>
+        <li>Feedback is in close proximity to the user&rsquo;s visual focus.</li>
+        <li>Dialog boxes and other such pop-up messages  appear over the users point of regard.</li>
+        <li>Users are informed of new information that may be outside of their view &mdash; such as a new browser tab opening in the background.</li>
+      </ul>
+      <div class="userrequire">
         <h4>User Need:</h4>
-        <p>Users can find related information.</p>
+        <p>Users know about and can find related information.</p>
       </div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-        <p> [is this covered sufficiently?: Fleeting messages that appear and then disappear that may appear outside the user&rsquo;s zoomed or magnified viewport. Currently would likely fail SC 2.2.1]</p>
-        <p>Source: [Laura1], [Laura 2]</p>
-      </div>
-        </section>
+    </section>
   </section>
       <section>
     <h2>Work with  User Settings</h2>
@@ -552,6 +537,9 @@
           <p>When people use large fonts or  lower screen resolution,  it is not uncommon for dialog boxes to include information that is not in the viewport. In such cases, it is usually best practice for scrollbars to be provided for the dialog box.<br>
         [Figure: example dialog box cut off]</p>
           <p>Scrollbars generally provide the additional benefit of communicating where the user is in an interface.</p>
+          <p>Some users increase the size of mouse pointers in their operating system or with screen magnification software. These should not obscure tooltip text.<br>
+            [Figure: hover hand obscures important tooltip text]
+          </p>
           <div class="userrequire">
         <h4>User Need:</h4>
         <p>Users can see all  interface elements that are intended for users to see, including when users have changed display settings such as text size.</p>
@@ -574,46 +562,12 @@
           <h3>Using User Settings</h3>
           <p>Most operating systems allow users to set ...</p>
           <p>Most browsers allow users to set ...</p>
-          <div class="userrequire">
+      <div class="userrequire">
         <h4>User Need:</h4>
-        Content picks up user settings...</div>
-          <div class="lvtfnotes">
-        <h4>LVTF notes</h4>
-      </div>
-        </section>
-  </section>
-      <section>
-    <h2>[LVTF Notes Overall]</h2>
-    <div class="lvtfnotes">
-          <h3>Specific issues – not sure best way to address?</h3>
-          <h4>Captcha</h4>
-          <p><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html"> Understanding&nbsp;SC&nbsp;1.1.1</a> … <b>CAPTCHA:&nbsp;</b>If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities. …</p>
-          <p>Source: [Laura UC-10]</p>
-          <h4>Background images</h4>
-          <p><a href="http://www.w3.org/TR/WCAG20-TECHS/F3.html"> WCAG Technique F3</a> Failure of Success Criterion 1.1.1 due to using CSS to include images that convey important information</p>
-          <p>Sources: [Laura7], [<a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2015Oct/0062.html">1</a>]</p>
-          <h3>Users agent functionality</h3>
-          <p>User experience: @@A person uses magnification software attempts to return to a landing Web page from an interior Web page by using the browser back button but it is disabled in the product. Moreover, the tool&rsquo;s back button (and navigation) is outside the zoomed-in field of view. No other method of navigation within the set of Web pages is provided i.e., breadcrumbs. This makes it difficult to locate previous content.</p>
-          <p>User requirement: Browser or other user agent functionality is not disabled.</p>
-          <p>Source: [Laura3]</p>
-          <h4>Large Cursor and tool tip text</h4>
-          <p>User experience: Some people set their cursor to be large so they can see it.</p>
-          <p>User requirement: User&rsquo;s cursor does not obscure tool-tip text.</p>
-          <p>Source: [Laura5]</p>
-          <h4>Links in new tab</h4>
-          <p>User experience: People with limited field of vision or screen magnification may not see if a new tab is opened.</p>
-          <p>User requirement: Users are informed of links that open in a new browser tab.</p>
-          <p>Source: [Laura4]</p>
-          <h4>Icon fonts</h4>
-          <p>Icon fonts that when combined with custom fonts are browser/AT combinations like ZoomText and Firefox change to squares and are unrecognizable. Discussed in <a href="http://www.w3.org/2015/10/28-lvtf-minutes.html#agenda"> 28 Oct telecon</a>. Maybe issue for everyone and not sufficiently more of an issue for people with low vision?</p>
-          <h3>Misc Notes</h3>
-          <ul>
-        <li>Not for this section, but for understanding low   vision users: Person wants to use mobile OS magnification. [John Rochford1],   Person using TTS, not a screen reader. [John Rochford2]</li>
-        <li><a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2016Jan/0001.html">contrast issues</a></li>
-      </ul>
-        </div>
-  </section>
+        Content picks up all relevant user settings, such as ...</div>
     </section>
+  </section>
+</section>
 <section class='appendix'>
   <h2>References</h2>
       <ul>
@@ -623,7 +577,7 @@
     </section>
 <section class='appendix'>
       <h2>Acknowledgments</h2>
-      <p>@@ LVTF participants, facilitators, contacts</p>
+      <p>@@ LVTF editors, drafters, copy editors &amp; code editors, facilitators, team contacts, participants</p>
       <p>@@ funders</p>
     </section>
 </body>
