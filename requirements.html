@@ -33,7 +33,7 @@ ul, ol {
 .draftnotes p {
 	line-height: 111% !important;
 }
-</style>
+    </style>
     <script src='https://www.w3.org/Tools/respec/respec-w3c-common'
             async class='remove'></script>
     <script class='remove'>
@@ -71,7 +71,7 @@ ul, ol {
           editors:  [
               {
                   name:       "Jim Allan",
-                  company:    "Texas School for the Blind"
+                  company:    "Texas School for the Blind and Visually Impaired"
               },
 			  {
                   name:       "Andrew Kirkpatrick",
@@ -133,7 +133,7 @@ ul, ol {
       <p>Additional   details on visual conditions and their impact on web use, as well as future work, will be linked from <a href="https://www.w3.org/WAI/users/low-vision/">Accessibility for People with Low Vision</a>.</p>
       <section>
     <div class="draftnotes">
-          <h4>Review Note</h4>
+          <h4>Review Note:</h4>
           <p> There are several <a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/LVTF_Open_Issues">open issues</a> that are not yet included in this draft. It is not yet copy edited or polished.</p>
         </div>
   </section>
@@ -232,7 +232,7 @@ ul, ol {
     <h2>Functional Vision</h2>
     <div class="draftnotes">
           <h4>Review Note:</h4>
-          <p> The Task Force plans to expand this section some. @@</p>
+          <p> The Task Force plans to expand this section some. <em><strong>@@ before First Public Working Draft </strong></em></p>
         </div>
     <section>
           <p>Many people with low vision have multiple visual impairments, for example, they have poor visual acuity (clarity), high light sensitivity, low contrast sensitivity, and visual field impairments. Other factors &mdash; such as inflammation, medication, fatigue, environment, and task &mdash;  influence a person&rsquo;s effective vision in a given situation.</p>
@@ -257,6 +257,10 @@ ul, ol {
       <h2>User Needs</h2>
       <!-- @@ edit &/or lvtf review: [Low vision accessibility is largely about perceiving textual information. ...] -->
       <p>User needs varying widely across people who have low vision, and one user&rsquo;s needs may conflict with another user&rsquo;s needs. For example, an older person might need high contrast but that might be unreadable to a person with light sensitivity; a person with good visual acuity (clarity) and tunnel vision might need to make the text size small so they can see more words at a time to read better, whereas most people with low visual acuity need large text.</p>
+      <div class="draftnotes">
+        <h4>Review Note:</h4>
+        <p> The Task Force plans to expand this section some.</p>
+      </div>
       <p>It is not uncommon for one person&rsquo;s needs to be different from day-to-day or even throughout one day; for example, when they are more fatigued, they might need larger text or a different background color. Task and the amount of information influences user needs. For example, when a person is typing an e-mail, they may be able to have smaller font because they know what is being written and are just skimming for typos; whereas when that same person is reading an e-mail, they need larger font because they do not already know the content.]</p>
       <p>Thus users need to be able to adjust user interfaces to meet their needs.</p>
       <p>The characteristics of text that make it more or less legible and readable are highly inter-related; that is, one characteristic is dependent on other characteristics. For example, a person with low contrast sensitivity might not be able to read small text with a contrast ratio of 5:1, but can read text at that ratio when then text is much larger; similarly, with some fonts a person does not need to increase the letter spacing, but with other fonts they do.</p>
@@ -270,6 +274,10 @@ ul, ol {
     <li><a href="#point-of-regard-and-proximity">Point of Regard and Proximity</a></li>
     <li><a href="#work-with-user-settings">Work with User Settings</a></li>
   </ul>
+      <div class="draftnotes">
+        <h4>Review Note:</h4>
+        <p> Additional User Needs will be added related to contrast and image accessibility.</p>
+      </div>
       <p>Each section briefly explains  the issue and the user experience, and then states a specific user need after "User Need - ".  User Needs that say &ldquo;Users can...&rdquo;  indicates that users can change a setting.</p>
       <section>
     <h2>Luminance and Color</h2>
@@ -305,22 +313,22 @@ ul, ol {
       <section>
     <h2>Tracking </h2>
     <p>Tracking is following along lines of text, including getting from the end of one line to the beginning of the next line of text.</p>
-    <p>This section includes rewrap, reflow, text areas, line length,  and hyphenation. Leading and justification also impact tracking; they are included in the <a href="#spacing">Spacing</a> section. <a href="#margins-and-borders">Margins and Borders</a> can also impact tracking, especially when blocks of text are in columns or near other text.</p>
+    <p>This section includes rewrap, reflow, line length,  and hyphenation. Tracking is also impacted by <a href="#leading">leading</a>, <a href="#justification">justification</a>, and <a href="#margins-and-borders">margins and borders</a>, especially when blocks of text are in columns or near other text.</p>
     <section>
-          <h3>Rewrap for one direction scrolling</h3>
+          <h3>Rewrap for One Direction Scrolling</h3>
           <p>For many people, with and without disabilities, it is difficult to read when they have to scroll back and forth to read a line of text. When people with low vision increase the text size and the text doesn't &ldquo;reflow&rdquo;, they sometimes have to scroll horizontally several screens to read a single line of text. Additionally, the scrollbar and cursor is harder to find for some. Getting from the end of a line of text, scrolling back left, and then finding the beginning of the next line can take considerable attention. This degrades reading flow and comprehension, sometimes significantly enough that effective reading is not possible when horizontal scrolling is required.</p>
           <div class="userneed">
         <h4>User Need - Rewrap:</h4>
         <p>Blocks of text rewrap so that only one direction of scrolling is needed, e.g., for left-right and right-left scripts (languages), usually vertical scrolling and not horizontal scrolling.</p>
       </div>
           <div class="draftnotes">
-        <h4>LVTF Notes:</h4>
-        <p>Script direction: Above and below is written for left-right and right-left scripts for now for simplicity. We'll edit it to make it generic to apply also vertically to top-to-bottom scripts as appropriate &mdash; if we can without complicating it too much, or change it to example only.<br>
+        <h4 id="script-direction">LVTF Notes:</h4>
+        <p>Script direction: Rewrap above and Reflow below are written for left-right and right-left scripts for now for simplicity. We'll edit it to make it generic to apply also vertically to top-to-bottom scripts as appropriate &mdash; if we can without complicating it too much, or change it to example only.<br>
               <a href="http://www.i18nguy.com/temp/rtl.html">script vs. language reference</a> says &ldquo;Languages don't have a direction. Scripts have a writing direction&rdquo;.</p>
       </div>
         </section>
     <section>
-          <h3>Reflow to single column</h3>
+          <h3>Reflow to Single Column</h3>
           <p>For many people, with and without disabilities, it is more difficult to read when they have to scroll from the bottom of a column of text to the top of another column. For some people with low vision, with multiple columns, they have to scroll up several screens to get from the bottom of one column to the top of the next. Additionally, the scrollbar and cursor is harder to find for some. Getting from the bottom of a column and finding the top of the next column can take considerable attention. This degrades reading flow and comprehension, sometimes significantly.</p>
           <div class="userneed">
         <h4>User Need - Reflow:</h4>
@@ -328,7 +336,7 @@ ul, ol {
       </div>
         </section>
     <section>
-          <h3>Line length</h3>
+          <h3>Line Length</h3>
           <p>For many people, with and without disabilities, it is harder to read very long lines of text than shorter lines. For people with a small field of vision, it can be even more difficult to read long lines of text, and from the end of a line of text, to find the beginning of the next line.</p>
           <p>People with good visual acuity yet small field of vision might want to set the text size small and the text area narrow so they can get more characters in their field of vision.</p>
           <div class="userneed">
@@ -340,7 +348,7 @@ ul, ol {
           <h3>Hyphenation</h3>
           <p>For some people it is especially difficult to understand words that are hyphenated, and they need to turn off hyphenation. While primarily an issue for people with cognitive impairments, hyphenation becomes more of an issue when text size is increased, thus it is also related to low vision. Some people with very large text may prefer hyphenation on so that more characters fit on a line of text.</p>
           <div class="userneed">
-        <h4>User Need - hyphenation:</h4>
+        <h4>User Need - Hyphenation:</h4>
         <p>Users can turn hyphenation on or off.</p>
       </div>
         </section>
@@ -348,7 +356,7 @@ ul, ol {
       <section>
     <h2>Perceiving </h2>
     <p>Perceiving includes being able to recognize individual letters based on their characteristics, which is legibility, and non-text information and interface elements.</p>
-    <p>This section includes text size font, style, capitalization, and size of all elements. <a href="#spacing">Spacing</a> also impacts how hard it is to perceive letters.</p>
+    <p>This section includes text size, font, style, capitalization, and size of all elements. <a href="#spacing">Spacing</a> also impacts how hard it is to perceive letters.</p>
     <section>
           <h3>Text Size</h3>
           <p>Some people need larger text in order to perceive letters. Although increasing size is most common, some people with tunnel vision and good visual acuity may prefer smaller letters so they can see more words at a time.</p>
@@ -403,9 +411,9 @@ ul, ol {
         </section>
   </section>
       <section>
-    <h2>Spacing for Reading</h2>
+    <h2 id="spacing">Spacing for Reading</h2>
     <p>Spacing such as space between lines and space between words impacts readability.</p>
-    <p>This section includes leading, letter spacing,  word spacing,  justification, margins and borders, and space between elements.</p>
+    <p>This section includes leading, letter spacing,  word spacing,  justification, margins and borders, and spacing between elements.</p>
     <section>
           <h3>Leading</h3>
           <p>Leading is the space between lines in a block of text. It is also called line spacing and line height. Some people need more space between lines to be able to read text. Leading also helps with tracking.</p>
@@ -415,7 +423,7 @@ ul, ol {
       </div>
         </section>
     <section>
-          <h3>Letter spacing</h3>
+          <h3>Letter Spacing</h3>
           <p>Some people need more space between letters to read text.</p>
           <div class="userneed">
         <h4>User Need - Letter Spacing:</h4>
@@ -423,7 +431,7 @@ ul, ol {
       </div>
         </section>
     <section>
-          <h3>Word spacing</h3>
+          <h3>Word Spacing</h3>
           <p>Some people need more space between words to read text.</p>
           <div class="userneed">
         <h4>User Need - Word Spacing:</h4>
@@ -483,8 +491,12 @@ ul, ol {
   </section>
       <section>
     <h2>Point of Regard and Proximity </h2>
-    <p>The point of regard is the area that the user is viewing. (More info is available in: IndieUI wiki and <a href="https://www.w3.org/TR/UAAG20/#def-point-of-regard">UAAG 2 Glossary</a>.) Proximity is the space between items. In user interface generally, proximity is about using space to group related content and separate unrelated content.</p>
+    <p>The point of regard is the area that the user is viewing.<!-- @@clean up --> (More info is available in: IndieUI wiki and <a href="https://www.w3.org/TR/UAAG20/#def-point-of-regard">UAAG 2 Glossary</a>.) Proximity is the space between items. In user interface generally, proximity is about using space to group related content and separate unrelated content.</p>
     <p>As discussed in the <a href="#visfie">Field of Vision</a> section, some people with low vision see only a small amount of content and/or the user interface at a time.</p>
+    <div class="draftnotes">
+      <h4>Review Note:</h4>
+      <p>The Task Force plans to add additional information in this section related to point of regard and proximity.</p>
+    </div>
     <section>
           <h3>Maintain Point of Regard</h3>
           <p>Sometimes people will be viewing content and need to change the display to read it better, for example, make the text larger. If the place where they are reading (called &ldquo;point of regard&rdquo;) changes much, they lose their place and, especially with a small visible area and large text, it can be very difficult to find their place again.</p>
@@ -496,10 +508,6 @@ ul, ol {
         <h4>User Need - Point of Regard:</h4>
         <p>The point of regard remains visible within the viewport when the viewport is resized, when content is zoomed or scaled, or when content formatting is changed.</p>
       </div>
-        </section>
-    <section>
-          <h3>Others</h3>
-          <p><em>(This is an open issue that the Task Force is working on.)</em></p>
         </section>
     <section>
           <h3>Proximity of Related Information</h3>
@@ -534,8 +542,14 @@ ul, ol {
       </div>
         </section>
     <section>
-          <h3>Printing customized text</h3>
-          <p>It is difficult for some people to read text on the computer; they need to be able to print electronic text on paper in order to read it. [@@ say more here – could pull from <a href="http://www.tader.info/printing.html"> printing</a>]</p>
+          <h3>Printing Customized Text</h3>
+<p class="listintro">It is difficult for some people to read text on the computer; they need to be able to print electronic text on paper in order to read it. For example:</p>
+<ul>
+  <li>It is  uncomfortable or painful for some people to be in the physical position required for reading on a computer monitor, for example, some people with low vision need to be an inch away from the display. While some people have mobile devices, others have only a monitor that is difficult to move, or use a public terminal.</li>
+  <li>Some people  print so they can block out surrounding text; for example, they slide a sheet of paper down as they read to cover up the line below where they are reading. Some people need colored overlays.</li>
+  <li>Sometimes people need to print text to use it away from the computer,  for example, presentation notes,  recipes, and repair instructions. </li>
+</ul>
+
           <div class="userneed">
         <h4>User Need - Printing:</h4>
         <p>Users can print content after customizing how the text is displayed.</p>
@@ -553,6 +567,7 @@ ul, ol {
     </section>
 <section class='appendix'>
       <h2>References</h2>
+      <p>@@format references in W3C TR style</p>
     </section>
 <section class='appendix'>
       <h2>Acknowledgments</h2>
@@ -565,7 +580,7 @@ ul, ol {
     <li>Content drafters: Jim Allan, Laura Carlson, Wayne Dick, Shawn Lawton Henry, Andrew Kirkpatrick</li>
     <li>Code editors and copy editors: Michael Cooper, Andrew Kirkpatrick</li>
   </ul>
-      <p class="listintro">Task Force participants active at the time of publication:</p>
+      <p class="listintro">Task Force contributors:</p>
       <ul>
     <li>Jim Allan</li>
     <li>Jonathan Avila (SSB BART Group)</li>
