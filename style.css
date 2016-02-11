@@ -1,0 +1,36 @@
+p, li, dd {
+	line-height: 135%;
+}
+
+li {
+	padding-top: .25em;
+}
+
+ul, ol {
+	padding-top: 0;
+	margin-top: 0;
+}
+.listintro {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.userneed {
+	background-color: #cfc;
+	padding: 7px;
+	margin-bottom: 1em;
+}
+.userneed h4, .draftnotes h4 {
+	display: inline;
+}
+.userneed p, .draftnotes p {
+	display: inline;
+}
+.draftnotes {
+	margin-left: 55px;
+	padding: 3px 3px 3px 7px;
+	background-color: #ffc;
+	font-size: 88%;
+}
+.draftnotes p {
+	line-height: 111% !important;
+}
