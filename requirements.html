@@ -285,7 +285,12 @@
           <p>As mentioned in the <a href="#light-sensitivity">Light Sensitivity</a> section, some people need low brightness, especially for backgrounds. Some people who need low brightness for backgrounds also need low brightness overall and thus need low brightness text.</p>
           <p>Other people need high contrast between text and background, including many older people who lose <a href="#contrast-sensitivity">contrast sensitivity</a> from ageing. Some read better with dark text on light background.</p>
           <p>For some people, common color combinations or colors from a limited color palette work fine, for example, black text on white background or the inverse with white text on black background. Other people need to select more specific background and text colors. For example, people who need low brightness overall, need to select the specific background and text colors that provide sufficient contrast for them yet not too high brightness. Readable and optimal color combinations differs vastly among individuals and can even vary for one individual depending on conditions such as fatigue and lighting.</p>
-          <p>[images of color example color settings, e.g.,  middle of <a href="http://www.w3.org/WAI/RD/2012/text-customization/r14"> css paper</a>]</p>
+
+<figure><img alt="screen shot of page with author-defined colors" src="images/r14-author.png"><figcaption>Example showing web page with author-defined colors</figcaption></figure>
+<figure><img alt="screen shot of page with custom color scheme" src="images/r14-w2.png"><figcaption>Example using tan background and dark text</figcaption></figure>
+<figure><img alt="screen shot of page with different custom color scheme" src="images/r-14sb.png"><figcaption>Example using black background and yellow text</figcaption></figure>
+        
+        
           <div class="userneed">
         <h4>User Need - Contrast:</h4>
         <p>Users can set the background color and the text color from the full color spectrum.</p>
@@ -522,8 +527,10 @@
     <section>
           <h3>Seeing All Interface Elements</h3>
           <p>When people increase text size, increase leading, or change other text display aspects through text-only zoom or other text settings, content that is poorly designed can become unusable. For example, with text areas in web pages, sometimes columns and sections overlap, the space between lines disappears, lines of text become too long, or text disappears.<br>
-        [Figure: Two screen captures show that when text size is increased, the heading overlaps the main text, the main text overlaps the sidebar text; and the sidebar text is cut off at the bottom. <a href="http://www.w3.org/WAI/images/easychecks/zoom-100.png">default text size</a>, <a href="http://www.w3.org/WAI/images/easychecks/zoom-overlap.png">increased text size</a> ]</p>
-          <p>Often it is best for  text areas to automatically resize to fit the text, and for users to be able to change the size of text areas. When the areas cannot be resized to accommodate all content, usually a scrollbar should be available. See also the <a href="#rewrap-for-one-direction-scrolling">Rewrap for one direction scrolling</a> section.</p>
+
+<figure><img alt="screen shot of page without zooming" src="images/zoom-100.png"><figcaption>Example showing a page without use of the zoom feature</figcaption></figure>
+<figure><img alt="screen shot of page with zoom applied" src="images/zoom-overlap.png"><figcaption>Example showing that when text size is increased, the heading overlaps the main text, the main text overlaps the sidebar text; and the sidebar text is cut off at the bottom. </figcaption></figure>
+              <p>Often it is best for  text areas to automatically resize to fit the text, and for users to be able to change the size of text areas. When the areas cannot be resized to accommodate all content, usually a scrollbar should be available. See also the <a href="#rewrap-for-one-direction-scrolling">Rewrap for one direction scrolling</a> section.</p>
           <p>When people use large fonts or  lower screen resolution,  it is not uncommon for dialog boxes to include information that is not in the viewport. In such cases, it is usually best practice for scrollbars to be provided for the dialog box.<br>
         <em>[Review Note: Possible figure to be added:  example dialog box cut off]</em></p>
           <p>Scrollbars generally provide the additional benefit of communicating where the user is in an interface.</p>
