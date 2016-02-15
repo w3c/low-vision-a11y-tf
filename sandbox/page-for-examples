@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Example for Customization</title>
+<link href="example-wai.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Example  (Heading 1)</h1>
+<p>Paragraph text. <a href="@@link">Accessibility Requirements for People with Low Vision</a> describes what people with low vision need for electronic content, tools, and technologies to be accessible. <strong>It includes an overview of low vision and describes specific user needs.</strong></p>
+<h2>Overview (Heading 2)</h2>
+<p><strong>Paragraph text.</strong> Accessibility Requirements for People with Low Vision describes what people with low vision need for electronic content, tools, and technologies to be accessible. It includes an overview of low vision and describes specific user needs.</p>
+<ol>
+  <li>List item  one</li>
+  <li>List item  two</li>
+</ol>
+<p>Paragraph text. Accessibility Requirements for People with Low Vision describes what people with low vision need for electronic content, tools, and technologies to be accessible. <strong>It includes an overview of low vision and describes specific user needs.</strong></p>
+<h3>Sub-Point (Heading 3)</h3>
+<p><strong>Paragraph text. </strong>Accessibility Requirements for People with Low Vision describes what people with low vision need for electronic content, tools, and technologies to be accessible. It includes an overview of low vision and describes specific user needs.</p>
+<ul>
+  <li>List item bullet one</li>
+  <li>List item bullet two</li>
+  <li>List item bullet three</li>
+</ul>
+<p>Paragraph text. Accessibility Requirements for People with Low Vision describes what people with low vision need for electronic content, tools, and technologies to be accessible. It includes an overview of low vision and describes specific user needs.</p>
+</body>
+</html>
