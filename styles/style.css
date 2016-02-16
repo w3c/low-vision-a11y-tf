@@ -39,3 +39,6 @@ ul, ol {
 .draftnotes p {
 	line-height: 111% !important;
 }
+figure { 
+    display: inline-block;
+}
