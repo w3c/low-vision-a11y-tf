@@ -39,6 +39,22 @@ ul, ol {
 .draftnotes p {
 	line-height: 111% !important;
 }
-figure { 
-    display: inline-block;
+figure {
+  display: table;
+  float: left;
+}
+
+figure > img {
+  width: auto;
+  display: block;
+  padding-top: 4px;
+}
+
+figure > figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  margin-top: 4px;
+}
+figure + p, figure + .listintro, figure + .userneed {
+	clear: both; /*addedd to stop text floating around fig */
 }
