@@ -58,3 +58,6 @@ figure > figcaption {
 figure + p, figure + .listintro, figure + .userneed {
 	clear: both; /*addedd to stop text floating around fig */
 }
+img + img {
+	margin-top: .75em;
+}
