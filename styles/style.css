@@ -19,6 +19,9 @@ ul, ol {
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
+.userneedcolor {
+	background-color: #cfc
+	}
 .userneed {
 	background-color: #cfc;
 	padding: 7px;
