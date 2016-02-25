@@ -1,62 +1,51 @@
 p, li, dd {
 	line-height: 135%;
 }
-
 li {
 	padding-top: .25em;
 }
-
 ul, ol {
 	padding-top: 0;
 	margin-top: 0;
 }
-
 .toc li {
-    padding-top: 0;
+	padding-top: 0;
 }
-
 .listintro {
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
 .userneedcolor {
 	background-color: #cfc
-	}
+}
 .userneed {
 	background-color: #cfc;
 	padding: 7px;
 	margin-bottom: 1em;
 }
-.userneed h4, .draftnotes h4 {
+.userneed h4 {
 	display: inline;
 }
 .userneed p, .draftnotes p {
 	display: inline;
 }
 .draftnotes {
-	margin-left: 55px;
-	padding: 3px 3px 3px 7px;
+	padding: 7px;
 	background-color: #ffc;
-	font-size: 88%;
-}
-.draftnotes p {
-	line-height: 111% !important;
 }
 figure {
-  display: table;
-  float: left;
+	display: table;
+	float: left;
 }
-
 figure > img {
-  width: auto;
-  display: block;
-  padding-top: 4px;
+	width: auto;
+	display: block;
+	padding-top: 4px;
 }
-
 figure > figcaption {
-  display: table-caption;
-  caption-side: bottom;
-  margin-top: 4px;
+	display: table-caption;
+	caption-side: bottom;
+	margin-top: 4px;
 }
 figure + p, figure + .listintro, figure + .userneed {
 	clear: both; /*addedd to stop text floating around fig */
