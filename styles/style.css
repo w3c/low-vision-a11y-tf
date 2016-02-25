@@ -53,6 +53,12 @@ figure > img {
   padding-top: 4px;
 }
 
+figure > div {
+  width: auto;
+  display: block;
+  padding-top: 4px;
+}
+
 figure > figcaption {
   display: table-caption;
   caption-side: bottom;
