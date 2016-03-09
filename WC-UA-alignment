@@ -6,6 +6,7 @@
 </head>
 
 <body>
+<p>This table is to show the alignment between the Low Vision Task Force Requirements Document and WCAG and UAAG</p>
 <table width="100%" border="1" cellspacing="3" cellpadding="3">
   <tr>
     <th scope="row">LVTF User Need</th>
