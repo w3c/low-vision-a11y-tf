@@ -16,22 +16,13 @@ ul, ol {
 	margin-bottom: 0;
 }
 .userneedcolor {
-	background-color: #cfc
+	background-color: #fec;
 }
-.userneed {
-	background-color: #cfc;
-	padding: 7px;
-	margin-bottom: 1em;
-}
-.userneed h4 {
+.advisement h4 {
 	display: inline;
 }
-.userneed p, .draftnotes p {
+.advisement p {
 	display: inline;
-}
-.draftnotes {
-	padding: 7px;
-	background-color: #ffc;
 }
 figure {
 	display: table;
@@ -51,8 +42,10 @@ figure > figcaption {
 	display: table-caption;
 	caption-side: bottom;
 	margin-top: 4px;
+	text-align: left;
+	font-style: normal;
 }
-figure + p, figure + .listintro, figure + .userneed {
+figure + p, figure + .listintro, figure + .advisement {
 	clear: both; /*addedd to stop text floating around fig */
 }
 img + img {
