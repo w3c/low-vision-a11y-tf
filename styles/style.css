@@ -1,6 +1,7 @@
+/* commenting this out since new TR CSS has line-height of 1.5
 p, li, dd {
 	line-height: 135%;
-}
+}  */
 li {
 	padding-top: .25em;
 }
@@ -18,12 +19,7 @@ ul, ol {
 .userneedcolor {
 	background-color: #fec;
 }
-.advisement h4 {
-	display: inline;
-}
-.advisement p {
-	display: inline;
-}
+/*** figures ***/
 figure {
 	display: table;
 	float: left;
@@ -51,3 +47,11 @@ figure + p, figure + .listintro, figure + .advisement {
 img + img {
 	margin-top: .75em;
 }
+
+/*** fixing & tweaking things from the new TR CSS ***/
+.caption, figcaption, caption { font-style: normal; }
+.toc > li li li       { font-style:  normal; }
+.toc > li li li li li { font-style:  normal; }
+.issue::before, .issue > .marker { color: #AE1E1E; 	}
+.advisement h4 { display: inline; }
+.advisement p { 	display: inline; }
