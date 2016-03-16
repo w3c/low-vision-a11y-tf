@@ -1,6 +1,7 @@
+/* commenting this out since new TR CSS has line-height of 1.5
 p, li, dd {
 	line-height: 135%;
-}
+}  */
 li {
 	padding-top: .25em;
 }
@@ -16,23 +17,9 @@ ul, ol {
 	margin-bottom: 0;
 }
 .userneedcolor {
-	background-color: #cfc
+	background-color: #fec;
 }
-.userneed {
-	background-color: #cfc;
-	padding: 7px;
-	margin-bottom: 1em;
-}
-.userneed h4 {
-	display: inline;
-}
-.userneed p, .draftnotes p {
-	display: inline;
-}
-.draftnotes {
-	padding: 7px;
-	background-color: #ffc;
-}
+/*** figures ***/
 figure {
 	display: table;
 	float: left;
@@ -51,10 +38,20 @@ figure > figcaption {
 	display: table-caption;
 	caption-side: bottom;
 	margin-top: 4px;
+	text-align: left;
+	font-style: normal;
 }
-figure + p, figure + .listintro, figure + .userneed {
+figure + p, figure + .listintro, figure + .advisement {
 	clear: both; /*addedd to stop text floating around fig */
 }
 img + img {
 	margin-top: .75em;
 }
+
+/*** fixing & tweaking things from the new TR CSS ***/
+.caption, figcaption, caption { font-style: normal; }
+.toc > li li li       { font-style:  normal; }
+.toc > li li li li li { font-style:  normal; }
+.issue::before, .issue > .marker { color: #AE1E1E; 	}
+.advisement h4 { display: inline; }
+.advisement p { 	display: inline; }
