@@ -1,162 +1,218 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html >
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>LVTF Requirements - Alignment with other guidelines</title>
 </head>
 
 <body>
-<p>This table is to show the alignment between the Low Vision Task Force Requirements Document and WCAG and UAAG</p>
+<p>This table is to show the alignment between the Low Vision Task Force Requirements Document and WCAG, UAAG, and ATAG</p>
 <table width="100%" border="1" cellspacing="3" cellpadding="3">
   <tr>
-    <th scope="row">LVTF User Need</th>
-    <th>WCAG/UAAG alignment</th>
-    <th>Full/partial coverage</th>
-    <th>notes</th>
+    <th valign="top" scope="row">LVTF User Need</th>
+    <th valign="top">WCAG Alignment</th>
+    <th valign="top">UAAG alignment</th>
+    <th valign="top">ATAG Alignment</th>
+    <th valign="top">Full/partial coverage</th>
+    <th valign="top">notes</th>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#brightness-overall">3.1.1 Brightness Overall</a> Users can set the overall brightness of a display.</td>
-    <td><ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#gl-time-independent#sc_2108">UAAG 
-        - 2.10.8 Video Contrast and Brightness</a></li>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#brightness-overall">3.1.1 Brightness Overall</a> Users can set the overall brightness of a display.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#gl-time-independent#sc_2108">2.10.8 Video Contrast and Brightness</a></li>
     </ul></td>
-    <td><ul>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><ul>
       <li>partial</li>
     </ul></td>
-    <td><ul>
+    <td valign="top"><ul>
       <li>video only</li>
     </ul></td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#text-contrast">3.1.2 Text Contrast</a> Users can set the background color and the text color from the full color spectrum.</td>
-    <td><ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#sc_131">UAAG - 1.3.1 Distinguishable Highlighting</a>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#text-contrast">3.1.2 Text Contrast</a> Users can set the background color and the text color from the full color spectrum.</td>
+    <td valign="top"><ul>
+      <li><strong><a href="#visual-audio-contrast-contrast">1.4.3 Contrast (Minimum)</a></strong></li>
+      <li><strong><a href="#visual-audio-contrast7">1.4.6 Contrast (Enhanced)</a></strong></li>
+    </ul>    </td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_131">1.3.1 Distinguishable Highlighting</a>
       </li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#sc_132">UAAG - 1.3.2 Highlighting Options</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#sc_133">UAAG - 1.3.3 Highlighting Active Keyboard Focus</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_132">1.3.2 Highlighting Options</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_133">1.3.3 Highlighting Active Keyboard Focus</a></li>
       <li></li>
     </ul></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#not-relying-on-color">3.1.3 Not Relying on Color</a> 
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#not-relying-on-color">3.1.3 Not Relying on Color</a> 
 
 Color is not the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top"><ul>
+      <li><strong><a href="#content-structure-separation-understanding">1.3.3 Sensory Characteristics</a></strong></li>
+      <li><strong><a href="#visual-audio-contrast-without-color">1.4.1 Use of Color</a></strong></li>
+    </ul>    </td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#rewrap-for-one-direction-scrolling">3.2.1 Rewrap for One Direction Scrolling</a> 
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#rewrap-for-one-direction-scrolling">3.2.1 Rewrap for One Direction Scrolling</a> 
 
 Blocks of text rewrap so that only one direction of scrolling is needed, e.g., for left-right and right-left scripts (languages), usually vertical scrolling and not horizontal scrolling</td>
-    <td><ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#sc_1815">UAAG - 1.8.15 Linearize Content</a></li>
+    <td valign="top"><strong><a href="#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a></strong></td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_1815">1.8.15 Linearize Content</a></li>
     </ul></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#reflow-to-single-column">3.2.2 Reflow to Single Column</a> 
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#reflow-to-single-column">3.2.2 Reflow to Single Column</a> 
 
 Users can set blocks of text in one continuous block, instead of in multiple columns.</td>
-    <td><a href="https://www.w3.org/TR/UAAG20/#sc_1813">UAAG - 1.8.13 Multi-Column Text Reflow</a></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><a href="https://www.w3.org/TR/UAAG20/#sc_1813">1.8.13 Multi-Column Text Reflow</a></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#line-length">3.2.3 Line Length</a> Users can set the line length for blocks of text. Often the easiest way to do this (for developers, designers, and users) is for users to resize text areas and the text rewraps to change the line length.</td>
-    <td><a href="https://www.w3.org/TR/UAAG20/#sc_143">UAAG - 1.4.3 Blocks of text (Globally)</a></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#line-length">3.2.3 Line Length</a> Users can set the line length for blocks of text. Often the easiest way to do this (for developers, designers, and users) is for users to resize text areas and the text rewraps to change the line length.</td>
+    <td valign="top"><strong><a href="#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a></strong></td>
+    <td valign="top"><a href="https://www.w3.org/TR/UAAG20/#sc_143">1.4.3 Blocks of text (Globally)</a></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#hyphenation">3.2.4 Hyphenation</a> Users can turn hyphenation on or off.</td>
-    <td><a href="https://www.w3.org/TR/UAAG20/#sc_146">UAAG - 1.4.6 Advanced text formatting</a></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#hyphenation">3.2.4 Hyphenation</a> Users can turn hyphenation on or off.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><a href="https://www.w3.org/TR/UAAG20/#sc_146">1.4.6 Advanced text formatting</a></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#text-size">3.3.1 Text Size</a> Users can change the text size (font size) of all text, without zooming the entire interface.</td>
-    <td><ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#sc_141">UAAG - 1.4.1 Basic text formatting (Globally)</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">UAAG - 1.4.2 Basic text formatting (by Element)</a></li>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#text-size">3.3.1 Text Size</a> Users can change the text size (font size) of all text, without zooming the entire interface.</td>
+    <td valign="top"><p><strong><a href="#visual-audio-contrast-scale">1.4.4 Resize text</a></strong></p>
+    <p><strong><a href="#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a></strong></p></td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_141">1.4.1 Basic text formatting (Globally)</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a></li>
     </ul>
     <p>&nbsp;</p></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top">A2.1.1</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#font">3.3.2 Font</a> 
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#font">3.3.2 Font</a> 
 
 Users can change the font face (also called font family or typeface) of all text, choosing from a wide range of fonts including serif and sans serif fonts.</td>
-    <td><ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#sc_141">UAAG - 1.4.1 Basic text formatting (Globally)</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">UAAG - 1.4.2 Basic text formatting (by Element)</a></li>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_141">1.4.1 Basic text formatting (Globally)</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a></li>
     </ul></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#style">3.3.3 Style</a> Users can change the text style (underline, italic, bold) of blocks of text.</td>
-    <td><ul>
-      <li><a href="https://www.w3.org/TR/UAAG20/#sc_141">UAAG - 1.4.1 Basic text formatting (Globally)</a></li>
-      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">UAAG - 1.4.2 Basic text formatting (by Element)</a></li>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#style">3.3.3 Style</a> Users can change the text style (underline, italic, bold) of blocks of text.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_141">1.4.1 Basic text formatting (Globally)</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a></li>
     </ul></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#capitalization">3.3.4 Capitalization</a> Users can change the capitalization (all capital letters, small capital letters, sentence style) of blocks of text.</td>
-    <td><a href="https://www.w3.org/TR/UAAG20/#sc_146">UAAG - 1.4.6 Advanced text formatting</a></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#capitalization">3.3.4 Capitalization</a> Users can change the capitalization (all capital letters, small capital letters, sentence style) of blocks of text.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><a href="https://www.w3.org/TR/UAAG20/#sc_146">1.4.6 Advanced text formatting</a></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#size-of-all-elements">3.3.5 Size of All Elements</a> Users can change the size of all elements.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#size-of-all-elements">3.3.5 Size of All Elements</a> Users can change the size of all elements.</td>
+    <td valign="top"><p><strong><a href="#visual-audio-contrast-scale"></a></strong><strong><a href="#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a></strong></p></td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_141">1.4.1 Basic text formatting (Globally)</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a></li>
+    </ul></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#leading">3.4.1 Leading</a> Users can change the leading (line spacing, line height) of blocks of text.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#leading">3.4.1 Leading</a> Users can change the leading (line spacing, line height) of blocks of text.</td>
+    <td valign="top"><p><strong><a href="#visual-audio-contrast-scale"></a></strong><strong><a href="#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a></strong></p></td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_141">1.4.1 Basic text formatting (Globally)</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a></li>
+    </ul></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#letter-spacing">3.4.2 Letter Spacing</a> Users can change the letter spacing (space between letters/characters) of blocks of text.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#letter-spacing">3.4.2 Letter Spacing</a> Users can change the letter spacing (space between letters/characters) of blocks of text.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><h4><a href="https://www.w3.org/TR/UAAG20/#sc_146"></a></h4></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#word-spacing">3.4.3 Word Spacing</a> Users can change the word spacing (space between words) of blocks of text.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#word-spacing">3.4.3 Word Spacing</a> Users can change the word spacing (space between words) of blocks of text.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><a href="https://www.w3.org/TR/UAAG20/#sc_146">1.4.6 Advanced text formatting</a></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#justification">3.4.4 Justification</a> Users can change the justification / alignment (left, right, full/both, centered) of blocks of text.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#justification">3.4.4 Justification</a> Users can change the justification / alignment (left, right, full/both, centered) of blocks of text.</td>
+    <td valign="top"><strong><a href="#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a></strong></td>
+    <td valign="top"><a href="https://www.w3.org/TR/UAAG20/#sc_146">1.4.6 Advanced text formatting</a></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#margins-and-borders">3.4.5 Margins and Borders</a> Users can change the margins (blank space) and borders — including line color, width, style — around blocks of text.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#margins-and-borders">3.4.5 Margins and Borders</a> Users can change the margins (blank space) and borders � including line color, width, style � around blocks of text.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a></li>
+      <li> <a href="https://www.w3.org/TR/UAAG20/#sc_143">1.4.3 Blocks of text (Globally)</a>      </li>
+    </ul>
+    <p>&nbsp;</p></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#spacing-between-elements">3.4.6 Spacing Between Elements</a> Spacing groups related elements and separates less related elements.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#spacing-between-elements">3.4.6 Spacing Between Elements</a> Spacing groups related elements and separates less related elements.</td>
+    <td valign="top"><strong><a href="#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a></strong> (&lt;p&gt; only)</td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a></li>
+      <li> <a href="https://www.w3.org/TR/UAAG20/#sc_143">1.4.3 Blocks of text (Globally)</a>      </li>
+    </ul></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#element-level-customization">3.5.1 Element-level Customization</a> <p>Users can customize text differently for specific elements, such as headings, lists, and paragraph text.</p>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#element-level-customization">3.5.1 Element-level Customization</a> <p>Users can customize text differently for specific elements, such as headings, lists, and paragraph text.</p>
         <p>Users can set at least:</p>
         <ul>
               <li>Text size</li>
@@ -165,53 +221,58 @@ Users can change the font face (also called font family or typeface) of all text
               <li>Text style (that is, turn on or off underline, italic, bold)</li>
               <li>Leading</li>
               <li>Margins</li>
-              <li>Borders — including border line color, width, style</li></ul>
+              <li>Borders � including border line color, width, style</li></ul>
 </td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><ul>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a></li>
+      <li><a href="https://www.w3.org/TR/UAAG20/#sc_146">1.4.6 Advanced text formatting</a></li>
+    </ul>    </td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#maintain-point-of-regard">3.6.1 Maintain Point of Regard</a> The point of regard remains visible within the viewport when the viewport is resized, when content is zoomed or scaled, or when content formatting is changed.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#maintain-point-of-regard">3.6.1 Maintain Point of Regard</a> The point of regard remains visible within the viewport when the viewport is resized, when content is zoomed or scaled, or when content formatting is changed.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><p><a href="https://www.w3.org/TR/UAAG20/#sc_186">1.8.6 Maintain Point of Regard</a></p>
+      <h4><a href="https://www.w3.org/TR/UAAG20/#sc_189">1.8.9 Provide Viewport History</a></h4>
+    <p>&nbsp;</p></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#proximity-of-related-information">3.6.2 Proximity of Related Information</a> Users know about and can find related information.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#proximity-of-related-information">3.6.2 Proximity of Related Information</a> Users know about and can find related information.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><h4><a href="https://www.w3.org/TR/UAAG20/#sc_1101">1.10.1 Show Related Elements</a></h4></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#seeing-all-interface-elements">3.7.1 Seeing All Interface Elements</a> Users can see all interface elements that are intended for users to see, including when users have changed display settings such as text size.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#seeing-all-interface-elements">3.7.1 Seeing All Interface Elements</a> Users can see all interface elements that are intended for users to see, including when users have changed display settings such as text size.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><h4><a href="https://www.w3.org/TR/UAAG20/#sc_271">2.7.1  Customize Display of Controls for User Interface Commands, Functions, and Add-ons</a></h4></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#printing-customized-text">3.7.2 Printing Customized Text</a> Users can print content after customizing how the text is displayed.</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#printing-customized-text">3.7.2 Printing Customized Text</a> Users can print content after customizing how the text is displayed.</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><h4><a href="https://www.w3.org/TR/UAAG20/#sc_144">1.4.4 Configured and Reflowed Text Printing</a></h4></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#using-user-settings">3.7.3 Using User Settings</a>  Content picks up all relevant user settings, such as ... </td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td scope="row">&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td scope="row">&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td valign="top" scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#using-user-settings">3.7.3 Using User Settings</a>  Content picks up all relevant user settings, such as ... </td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><a href="https://www.w3.org/TR/UAAG20/#gl-store-pref">Guideline 2.6 - Configure and store preference settings</a>      <h4><a href="https://www.w3.org/TR/UAAG20/#sc_513">5.1.3 Implement Accessibility Features of the Platform</a></h4></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
   </tr>
 </table>
 </body>
