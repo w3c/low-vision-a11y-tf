@@ -1,0 +1,325 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Appendix: Image Descriptions</title>
+</head>
+
+<body>
+<h1>Appendix: Image Descriptions for Accessibilty Requirements for People with Low Vision</h1>
+<h4 resource="#h-color-vision" id="h-color-vision"><span property="xhv:role" resource="xhv:heading"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#color-vision">2.4.5 Color Vision</a></span></h4><figure><img alt="Color wheel with 12 different colors" src="images/full_color.png" height="190" width="190">
+<figcaption>Fig. <span class="figno">4</span> <span class="fig-title">Full color perception</span></figcaption></figure>
+<figure><img alt="Color wheel with shades of blue and yellow" src="images/protanopia.png" height="190" width="190">
+<figcaption>Fig. <span class="figno">5</span> <span class="fig-title">Red-green color blindness</span></figcaption></figure>
+       <figure><img alt="Color wheel with shades of green and red" src="images/tritanopia.png" height="190" width="190">
+        <figcaption>Fig. <span class="figno">6</span> <span class="fig-title">Blue-yellow color blindness</span></figcaption></figure>
+<figure><img alt="Color wheel with shades of gray" src="images/achromatopsia.png" height="190" width="190">
+        <figcaption>
+          <p>Fig. <span class="figno">7</span> <span class="fig-title">No color perception (rare)</span></p></figcaption></figure>
+          <p>Below is a text description of the Figures 4, 5 and &amp; 6 in the   Low Vision Requirements document. These figures show that colors that   are different for people with full color perception may appear to be the   same color for different types of color blindness. </p>
+          <p>The Position column refers to the clock position in the color   wheel. The Gray values are the Brightness levels from Hue, Saturation   and Brightness settings. </p>
+          <p>Note: 2 versions of table. Added the image to &lt;th&gt; to more closely associate image with description</p>
+          <table border="1" cellspacing="3" cellpadding="3
+          ">
+            <tbody>
+              <tr>
+                <th align="left">Position 
+                  in diagram</th>
+                <th align="left">Full Color <br>
+                (Fig. 4)<br>
+                <br>
+                <img alt="Color wheel with 12 different colors" src="images/full_color.png" height="190" width="190"></th>
+                <th align="left">Red-Green <br>
+                  color blindness<br>
+                  (Fig. 5)<br>
+                  <img alt="Color wheel with shades of blue and yellow" src="images/protanopia.png" height="190" width="190"></th>
+                <th align="left">Blue-Yellow <br>
+                  color blindness<br>
+                  (Fig. 6)<br>
+                  <img alt="Color wheel with shades of green and red" src="images/tritanopia.png" height="190" width="190"></th>
+                <th align="left">No color <br>
+                  perception (grays)<br>
+                  (Fig. 7)<br>
+                  <img alt="Color wheel with shades of gray" src="images/achromatopsia.png" height="190" width="190"></th>
+              </tr>
+              <tr>
+                <td align="left">12</td>
+                <td align="left">Red</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Red</td>
+                <td align="left">51%</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Red-orange</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Red</td>
+                <td align="left">55%</td>
+              </tr>
+              <tr>
+                <td align="left">2</td>
+                <td align="left">Orange</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Light red</td>
+                <td align="left">66%</td>
+              </tr>
+              <tr>
+                <td align="left">3</td>
+                <td align="left">Orange-yellow</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Light red</td>
+                <td align="left">74%</td>
+              </tr>
+              <tr>
+                <td align="left">4</td>
+                <td align="left">Yellow</td>
+                <td align="left">Yellow</td>
+                <td align="left">Pink</td>
+                <td align="left">94%</td>
+              </tr>
+              <tr>
+                <td align="left">5</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Pink-gray</td>
+                <td align="left">72%</td>
+              </tr>
+              <tr>
+                <td align="left">6</td>
+                <td align="left">Green</td>
+                <td align="left">Brown</td>
+                <td align="left">Dark blue-green</td>
+                <td align="left">49%</td>
+              </tr>
+              <tr>
+                <td align="left">7</td>
+                <td align="left">Green-blue</td>
+                <td align="left">Medium-blue</td>
+                <td align="left">Blue-green</td>
+                <td align="left">45%</td>
+              </tr>
+              <tr>
+                <td align="left">8</td>
+                <td align="left">Blue</td>
+                <td align="left">Blue</td>
+                <td align="left">Blue-green</td>
+                <td align="left">30%</td>
+              </tr>
+              <tr>
+                <td align="left">9</td>
+                <td align="left">Blue-purple</td>
+                <td align="left">Dark-blue</td>
+                <td align="left">Dark blue-green</td>
+                <td align="left">20%</td>
+              </tr>
+              <tr>
+                <td align="left">10</td>
+                <td align="left">Purple</td>
+                <td align="left">Medium-blue</td>
+                <td align="left">Gray</td>
+                <td align="left">31%</td>
+              </tr>
+              <tr>
+                <td align="left">11</td>
+                <td align="left">Purple-red</td>
+                <td align="left">Yellow-brown</td>
+                <td align="left">Dark red</td>
+                <td align="left">39%</td>
+              </tr>
+            </tbody>
+          </table>
+<table border="1" cellspacing="3" cellpadding="3
+          ">
+            <tbody>
+              <tr>
+                <th align="left">Position <br>
+                  in diagram</th>
+                <th height="21" align="left">Full Color <br>
+                  (Fig. 4)</th>
+                <th align="left">Red-Green <br>
+                  color blindness<br>
+                  (Fig. 5)</th>
+                <th align="left">Blue-Yellow <br>
+                  color blindness<br>
+                  (Fig. 6)</th>
+                <th align="left">No color <br>
+                  perception (grays)<br>
+                  (Fig. 7)</th>
+              </tr>
+              <tr>
+                <td align="left">12</td>
+                <td align="left">Red</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Red</td>
+                <td align="left">51%</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Red-orange</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Red</td>
+                <td align="left">55%</td>
+              </tr>
+              <tr>
+                <td align="left">2</td>
+                <td align="left">Orange</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Light red</td>
+                <td align="left">66%</td>
+              </tr>
+              <tr>
+                <td align="left">3</td>
+                <td align="left">Orange-yellow</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Light red</td>
+                <td align="left">74%</td>
+              </tr>
+              <tr>
+                <td align="left">4</td>
+                <td align="left">Yellow</td>
+                <td align="left">Yellow</td>
+                <td align="left">Pink</td>
+                <td align="left">94%</td>
+              </tr>
+              <tr>
+                <td align="left">5</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Yellow-green</td>
+                <td align="left">Pink-gray</td>
+                <td align="left">72%</td>
+              </tr>
+              <tr>
+                <td align="left">6</td>
+                <td align="left">Green</td>
+                <td align="left">Brown</td>
+                <td align="left">Dark blue-green</td>
+                <td align="left">49%</td>
+              </tr>
+              <tr>
+                <td align="left">7</td>
+                <td align="left">Green-blue</td>
+                <td align="left">Medium-blue</td>
+                <td align="left">Blue-green</td>
+                <td align="left">45%</td>
+              </tr>
+              <tr>
+                <td align="left">8</td>
+                <td align="left">Blue</td>
+                <td align="left">Blue</td>
+                <td align="left">Blue-green</td>
+                <td align="left">30%</td>
+              </tr>
+              <tr>
+                <td align="left">9</td>
+                <td align="left">Blue-purple</td>
+                <td align="left">Dark-blue</td>
+                <td align="left">Dark blue-green</td>
+                <td align="left">20%</td>
+              </tr>
+              <tr>
+                <td align="left">10</td>
+                <td align="left">Purple</td>
+                <td align="left">Medium-blue</td>
+                <td align="left">Gray</td>
+                <td align="left">31%</td>
+              </tr>
+              <tr>
+                <td align="left">11</td>
+                <td align="left">Purple-red</td>
+                <td align="left">Yellow-brown</td>
+                <td align="left">Dark red</td>
+                <td align="left">39%</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4 resource="#h-text-contrast" id="h-text-contrast"><span property="xhv:role" resource="xhv:heading"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#text-contrast">3.1.2 Text Contrast</a></span></h4>
+        </figcaption>
+      <img alt="screen capture" src="images/eg-gray.png" height="299" width="470">
+        <figcaption>
+          <p>Fig. <span class="figno">8</span> <span class="fig-title">Web page with author-defined colors with low contrast - light background, gray text, light green headings</span></p>
+          <ul>
+            <li>Background is light-gray</li>
+            <li>first heading is largest, sans-serif font, green</li>
+            <li>second heading is next largest, sans-serif font, light-green</li>
+            <li>text is smallest text, serif font, dark-gray</li>
+            <li>third heading is 3rd largest heading, serif font, light green (same color as second heading)        </li>
+          </ul>
+        </figcaption>
+      <img alt="screen capture" src="images/eg-lowcontrast.png" height="299" width="453">
+        <figcaption>
+          <p>Fig. <span class="figno">9</span> <span class="fig-title">Web page with user style with medium contrast - brown background, tan text, headings of different dull colors</span></p>
+          <ul>
+            <li>Background is black</li>
+            <li>all headings are the same size and sans-serif font</li>
+            <li>first heading is khaki</li>
+            <li>second heading is lavender</li>
+            <li>text is slightly larger than headings, sans-serif font, light-gray</li>
+            <li>third heading is orchid        </li>
+          </ul>
+        </figcaption>
+      <img alt="screen capture" src="images/eg-highcontrast.png" height="299" width="457">
+        <figcaption>
+          <p>Fig. <span class="figno">10</span> <span class="fig-title">Web page with user style with high contrast - black background, white text, headings of different bright colors</span></p>
+          <ul>
+            <li>Background is black</li>
+            <li>all headings are the same size and sans-serif font</li>
+            <li>first heading is blue-green</li>
+            <li>second heading is yellow</li>
+            <li>text is slightly larger than headings, sans-serif font, light-gray</li>
+            <li>third heading is blue</li>
+          </ul>
+          <h4 resource="#h-element-level-customization" id="h-element-level-customization"><span property="xhv:role" resource="xhv:heading"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#element-level-customization">3.5.1 Element-level Customization</a></span></h4>
+        </figcaption>
+<img alt="screen capture" src="images/eg-style-author.png"width="644" height="172">
+        <figcaption>
+          <p>Fig. <span class="figno">11</span> <span class="fig-title">Web page with author style</span></p>
+          <ul>
+            <li>Background is white</li>
+            <li>first heading is largest, sans-serif font, dark-green</li>
+            <li>second heading is next largest, sans-serif font, green</li>
+            <li>text is smallest text, serif font, dark-gray</li>
+            <li>third heading is 3rd largest heading, serif font, green (same color as second heading) </li>
+            <li>link is serif font, blue, underlined</li>
+            <li>bold is bold serif text</li>
+            <li>italic is italic serif text</li>
+            <li>bullet items are indented 3 spaces, filled circle dot vertically centered (1/3 size text font size), one space, item text</li>
+          </ul>
+          <p>&nbsp;</p>
+        </figcaption>
+<img alt="screen capture" width="633" height="397 "src="images/eg-style-low.png">
+        <figcaption>
+          <p>Fig. <span class="figno">12</span> <span class="fig-title">Web page with user style - with different fonts, indentation, borders, different colors, and dots preceding text to differentiate heading levels</span></p>
+          <ul>
+            <li>Background is khaki</li>
+            <li>all text including headings is the same size</li>
+            <li>first heading is sans-serif font, maroon text and full border around   element, 1 period with a space (. ) precedes text of heading, period   and text indented 2 spaces from border</li>
+            <li>second heading is sans-serif font, blue text and border around   element, 2 periods with a space (.. ) precedes text of heading, periods   and text indented 2 spaces from border</li>
+            <li>text is larger than headings, serif font, black text, gray border around element, text not indented</li>
+            <li>third heading is 3rd largest heading, serif font, purple text and   border around element, 3 periods with a space (... ) precedes text of   heading, periods and text indented 2 spaces from border</li>
+            <li>link is serif font, brown, underlined, surrounded by square brackets [ ]</li>
+            <li>bold is bold serif text</li>
+            <li>italic is italic serif text</li>
+            <li>bullet items are indented one space, the list has a left margin border of light blue, each item has a top border of lavender </li>
+          </ul>
+          <p>&nbsp;</p>
+        </figcaption>
+<img alt="screen capture"  width="643" height="410" src="images/eg-style-high.png">
+        <figcaption>
+          <p>Fig. <span class="figno">13</span> <span class="fig-title">Web page with user style - with different fonts, indentation, and  colors to differentiate heading levels</span></p>
+          <ul>
+            <li>Background is black </li>
+            <li>all headings are sans-serif font, spring green</li>
+            <li>first heading is largest text, indented 2 spaces from left margin</li>
+            <li>second heading is next largest text, indented 4 spaces from left margin</li>
+            <li>text is smallest text on page, serif font, white </li>
+            <li>third heading is 3rd largest heading, indented 6 spaces from left margin</li>
+            <li>link is serif font, blue, underlined, surrounded by square brackets [ ]</li>
+            <li>bold is bold serif text, yellow</li>
+            <li>italic is italic serif text, pale yellow</li>
+            <li>bullet items indented 1 space, horizontally centered bullet, one space, text</li>
+          </ul>
+          <p>&nbsp;</p>
+        </figcaption>
+      
+</body>
+</html>
