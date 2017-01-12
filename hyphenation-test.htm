@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="c/base.css" type="text/css">
+<style type="text/css" id="tests">
+.arena p {text-align: justify;}
+#p06 {text-align:left;
+hyphens: auto;
+-moz-hyphens: auto;
+-ms-hyphens: auto;
+-webkit-hyphens: auto;}
+#p03 {hyphens: auto;}
+#p04 {hyphens: manual;}
+#p05 {hyphens: none;}
+</style>
+<title>CSS3 test: hyphens</title></head>
+<body id="www-meyerweb-com" class="css test suite">
+<h1 id="specref">Hypenation test</h1>
+<p><a href="http://www.w3.org/TR/css3-gcpm/#hyphens">http://www.w3.org/TR/css3-gcpm/#hyphens</a></p>
+<p>Modified Eric Meyer's hypen page: <a href="http://meyerweb.com/eric/css/tests/css3/hyphens.html">http://meyerweb.com/eric/css/tests/css3/hyphens.html</a></p>
+<h3>Styles</h3>
+<p>.arena p {text-align: justify;}</p>
+<p>  #p03 {hyphens: auto;}</p>
+<p>  #p04 {hyphens: manual;}</p>
+<p>  #p05 {hyphens: none;}</p>
+<p>#p06 {text-align:left;<br>
+hyphens: auto;<br>
+-moz-hyphens: auto;<br>
+-ms-hyphens: auto;<br>
+-webkit-hyphens: auto;}</p>
+<table border="1">
+  <caption>
+    Hyphen results across browsers
+  </caption>
+  <tr>
+    <th>Paragraph characteristics</th>
+    <th>FF</th>
+    <th>IE</th>
+    <th>Chrome</th>
+    <th>Safari</th>
+  </tr>
+  <tr>
+    <td>p01 - no hints, no css, justified</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>p02 - hints, no css, justified</td>
+    <td>x</td>
+    <td>+</td>
+    <td>+</td>
+    <td>+</td>
+  </tr>
+  <tr>
+    <td>p03 - no hints, css - hyphens: auto, justified</td>
+    <td>+</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>p04 - hints, css - hypens: manual, justified</td>
+    <td>+</td>
+    <td>+</td>
+    <td>+</td>
+    <td>+</td>
+  </tr>
+  <tr>
+    <td><p>p05 - hints, css - hypens: none, justified</p></td>
+    <td>x</td>
+    <td>+ <br>
+    (ignores css)</td>
+    <td>x</td>
+    <td>+</td>
+  </tr>
+  <tr>
+    <td>p06 - no hints, hypens:auto (all browser prefixes), left.</td>
+    <td>+</td>
+    <td>+</td>
+    <td>x</td>
+    <td>+</td>
+  </tr>
+</table>
+<p>Hyphenation hints (&amp;shy; or &amp;#00AD;) work  with IE, Chrome, Safari and no css hyphens declaration.</p>
+<p>Hyphenation hints (&amp;shy; or &amp;#00AD;) work with  Firefox, IE, Chrome, Safari and css hyphens:manual declaration.</p>
+<p>CSS hyphens: auto (with browser prefixes) work with Firefox, IE, and Safari. </p>
+
+<div class="arena">
+<p class="note">It is most likely necessary to resize the viewport to properly evaluate this test.</p>
+
+<p id="p01">[#p01] This is a paragraph with no embedded hyphenation hints and no hyphen-related CSS applied.  Corporate gibberish follows.  Think visionary. If you generate proactively, you may have to e-enable interactively. We apply the proverb "Grass doesn't grow on a racetrack" not only to our re-purposing but our power to matrix. If all of this comes off as dumbfounding to you, that's because it is! Our feature set is unparalleled in the industry, but our reality-based systems and simple use is usually considered a remarkable achievement. The power to brand robustly leads to the aptitude to embrace seamlessly. What do we streamline? Anything and everything, regardless of reconditeness!</p>
+
+<p id="p02">[#p02] This is a paragraph with embedded hyphenation hints but no hyphen-related CSS applied.  Corp&shy;orate gibb&#x00AD;erish fol&shy;lows.  Think vision&#x00AD;ary. If you gener&shy;ate pro&#x00AD;actively, you may have to e-enable inter&shy;actively. We apply the pro&#x00AD;verb "Grass doesn't grow on a race&shy;track" not only to our re-pur&shy;posing but our pow&#x00AD;er to mat&shy;rix. If all of this comes off as dumb&#x00AD;founding to you, that's be&shy;cause it is! Our feat&#x00AD;ure set is un&#x00AD;paral&shy;leled in the in&shy;dus&shy;try, but our reality-based sys&shy;tems and sim&#x00AD;ple use is usu&shy;ally con&#x00AD;sid&shy;ered a re&shy;mark&shy;able achieve&#x00AD;ment. The power to brand ro&shy;bustly leads to the apti&shy;tude to em&shy;brace seam&shy;lessly. What do we stream&shy;line? Any&shy;thing and every&shy;thing, re&shy;gard&shy;less of re&shy;con&shy;diteness!</p>
+
+<p id="p03">[#p03] This is a paragraph with no embedded hyphenation hints but hyphen-related CSS applied.  Corporate gibberish follows.  Think visionary. If you generate proactively, you may have to e-enable interactively. We apply the proverb "Grass doesn't grow on a racetrack" not only to our re-purposing but our power to matrix. If all of this comes off as dumbfounding to you, that's because it is! Our feature set is unparalleled in the industry, but our reality-based systems and simple use is usually considered a remarkable achievement. The power to brand robustly leads to the aptitude to embrace seamlessly. What do we streamline? Anything and everything, regardless of reconditeness!</p>
+
+<p id="p04">[#p04] This is a paragraph with embedded hyphenation hints and hyphen-related CSS applied.  Corp&shy;orate gibb&#x00AD;erish fol&shy;lows.  Think vision&#x00AD;ary. If you gener&shy;ate pro&#x00AD;actively, you may have to e-enable inter&shy;actively. We apply the pro&#x00AD;verb "Grass doesn't grow on a race&shy;track" not only to our re-pur&shy;posing but our pow&#x00AD;er to mat&shy;rix. If all of this comes off as dumb&#x00AD;founding to you, that's be&shy;cause it is! Our feat&#x00AD;ure set is un&#x00AD;paral&shy;leled in the in&shy;dus&shy;try, but our reality-based sys&shy;tems and sim&#x00AD;ple use is usu&shy;ally con&#x00AD;sid&shy;ered a re&shy;mark&shy;able achieve&#x00AD;ment. The power to brand ro&shy;bustly leads to the apti&shy;tude to em&shy;brace seam&shy;lessly. What do we stream&shy;line? Any&shy;thing and every&shy;thing, re&shy;gard&shy;less of re&shy;con&shy;diteness!</p>
+
+<p id="p05">[#p05] This is a paragraph with embedded hyphenation hints and hyphen-related CSS applied.  Corp&shy;orate gibb&#x00AD;erish fol&shy;lows.  Think vision&#x00AD;ary. If you gener&shy;ate pro&#x00AD;actively, you may have to e-enable inter&shy;actively. We apply the pro&#x00AD;verb "Grass doesn't grow on a race&shy;track" not only to our re-pur&shy;posing but our pow&#x00AD;er to mat&shy;rix. If all of this comes off as dumb&#x00AD;founding to you, that's be&shy;cause it is! Our feat&#x00AD;ure set is un&#x00AD;paral&shy;leled in the in&shy;dus&shy;try, but our reality-based sys&shy;tems and sim&#x00AD;ple use is usu&shy;ally con&#x00AD;sid&shy;ered a re&shy;mark&shy;able achieve&#x00AD;ment. The power to brand ro&shy;bustly leads to the apti&shy;tude to em&shy;brace seam&shy;lessly. What do we stream&shy;line? Any&shy;thing and every&shy;thing, re&shy;gard&shy;less of re&shy;con&shy;diteness!  (NOTE:  in this case, the CSS requires hyphenation hints to be ignored.)</p>
+<p id="p06">[#p06] This is a paragraph with no embedded hyphenation hints but hyphen-related CSS applied (-ms-hyphens, -moz-hyphens, -webkit-hyphens) and no justification.  Corporate gibberish follows.  Think visionary. If you generate proactively, you may have to e-enable interactively. We apply the proverb "Grass doesn't grow on a racetrack" not only to our re-purposing but our power to matrix. If all of this comes off as dumbfounding to you, that's because it is! Our feature set is unparalleled in the industry, but our reality-based systems and simple use is usually considered a remarkable achievement. The power to brand robustly leads to the aptitude to embrace seamlessly. What do we streamline? Anything and everything, regardless of reconditeness!</p>
+</div>
+
+<p class="credit">Corporate gibberish courtesy the <a href="http://www.andrewdavidson.com/gibberish/?companyname=ConHugeCo">Corporate Gibberish Generator on AndrewDavidson.com</a></p>
+
+</body>
+</html>
+
+</body>
+</html>
