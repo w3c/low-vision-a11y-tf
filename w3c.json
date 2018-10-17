@@ -1,5 +1,6 @@
 {
     "group":      35422
-,   "contacts":   "michael-n-cooper"
+,   "contacts":   [ "michael-n-cooper" ]
 ,   "shortName":  "low-vision-a11y-tf"
+,   "repo-type": "others"
 }
