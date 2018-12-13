@@ -4,7 +4,7 @@
 <ul>
 <li>In WCAG 2.1</li>
 <li>Potentially for 2.2</li>
-<li>For Sliver</li>
+<li>Possible for Silver</li>
 <li>Responsibility in content authoring, browser, OS</li>
 </ul>
 
@@ -12,7 +12,7 @@
 
 <table width="100%" border="1" cellpadding="7">
   <tr valign="top" align="left">
-    <th scope="col">User Needs</th>
+    <th scope="col">User Needs - with links to relevant User Need document section</th>
     <th scope="col"><p>Author/Browser/OS<br>
         A, B, O<br>
         What can authors do to not interfere with these needs? </p></th>
@@ -20,10 +20,40 @@
       Success Criteria</th>
     <th scope="col">WCAG 2.2</th>
     <th scope="col">Silver</th>
-    <th scope="col">Thoughts</th>
+    <th scope="col">References, Resources, Thoughts, etc.</th>
+    </tr>
+   <tr valign="top" align="left">
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#proximity-of-related-information">Proximity of Related Information</a>: </strong>Users know about and can find related  information.</p></td>
+    <td>A</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr> <tr valign="top" align="left">
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#justification">Justification</a>:</strong> Users can change the justification /  alignment (left, right, full/both, centered) of blocks of text.</p></td>
+    <td>B - user CSS,  possible UI setting</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+    <td>&nbsp;</td>
+    <td>@@Laura I suspect  that a justification /  alignment SC would not be accepted in 2.2 and would be pushed to Silver. JF thinks it would be easy to add "don't use full justification"</td>
+  </tr>  <tr valign="top" align="left">
+    <td><strong>Visual affordance</strong> - focus and controls</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
   </tr>
   <tr valign="top" align="left">
-    <td><strong>Brightness: </strong>Users can set the overall brightness of a display.</td>
+    <td><strong>Page Refresh</strong> - an aspect of Point of Regard. Auto page refresh, jumping user to top page.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+   <tr valign="top" align="left">
+    <td><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#brightness-overall">Brightness</a>: </strong>Users can set the overall brightness of a display.</td>
     <td><p>B - media players</p>
       <p>O - brightness setting</p></td>
     <td>&nbsp;</td>
@@ -32,7 +62,7 @@
     <td>&nbsp;</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Contrast: </strong>Users  can set the background color and the text color from the full color spectrum.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#text-contrast">Contrast</a>: </strong>Users  can set the background color and the text color from the full color spectrum.</p></td>
     <td><p>B - override forground/background in browser settings. User CSS. </p>
       <p>O - forground/background color of application</p></td>
     <td><p>1.4.11 Non-Text Contrast</p>
@@ -41,8 +71,40 @@
     <td>X</td>
     <td>@@Jim - Exception for browser default.</td>
   </tr>
-  <tr valign="top" align="left">
-    <td><p><strong>Color: </strong>Color is not the only  visual means of conveying information, indicating an action, prompting a  response, or distinguishing a visual element.</p></td>
+   <tr valign="top" align="left">
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#maintain-point-of-regard">Point of Regard</a>: </strong>The point of regard remains visible within  the viewport when the viewport is resized, when content is zoomed or scaled, or  when content formatting is changed.</p></td>
+    <td>B</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>X</td>
+    <td>&nbsp;</td>
+  </tr> 
+   <tr valign="top" align="left">
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#using-user-settings">User Settings</a>: </strong>Content picks up all relevant user settings,  such as ... [Draft Note: The Task Force plans to add additional information  here.]</p></td>
+    <td>B - possible UI setting. Should inherit OS settings </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>X</td>
+    <td>@@Laura I suspect  that a user settings SC would not be accepted in 2.2 and would be pushed to Silver.</td>
+  </tr>
+<tr valign="top" align="left">
+    <td><a href="https://www.w3.org/2016/03/09-lvtf-minutes.html#resolution01">[RESOLUTION</a>: add User Need: <strong>Users can see and operate all interface elements that are intended for users to see and operate. This includes when users have changed display settings such as text size, magnification, and cursor</strong>. 
+    (9 March 2016)]</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>X</td>
+    <td>@@Laura LVTF pushed the title attribute/tooltip obscured under the screen magnifier's large cursor issue to Silver. Resources:<br>
+      <ul><li><a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/index.php?title=User_stories_-_use_cases&oldid=752#Size_Limitations">Use Case</a>: TAGLINE: Difficulty reading tooltips for icons, which are obscured under the screen magnifier's large cursor</li>
+        <li><a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/index.php?title=Metadata_On_Hover&direction=prev&oldid=2450">Wiki page with title attribute evidence</a> (28 November 2016)</li>
+        <li><a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2016Mar/0032.html">Email:</a> Obscuring active elements and text email </li>
+        <li><a href="https://w3c.github.io/low-vision-a11y-tf/requirements.html#seeing-all-interface-elements">User need 7.1 Seeing All Interface Element</a>s (Draft Note: Possible figure to be added: hover hand obscures important tooltip text)</li>
+        <li><a href="https://www.w3.org/2016/03/09-lvtf-minutes.html#resolution01">RESOLUTION</a>: add User Need: Users can see and operate all interface elements that are intended for users to see and operate. This includes when users have changed display settings such as text size, magnification, and cursor. 
+          (9 March 2016)</li>
+    </ul></td>
+  </tr>
+<tr valign="top" align="left">
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#not-relying-on-color">Color</a>: </strong>Color is not the only  visual means of conveying information, indicating an action, prompting a  response, or distinguishing a visual element.</p></td>
     <td>&nbsp;</td>
     <td>1.4.1 Use of Color</td>
     <td>&nbsp;</td>
@@ -50,7 +112,7 @@
     <td>&nbsp;</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Rewrap: </strong>Blocks of text rewrap so  that only one direction of scrolling is needed, e.g., for left-right and  right-left scripts (languages), usually vertical scrolling and not horizontal  scrolling.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#rewrap-for-one-direction-scrolling">Rewrap</a>: </strong>Blocks of text rewrap so  that only one direction of scrolling is needed, e.g., for left-right and  right-left scripts (languages), usually vertical scrolling and not horizontal  scrolling.</p></td>
     <td>&nbsp;</td>
     <td>1.4.10 Reflow</td>
     <td>&nbsp;</td>
@@ -58,7 +120,7 @@
     <td>&nbsp;</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Reflow: </strong>Users can set blocks of  text in one continuous block, instead of in multiple columns.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#reflow-to-single-column">Reflow</a>: </strong>Users can set blocks of  text in one continuous block, instead of in multiple columns.</p></td>
     <td>&nbsp;</td>
     <td>1.4.10 Reflow</td>
     <td>&nbsp;</td>
@@ -66,7 +128,7 @@
     <td>&nbsp;</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Line Length: </strong>Users  can set the line length for blocks of text. Often the easiest way to do this  (for developers, designers, and users) is for users to resize text areas and  the text rewraps to change the line length.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#line-length">Line Length</a>: </strong>Users  can set the line length for blocks of text. Often the easiest way to do this  (for developers, designers, and users) is for users to resize text areas and  the text rewraps to change the line length.</p></td>
     <td>&nbsp;</td>
     <td>1.4.10 Reflow</td>
     <td>&nbsp;</td>
@@ -74,7 +136,7 @@
     <td>&nbsp;</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Hyphenation: </strong>Users  can turn hyphenation on or off.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#hyphenation">Hyphenation</a>: </strong>Users  can turn hyphenation on or off.</p></td>
     <td><p>B - user CSS,  possible UI setting</p></td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -82,7 +144,7 @@
     <td>@@Laura I suspect  that a hyphenation SC would not be accepted in 2.2 and would be pushed to Silver.</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Text Size: </strong>Users  can change the text size (font size) of all text, without zooming the entire  interface.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#text-size">Text Size</a>: </strong>Users  can change the text size (font size) of all text, without zooming the entire  interface.</p></td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -90,7 +152,7 @@
     <td>@@Jim - zoom is adequate for text and text in vector images. There are issues with raster images. Also, Huge issues with Tooltips. </td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Font:</strong> Users can change the font face (also called font  family or typeface) of all text, choosing from a wide range of fonts including  sans serif and serif fonts.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#font">Font</a>:</strong> Users can change the font face (also called font  family or typeface) of all text, choosing from a wide range of fonts including  sans serif and serif fonts.</p></td>
     <td>B - user CSS,  possible UI setting</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -98,7 +160,7 @@
     <td>@@Laura I suspect  that a font SC would not be accepted in 2.2 and would be pushed to Silver.</td>
   </tr>
   <tr valign="top" align="left">
-    <td><strong>Style:</strong> Users can change the text style (underline, italic, bold) of blocks of text.</td>
+    <td><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#style">Style</a>:</strong> Users can change the text style (underline, italic, bold) of blocks of text.</td>
     <td>B - user CSS,  possible UI setting</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -106,7 +168,7 @@
     <td>@@Laura I suspect  that a style SC would not be accepted in 2.2 and would be pushed to Silver.</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Capitalization: </strong>Users can change the capitalization (all  capital letters, small capital letters, sentence style) of blocks of text.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#capitalization">Capitalization</a>: </strong>Users can change the capitalization (all  capital letters, small capital letters, sentence style) of blocks of text.</p></td>
     <td>B - user CSS,  possible UI setting</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -114,7 +176,7 @@
     <td>@@Laura I suspect  that a capitalization SC would not be accepted in 2.2 and would be pushed to Silver.</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Size: </strong>Users can change the size of all elements.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#size-of-all-elements">Size of All Elements</a>: </strong>Users can change the size of all elements.</p></td>
     <td>&nbsp;</td>
     <td>1.4.4 Resize Text</td>
     <td>&nbsp;</td>
@@ -122,7 +184,7 @@
     <td>&nbsp;</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Line Spacing: </strong>Users can change the line spacing (leading)  for blocks of text.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#line-spacing">Line Spacing</a>: </strong>Users can change the line spacing (leading)  for blocks of text.</p></td>
     <td>&nbsp;</td>
     <td>1.4.12  Text Spacing</td>
     <td>&nbsp;</td>
@@ -130,7 +192,7 @@
     <td>&nbsp;</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Letter Spacing: </strong>Users can change the letter spacing (space  between letters/characters) of blocks of text.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#letter-spacing">Letter Spacing</a>: </strong>Users can change the letter spacing (space  between letters/characters) of blocks of text.</p></td>
     <td>&nbsp;</td>
     <td>1.4.12  Text Spacing</td>
     <td>&nbsp;</td>
@@ -138,23 +200,16 @@
     <td>&nbsp;</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Word Spacing: </strong>Users can change the word spacing (space  between words) of blocks of text.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#word-spacing">Word Spacing</a>: </strong>Users can change the word spacing (space  between words) of blocks of text.</p></td>
     <td>&nbsp;</td>
     <td>1.4.12  Text Spacing</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
+ 
   <tr valign="top" align="left">
-    <td><p><strong>Justification:</strong> Users can change the justification /  alignment (left, right, full/both, centered) of blocks of text.</p></td>
-    <td>B - user CSS,  possible UI setting</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>X</td>
-    <td>@@Laura I suspect  that a justification /  alignment SC would not be accepted in 2.2 and would be pushed to Silver. JF thinks it would be easy to add "don't use full justification"</td>
-  </tr>
-  <tr valign="top" align="left">
-    <td><p><strong>Margins and Borders: </strong>Users can change the margins (blank  space) and borders (including color, width, style) around blocks of text.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#margins-and-borders">Margins and Borders</a>: </strong>Users can change the margins (blank  space) and borders (including color, width, style) around blocks of text.</p></td>
     <td>B - user CSS,  possible UI setting</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -162,7 +217,7 @@
     <td>@@Laura I suspect  that a margins /borders SC would not be accepted in 2.2 and would be pushed to Silver.</td>
   </tr>
   <tr valign="top" align="left">
-    <td><strong>Spacing  Between Elements:</strong> Spacing groups related elements and separates less related  elements.</td>
+    <td><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#spacing-between-elements">Spacing  Between Elements</a>:</strong> Spacing groups related elements and separates less related  elements.</td>
     <td>&nbsp;</td>
     <td>1.4.12  Text Spacing</td>
     <td>&nbsp;</td>
@@ -170,7 +225,7 @@
     <td>&nbsp;</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Element-level Customization: </strong>Users can customize text differently for specific elements, such  as headings, lists, paragraphs, links, &lt;strong&gt;, &lt;em&gt;,  &lt;cite&gt;, etc.<br>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#element-level-customization">Element-level Customization</a>: </strong>Users can customize text differently for specific elements, such  as headings, lists, paragraphs, links, &lt;strong&gt;, &lt;em&gt;,  &lt;cite&gt;, etc.<br>
         &nbsp;Users can set at least:</p>
       <ul>
         <li>Text size</li>
@@ -187,24 +242,10 @@
     <td>&nbsp;</td>
     <td>@@Jim some covered in 1.4.12.</td>
   </tr>
+
+ 
   <tr valign="top" align="left">
-    <td><p><strong>Point of Regard: </strong>The point of regard remains visible within  the viewport when the viewport is resized, when content is zoomed or scaled, or  when content formatting is changed.</p></td>
-    <td>B</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>X</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr valign="top" align="left">
-    <td><p><strong>Related Information: </strong>Users know about and can find related  information.</p></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr valign="top" align="left">
-    <td><p><strong>All Elements:</strong> Users can see all interface elements that are  intended for users to see, including when users have changed display settings  such as text size.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#seeing-all-interface-elements">All Elements</a>:</strong> Users can see all interface elements that are  intended for users to see, including when users have changed display settings  such as text size.</p></td>
     <td><p>B</p>
       <p>O </p></td>
     <td>&nbsp;</td>
@@ -213,22 +254,14 @@
     <td>@@Laura I suspect  that an  all interface elements SC would not be accepted in 2.2 and would be pushed to Silver.</td>
   </tr>
   <tr valign="top" align="left">
-    <td><p><strong>Printing: </strong>Users can print content after customizing how the  text is displayed.</p></td>
+    <td><p><strong><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#printing-customized-text">Printing</a>: </strong>Users can print content after customizing how the  text is displayed.</p></td>
     <td>B - user CSS,  possible UI setting</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>@@Laura I suspect  that a printing SC would not be accepted in 2.2 and would be pushed to Silver.</td>
   </tr>
-  <tr valign="top" align="left">
-    <td><p><strong>User Settings: </strong>Content picks up all relevant user settings,  such as ... [Draft Note: The Task Force plans to add additional information  here.]</p></td>
-    <td>B - possible UI setting. Should inherit OS settings </td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>X</td>
-    <td>@@Laura I suspect  that a user settings SC would not be accepted in 2.2 and would be pushed to Silver.</td>
-  </tr>
-  <tr valign="top" align="left">
+   <tr valign="top" align="left">
     <td>[hover, focus...]</td>
     <td>&nbsp;</td>
     <td>1.4.13 Content on Hover or Focus</td>
@@ -236,38 +269,8 @@
     <td>&nbsp;</td>
     <td>@@Jim - browser exception for TOOLTIPS.    </td>
   </tr>
-  <tr valign="top" align="left">
-    <td><a href="https://www.w3.org/2016/03/09-lvtf-minutes.html#resolution01">[RESOLUTION</a>: add User Need: <strong>Users can see and operate all interface elements that are intended for users to see and operate. This includes when users have changed display settings such as text size, magnification, and cursor</strong>. 
-    (9 March 2016)]</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>X</td>
-    <td>@@Laura LVTF pushed the title attribute/tooltip obscured under the screen magnifier's large cursor issue to Silver. Resources:<br>
-      <ul><li><a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/index.php?title=User_stories_-_use_cases&oldid=752#Size_Limitations">Use Case</a>: TAGLINE: Difficulty reading tooltips for icons, which are obscured under the screen magnifier's large cursor</li>
-        <li><a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/index.php?title=Metadata_On_Hover&direction=prev&oldid=2450">Wiki page with title attribute evidence</a> (28 November 2016)</li>
-        <li><a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2016Mar/0032.html">Email:</a> Obscuring active elements and text email </li>
-        <li><a href="https://w3c.github.io/low-vision-a11y-tf/requirements.html#seeing-all-interface-elements">User need 7.1 Seeing All Interface Element</a>s (Draft Note: Possible figure to be added: hover hand obscures important tooltip text)</li>
-        <li><a href="https://www.w3.org/2016/03/09-lvtf-minutes.html#resolution01">RESOLUTION</a>: add User Need: Users can see and operate all interface elements that are intended for users to see and operate. This includes when users have changed display settings such as text size, magnification, and cursor. 
-          (9 March 2016)</li>
-    </ul></td>
-  </tr>
-  <tr valign="top" align="left">
-    <td>(visual affordance)</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>x</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr valign="top" align="left">
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
+  
+
   <tr valign="top" align="left">
     <td>&nbsp;</td>
     <td>&nbsp;</td>
