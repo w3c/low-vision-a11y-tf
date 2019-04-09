@@ -4,7 +4,7 @@
     <title>Accessibility Requirements for People with Low Vision</title>
     <meta charset='utf-8' />
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
-    <script src='https://www.w3.org/Tools/respec/respec-w3c-common' async="async" class='remove'></script>
+    <script src='https://www.w3.org/Tools/respec/respec-w3c-common' async class='remove'></script>
     <script class='remove'>
       var respecConfig = {
           // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
@@ -256,17 +256,17 @@
   </ul>
     <p class="issue">Additional User Needs will be added related to contrast and image accessibility.</p>
       <p><strong>Each section briefly explains  the issue and the user experience, and then states a specific user need after "<span class="userneedcolor">User Need - </span>".  User Needs that say “Users can...”  indicate that users can change a setting.</strong></p>
-      <section>
+  <section>
     <h2>Brightness and Color</h2>
     <p>Brightness relates to luminance and luminosity. [<em>Draft Note:</em> The Task Force plans to link to additional information on this topic.] This document  uses &quot;brightness&quot; for simplicity.</p>
     <section>
           <h3>Brightness Overall</h3>
-          <p>Bright light from a screen or other sources prevents some people with low vision (including those with photophobia and with reading disabilities such as dyslexia) from reading and causes pain for some people. Some people turn down the brightness of their screen or use an overlay. For other people, it is easier to read with a bright screen, and they sometimes increase the brightness, especially on mobile devices.</p>
+          <p>Bright light from a screen or other sources prevents some people with low vision (including those with photophobia and with reading disabilities such as dyslexia) from reading and causes pain for some people. Some people turn down the brightness of their screen or use an overlay. For other people, it is easier to read with a bright screen, and they sometimes increase the brightness, especially on mobile devices. @@Brightness adjustment is a funtion of the device hardware. That is, the monitor, the laptop, the tablet, or other mobile devices. All of these devices have brightness and contrast settings that are separate from Text Contrast below. Users may need to adjust both the device and specific operating system and application setting to achive optimal viewing. [<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_2108">UAAG 2.10.8 Video Contrast and Brightness</a>]</p>
           <div class="advisement">
         <h4>User Need - Brightness:</h4>
         <p>Users can set the  overall brightness of a display.</p>
       </div>
-        </section>
+    </section>
     <section>
           <h3>Text Contrast</h3>
           <p>As mentioned in the <a href="#light-sensitivity">Light Sensitivity</a> section, some people need low brightness, especially for backgrounds. Some people who need low brightness for backgrounds also need low brightness overall and thus need low brightness text.</p>
@@ -285,7 +285,26 @@
         <h4>User Need - Contrast:</h4>
         <p>Users can set the background color and the text color from the full color spectrum.</p>
       </div>
-        </section>
+      <section class="related">
+      <h4>Related Requirements</h4>
+        <ul>
+          <li><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">WCAG 1.4.3 Contrast (Minimum)</a></li>
+          <li><a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced">WCAG 1.4.6 Contrast (Enhanced)</a></li>
+          <li><a href="https://www.w3.org/TR/WCAG21/#non-text-contrast">WCAG 1.4.11 Non-text Contrast</a></li>
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_141">UAAG 1.4.1 Basic text Formatting (Globally)</a></li>
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic Text Formatting (by Element)</a></li>
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_131">UAAG 1.3.1 Distinguishable Highlighting</a></li>
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_132">UAAG 1.3.2 Highlighting Options</a></li>
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_133">UAAG 1.3.3 Highlighting Active Keyboard Focus</a></li>
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_134">UAAG 1.3.4 Distinguishing Enabled Elements</a></li>
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_135">UAAG 1.3.5 Distinguishing Enabled Elements</a></li>
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_187">UAAG 1.8.7 Customize Viewport Highlighting</a></li>
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_2108">UAAG 2.10.8 Video Contrast and Brightness</a></li>
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_412">UAAG 4.1.2 Expose Accessible Properties</a></li>
+        </ul>
+    </section>
+    </section>
+    
     <section>
           <h3>Not Relying on Color</h3>
           <p>Some people cannot distinguish colors... [<em>Draft Note:</em> The Task Force plans to add additional information here.]</p>
@@ -293,14 +312,20 @@
         <h4>User Need - Color:</h4>
         <p>Color is not   the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</p>
       </div>
-        </section>
-  </section>
+    </section>
+    <section class="related">
+      <h4>Related Requirements</h4>
+      <ul>
+        <li><a href="https://www.w3.org/TR/WCAG21/#use-of-color">WCAG 1.4.1 Use of Color</a></li>
+      </ul>
       <section>
-    <h2>Tracking </h2>
+  </section>
+      
+        <h2>Tracking </h2>
     <p>Tracking is following along lines of text, including getting from the end of one line to the beginning of the next line of text.</p>
     <p>This section includes rewrap, reflow, line length,  and hyphenation. Tracking is also impacted by <a href="#linespacing">line spacing</a>, <a href="#justification">justification</a>, and <a href="#margins-and-borders">margins and borders</a>, especially when blocks of text are in columns or near other text.</p>
     <section>
-          <h3>Rewrap for One Direction Scrolling</h3>
+          <h3>Rewrap for One Direction Scrolling @@rename to Reflow to mirrow WCAG?@@</h3>
           <p>For many people, with and without disabilities, it is difficult to read when they have to scroll back and forth to read a line of text. When people with low vision increase the text size and the text doesn't “reflow”, they sometimes have to scroll horizontally several screens to read a single line of text. Additionally, the scrollbar and cursor are harder to find for some. Getting from the end of a line of text, scrolling back left, and then finding the beginning of the next line can take considerable attention. This degrades reading flow and comprehension, sometimes significantly enough that effective reading is not possible when horizontal scrolling is required.</p>
           <div class="advisement">
         <h4>User Need - Rewrap:</h4>
@@ -308,6 +333,13 @@
       </div>
         <p class="issue" id="script-direction">Script direction: Rewrap above and Reflow below are written for left-right and right-left scripts for now for simplicity. We'll edit it to make it generic to apply also vertically to top-to-bottom scripts as appropriate — if we can without complicating it too much, or change it to example only.<br />
               <a href="https://www.w3.org/International/questions/qa-scripts#which">script vs. language reference</a> says “Languages don't have a direction. Scripts have a writing direction”.</p>
+               <section class="related">
+      <h4>Related Requirements</h4>
+      <ul>
+        <li><a href="https://www.w3.org/TR/WCAG21/#reflow">WCAG 1.4.10 Reflow</a></li>
+        <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_1813">UAAG 1.8.13 Multi-Column Text Reflow</a></li>
+      </ul>
+      <section>
         </section>
     <section>
           <h3>Reflow to Single Column</h3>
@@ -334,7 +366,7 @@
         <p>Users can turn hyphenation on or off.</p>
       </div>
         </section>
-  </section>
+</section>
       <section>
     <h2>Perceiving </h2>
     <p>Perceiving includes being able to recognize individual letters based on their characteristics, and see non-text information and interface elements.</p>
@@ -561,7 +593,7 @@ For this to work, content needs to be marked up appropriately based on semantic 
         <p>Content picks up all relevant user settings, such as ... [<em>Draft Note: </em>The Task Force plans to add additional information here.]</p></div>
         </section>
   </section>
-    </section>
+  </section>
 <section class='appendix'>
 <h2>Glossary</h2>
 <p>This glossary only includes important terms that are not otherwise explained in the document. Additional information on terminology is listed and linked in the <a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/References">References</a> page.</p>
