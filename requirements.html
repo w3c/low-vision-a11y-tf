@@ -257,7 +257,8 @@
 <p><strong>Each section briefly explains  the issue and the user experience, and then states a specific user need after "<span class="userneedcolor">User Need - </span>".  User Needs that say “Users can...”  indicate that users can change a setting.</strong></p>
 <section>
 <h2>Brightness and Color</h2>
-<p>Brightness relates to luminance and luminosity. [<em>Draft Note:</em> The Task Force plans to link to additional information on this topic.] This document  uses &quot;brightness&quot; for simplicity.</p>
+<p><ins>Color is combination of hue, saturation, and brighness. Hue is the tone of the color, think 'red', 'green', etc. Saturation is the intensity of tone, think shades from grey to pure color.  Brightness (also known as luminance) is the perceived amount of light coming from an object. The brighness scale is from 0% light (black) to 100% light (white). [see <a href="http://www.georeference.org/doc/colors_as_hue_saturation_and_brightness.htm">Colors as Hue, Saturation and Brightness</a> illustrated explanation]</ins>  [<em>Draft Note:</em> The Task Force plans to link to additional information on this topic.] This document  uses &quot;brightness&quot; for simplicity.</p>
+	<p>This section includes brightness overall, text contrast, and not relying on color alone.</p>
 <section>
       <h3>Brightness Overall</h3>
       <p>Bright light from a screen or other sources prevents some people with low vision (including those with photophobia and with reading disabilities such as dyslexia) from reading and causes pain for some people. Some people turn down the brightness of their screen or use an overlay. For other people, it is easier to read with a bright screen, and they sometimes increase the brightness, especially on mobile devices. @@Brightness adjustment is a funtion of the device hardware. That is, the monitor, the laptop, the tablet, or other mobile devices. All of these devices have brightness and contrast settings that are separate from Text Contrast below. Users may need to adjust both the device and specific operating system and application setting to achive optimal viewing. [<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_2108">UAAG 2.10.8 Video Contrast and Brightness</a>]</p>
@@ -268,9 +269,8 @@
       <section class="related">
     <h4>Related Requirements</h4>
     <ul>
-          <li></li>
-        </ul
-			     >
+          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_2108">UAAG Video Contrast and Brightness</a></li>
+        </ul>
   </section>
     </section>
 <section>
@@ -312,10 +312,10 @@
     </section>
 <section>
       <h3>Not Relying on Color</h3>
-      <p>Some people cannot distinguish colors... [<em>Draft Note:</em> The Task Force plans to add additional information here.]</p>
+	<p><ins>Color is an integral part of web design and interactions. However, some people cannot distinguish colors (see <a href="#color-vision">Section 2.5.4</a> above). People with color vision limitations may miss important information that is only conveyed by color. Examples include: a map with designated parking areas in green, or a form with required items marked in red. </ins>    <del>[<em>Draft Note:</em> The Task Force plans to add additional information here.]</del></p>
       <div class="advisement">
     <h4>User Need - Color:</h4>
-    <p>Color is not   the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</p>
+    <p>Color is not the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</p>
   </div>
     </section>
 <section class="related">
@@ -417,7 +417,9 @@
         <h3>Font</h3>
         <p>Some fonts/typefaces are more readable than others. For example, some people cannot read fonts with sub-pixel rendering.</p>
         <p>When users are changing fonts, it is best if they can see the fonts before making a selection, so that they do not select a font that is unreadable to them. For example, the fonts in a list are presented in their font (&quot;Times&quot; is in Times, &quot;Verdana&quot; is in Verdana, etc.), as in the figure below.</p>
-        <p>@@ add image</p>
+         <figure id="fig-font-selection-dropdown"><img alt="screen capture" src="images/lvtf-322-font.png" height="292" width="287">
+        <figcaption>Figure <span class="figno">11<!---0.250022%--></span> <span class="fig-title">Font selection dropdown, each font name shown in its font face.</span></figcaption>
+      </figure>
         <div class="advisement">
               <h4>User Need - Font:</h4>
               <p>Users can change the font face (also called font family or typeface) of all text, choosing from a wide range of fonts including sans serif and serif fonts.</p>
