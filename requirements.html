@@ -101,7 +101,7 @@
       <p>Additional information:</p>
       <ul>
     <li><a href="https://www.w3.org/WAI/users/low-vision/">Accessibility for People with Low Vision</a> links to details on visual conditions and their impact on web use, and links to related W3C work that is planned for the future</li>
-    <li><a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/References">References</a> provides sources for the information in this document <!-- @@ we might move this from a wiki page to a WAI web page later --></li>
+    <li><a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/References">References</a> provides sources for the information in this document <!-- @@ we might move this from a wiki page to a WAI web page later -->@@ References is a wiki page. Add to this document or create another WAI page (not wiki)</li>
   </ul>
     </section>
 <section>
@@ -126,7 +126,7 @@
   </section>
       <section>
     <h2>Visual Impairments</h2>
-    <p>This section briefly introduces five types of visual impairment that impact web use<!-- @@ should we make this more generic than "web" ? -->, not including total blindness:</p>
+    <p>This section briefly introduces five types of visual impairment that impact web [@@perhapd substitue &quot;digital information&quot; for &quot;web&quot;] use<!-- @@ should we make this more generic than "web" ? -->, not including total blindness:</p>
     <ul>
           <li>Visual acuity (clarity)</li>
           <li>Light and glare sensitivity</li>
@@ -217,7 +217,7 @@
     <div class="issue">
           <p>The Task Force plans to expand this section.</p>
         </div>
-    <p>Most people with low vision have multiple visual impairments. For example, people with macular degeneration usually develop central field loss (“blind spots”), poor visual acuity, low contrast sensitivity, and high light sensitivity. Other factors — such as inflammation, medication, fatigue, environment, and task —  influence a person’s functional vision in a given situation.</p>
+    <p>Most people with low vision have multiple @@<ins>issues related to their </ins>visual impairment<del>s</del>. For example, people with macular degeneration usually develop central field loss (“blind spots”), poor visual acuity, low contrast sensitivity, and high light sensitivity. Other factors — such as inflammation, medication, fatigue, environment, and task —  influence a person’s functional vision in a given situation.</p>
     <p>Fatigue is a significant issue for many people with low vision, particularly when they read text that is not displayed in an optimum way for their visual situation. Generally, the more a person needs to strain to read, the worse their visual fatigue will become. Some people can read for only a short time and then they need a break.</p>
     <p>Physical environmental factors include:</p>
     <ul>
@@ -237,12 +237,12 @@
 <!-- @@ edit &/or lvtf review: [Low vision accessibility is largely about perceiving textual information. ...] -->
 <p>User needs vary widely across people who have low vision, and one user’s needs may conflict with another user’s needs. For example, an older person might need high contrast but that might be unreadable to a person with light sensitivity; a person with good visual acuity (clarity) and tunnel vision might need to make the text size small so they can see more words at a time to read better, whereas most people with low visual acuity need large text.</p>
 <p>It is not uncommon for one person’s needs to be different from day-to-day or even throughout one day. For example, when they are more fatigued, they might need larger text or a different background color.</p>
-<p class="note">There is a difference between being able to see individual letters, being able to effectively read sentences, and being able to read for a long period of time. A person may be able to distinguish individual letters in a given text display (font, text size, etc.), but not be able to effectively read blocks of text in that same display, because the effort required to perceive the letters prevents the person from being able to understand the text well. Similarly, a person may be able to read a given text display for a short time, but it causes fatigue; the user needs different text display (larger text, more spacing, etc.) in order to read long enough to complete their task.</p>
+<p class="note">There is a difference between being able to see individual letters, being able to effectively read sentences, and being able to read for a long period of time. A person may be able to distinguish individual letters in a given text display (font, text size, etc.), but not be able to effectively read @@multiple lines  of text (blocks of text)@@ in that same display, because the effort required to perceive the letters prevents the person from being able to understand the text well. Similarly, a person may be able to read a given text display for a short time, but it causes fatigue; the user needs different text display (larger text, more spacing, etc.) in order to read long enough to complete their task.</p>
 <p>Users may need different text display for different tasks — such as reading only a few words by themselves, versus reading a couple paragraphs or reading long documents. For example, a user may be able to recognize a known street name on a map in small text with moderate contrast, yet for reading an article, the user needs larger font and more contrast.</p>
 <p>[figures: 1. Street name on a map with fairly small text size and moderate contrast, and not much else around it.  2. Long paragraph with same text size, same font, same contrast, and somewhat tight  spacing.]</p>
 <p>Thus users need to be able to adjust information display to meet their needs. An individual's optimum display for readability often requires very specific adaptations. For example, a person with high light sensitivity and low contrast sensitivity needs to set background and text colors that are not bright and that provide sufficient contrast for them to discern the text.</p>
 <p>The characteristics of text that make it more or less legible and readable are highly inter-related; that is, one characteristic is dependent on other characteristics. For example, a person with low contrast sensitivity might not be able to read small text with a contrast ratio of 5:1, but can read text at that ratio when then text is much larger; similarly, with some fonts a person does not need to increase the letter spacing, but with other fonts they do.</p>
-<p class="issue">The Task Force plans to expand this section.</p>
+<p class="issue">@@The Task Force plans to expand this section.</p>
 <p>The user needs below are grouped by categories, yet some aspects relate to different categories. This section explains user needs for:</p>
 <ul>
       <li><a href="#brightness-and-color">Brightness and Color</a></li>
@@ -254,14 +254,13 @@
       <li><a href="#work-with-user-settings">Work with User Settings</a></li>
     </ul>
 <p class="issue">Additional User Needs will be added related to contrast and image accessibility.</p>
-<p><strong>Each section briefly explains  the issue and the user experience, and then states a specific user need after "<span class="userneedcolor">User Need - </span>".  User Needs that say “Users can...”  indicate that users can change a setting.</strong></p>
+<p><strong>Each section below briefly explains  the issue and the user experience, and then states a specific user need after "<span class="userneedcolor">User Need - </span>".  User Needs that say “Users can...”  indicate that users can change a setting.</strong></p>
 <section>
 <h2>Brightness and Color</h2>
-<p><ins>Color is combination of hue, saturation, and brighness. Hue is the tone of the color, think 'red', 'green', etc. Saturation is the intensity of tone, think shades from grey to pure color.  Brightness (also known as luminance) is the perceived amount of light coming from an object. The brighness scale is from 0% light (black) to 100% light (white). [see <a href="http://www.georeference.org/doc/colors_as_hue_saturation_and_brightness.htm">Colors as Hue, Saturation and Brightness</a> illustrated explanation]</ins>  [<em>Draft Note:</em> The Task Force plans to link to additional information on this topic.] This document  uses &quot;brightness&quot; for simplicity.</p>
-	<p>This section includes brightness overall, text contrast, and not relying on color alone.</p>
+<p><ins>@@Color is combination of hue, saturation, and brighness. Hue is the tone of the color, think 'red', 'green', etc. Saturation is the intensity of tone, think shades from grey to pure color.  Brightness (also known as luminance) is the perceived amount of light coming from an object. The brighness scale is from 0% light (black) to 100% light (white). [see <a href="http://www.georeference.org/doc/colors_as_hue_saturation_and_brightness.htm">Colors as Hue, Saturation and Brightness</a> illustrated explanation]</ins> <del>Brightness relates to luminance and luminosity. [<em>Draft Note:</em> The Task Force plans to link to additional information on this topic.] </del>This document  uses &quot;brightness&quot; for simplicity.</p>
 <section>
       <h3>Brightness Overall</h3>
-      <p>Bright light from a screen or other sources prevents some people with low vision (including those with photophobia and with reading disabilities such as dyslexia) from reading and causes pain for some people. Some people turn down the brightness of their screen or use an overlay. For other people, it is easier to read with a bright screen, and they sometimes increase the brightness, especially on mobile devices. @@Brightness adjustment is a funtion of the device hardware. That is, the monitor, the laptop, the tablet, or other mobile devices. All of these devices have brightness and contrast settings that are separate from Text Contrast below. Users may need to adjust both the device and specific operating system and application setting to achive optimal viewing. [<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_2108">UAAG 2.10.8 Video Contrast and Brightness</a>]</p>
+      <p>Bright light from a screen or other sources prevents some people with low vision (including those with photophobia and with reading disabilities such as dyslexia) from reading and causes pain for some people. Some people turn down the brightness of their screen or use an overlay. For other people, it is easier to read with a bright screen, and they sometimes increase the brightness, especially on mobile devices. <ins>@@Brightness adjustment is a funtion of the device hardware. That is, the monitor, the laptop, the tablet, or other mobile devices. All of these devices have brightness and contrast settings that are separate from Text Contrast below. Users may need to adjust both the device and specific operating system and application setting to achive optimal viewing. [<a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_2108">UAAG 2.10.8 Video Contrast and Brightness</a>]</ins></p>
       <div class="advisement">
     <h4>User Need - Brightness:</h4>
     <p>Users can set the  overall brightness of a display.</p>
@@ -269,8 +268,9 @@
       <section class="related">
     <h4>Related Requirements</h4>
     <ul>
-          <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_2108">UAAG Video Contrast and Brightness</a></li>
-        </ul>
+          <li></li>
+        </ul
+			     >
   </section>
     </section>
 <section>
@@ -312,10 +312,10 @@
     </section>
 <section>
       <h3>Not Relying on Color</h3>
-	<p><ins>Color is an integral part of web design and interactions. However, some people cannot distinguish colors (see <a href="#color-vision">Section 2.5.4</a> above). People with color vision limitations may miss important information that is only conveyed by color. Examples include: a map with designated parking areas in green, or a form with required items marked in red. </ins>    <del>[<em>Draft Note:</em> The Task Force plans to add additional information here.]</del></p>
+      <p><ins>@@Color is an integral part of web design and interactions. However, some people cannot distinguish colors (see <a href="#color-vision">Section 2.5.4</a> above). People with color vision limitations may miss important information that is only conveyed by color. Examples include: a map with designated parking areas in green, or a form with required items marked in red. </ins>    <del>[<em>Draft Note:</em> The Task Force plans to add additional information here.]</del></p>
       <div class="advisement">
     <h4>User Need - Color:</h4>
-    <p>Color is not the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</p>
+    <p>Color is not   the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</p>
   </div>
     </section>
 <section class="related">
@@ -328,7 +328,7 @@
       <p>Tracking is following along lines of text, including getting from the end of one line to the beginning of the next line of text.</p>
       <p>This section includes rewrap, reflow, line length,  and hyphenation. Tracking is also impacted by <a href="#linespacing">line spacing</a>, <a href="#justification">justification</a>, and <a href="#margins-and-borders">margins and borders</a>, especially when blocks of text are in columns or near other text.</p>
       <section>
-    <h3>Rewrap for One Direction Scrolling @@rename to Reflow to mirrow WCAG?@@</h3>
+    <h3>Rewrap for One Direction Scrolling @@rename to Reflow to mirror WCAG?@@</h3>
     <p>For many people, with and without disabilities, it is difficult to read when they have to scroll back and forth to read a line of text. When people with low vision increase the text size and the text doesn't “reflow”, they sometimes have to scroll horizontally several screens to read a single line of text. Additionally, the scrollbar and cursor are harder to find for some. Getting from the end of a line of text, scrolling back left, and then finding the beginning of the next line can take considerable attention. This degrades reading flow and comprehension, sometimes significantly enough that effective reading is not possible when horizontal scrolling is required.</p>
     <div class="advisement">
           <h4>User Need - Rewrap:</h4>
@@ -382,7 +382,7 @@
               <p>Users can turn hyphenation on or off.</p>
             </div>
         <section class="related">
-          <h4>Related Requirements</h4>
+              <h4>Related Requirements</h4>
               <ul>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_146">UAAG 1.4.6 Advanced text formatting</a></li>
           </ul>
@@ -400,7 +400,7 @@
         <ul>
               <li>Text settings don't increase the text in tool-tip text and other pop-up text</li>
               <li>Text settings don't increase the text in images</li>
-              <li>Text settings don't increase the text in maps<!-- @@ edit &/or lvtf review:  [@@ is this different from images?]  --></li>
+              <li>Text settings don't increase the text in maps<!-- @@ edit &/or lvtf review:  [@@ is this different from images?]  -->  [@@ is this different from images?] </li>
             </ul>
         <div class="advisement">
               <h4>User Need - Text Size:</h4>
@@ -409,6 +409,7 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
+            <li>WCAG 1.4.2 Basic Text Formatting</li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic text formatting (by Element)</a></li>
           </ul>
             </section>
@@ -417,15 +418,14 @@
         <h3>Font</h3>
         <p>Some fonts/typefaces are more readable than others. For example, some people cannot read fonts with sub-pixel rendering.</p>
         <p>When users are changing fonts, it is best if they can see the fonts before making a selection, so that they do not select a font that is unreadable to them. For example, the fonts in a list are presented in their font (&quot;Times&quot; is in Times, &quot;Verdana&quot; is in Verdana, etc.), as in the figure below.</p>
-         <figure id="fig-font-selection-dropdown"><img alt="screen capture" src="images/lvtf-322-font.png" height="292" width="287">
-        <figcaption>Figure <span class="figno">11<!---0.250022%--></span> <span class="fig-title">Font selection dropdown, each font name shown in its font face.</span></figcaption>
-      </figure>
+       <figure id="fig-font-selection-dropdown"><img alt="screen capture" src="images/lvtf-322-font.png" height="292" width="287">
+        <figcaption>Figure <span class="figno">xx<!---0.250022%--></span> <span class="fig-title">Font selection dropdown, each font name shown in its font face.</span></figcaption>
         <div class="advisement">
               <h4>User Need - Font:</h4>
               <p>Users can change the font face (also called font family or typeface) of all text, choosing from a wide range of fonts including sans serif and serif fonts.</p>
             </div>
         <section class="related">
-          <h4>Related Requirements</h4>
+              <h4>Related Requirements</h4>
               <ul>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_141">UAAG 1.4.1 Basic text formatting (Globally)</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic text formatting (by Element)</a></li>
@@ -436,7 +436,7 @@
           <section>
         <h3>Style</h3>
         <p>For some people, it is difficult to read  text that is all italicized or underlined. For some people, bold text is easier to read. </p>
-        <p>This user need applies to <a href="#blockstextdef">blocks of text</a><!-- @@ To Do - add a style for definition links -->, not individual words or phrases. A related user need is <a href="#element-level-customization">Element-level Customization</a>.</p>
+        <p>This user need applies to @@[removed link to blocks of text, defined at first instance in document@@ blocks of text, not individual words or phrases. A related user need is <a href="#element-level-customization">Element-level Customization</a>.</p>
         <div class="advisement">
               <h4>User Need - Style:</h4>
               <p>Users can change the text style (underline, italic, bold) of blocks of text.</p>
@@ -444,8 +444,8 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
-                <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_141">UAAG 1.4.1 Basic text formatting (Globally)</a></li>
-                <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic text formatting (by Element)</a></li>
+            <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_141">UAAG 1.4.1 Basic text formatting (Globally)</a></li>
+            <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic text formatting (by Element)</a></li>
           </ul>
             </section>
       </section>
@@ -494,7 +494,7 @@
           <p>This section includes line spacing, letter spacing,  word spacing,  justification, margins and borders, and spacing between elements.</p>
           <section>
         <h3>Line Spacing</h3>
-        <p>The space between wrapping lines @@(removed blocks of text) of text is also called <em>leading</em>. Some people need more space between lines to be able to read text. Line spacing also helps with tracking.</p>
+        <p>The space <ins>between wrapping lines @@(removed blocks of text) </ins> <del>between lines in a block of text</del> is also called <em>leading</em>. Some people need more space between lines to be able to read text. Line spacing also helps with tracking.</p>
         <div class="advisement">
               <h4>User Need - Line Spacing:</h4>
               <p>Users can change the line spacing (leading) for blocks of text.</p>
@@ -502,8 +502,13 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
-                <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_141">UAAG 1.4.1 Basic text formatting (Globally)</a></li>
-                <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic text formatting (by Element)</a></li>
+            <li> <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html">WCAG 1.4.5:  Images of Text</a></li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">WCAG 1.4.8:  Visual Presentation</a><br>
+                </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html">WCAG 1.4.9:  Images of Text</a> </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG 1.4.12:  Text Spacing</a></li>
+            <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_141">UAAG 1.4.1 Basic text formatting (Globally)</a></li>
+            <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic text formatting (by Element)</a></li>
           </ul>
             </section>
       </section>
@@ -517,7 +522,10 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
-                <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_143">UAAG 1.4.3 Blocks of text (Globally)</a></li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">WCAG 1.4.8:  Visual Presentation</a><br>
+                </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG 1.4.12:  Text Spacing</a></li>
+            <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_143">UAAG 1.4.3 Blocks of text (Globally)</a></li>
           </ul>
             </section>
       </section>
@@ -531,6 +539,9 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
+            <li> <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html">WCAG 1.3.2:  Meaningful Sequence</a> </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">WCAG 1.4.8:  Visual Presentation</a> </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG 1.4.12:  Text Spacing</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_146">UAAG 1.4.6 Advanced text formatting</a></li>
           </ul>
             </section>
@@ -538,7 +549,7 @@
           <section>
         <h3>Justification</h3>
         <p>Justification or alignment options usually include: left, right, full/both, centered.</p>
-        <p>Justification impacts readability and tracking. Sometimes full justification makes reading more difficult because extra space between words causes @@“<a href="https://en.wikipedia.org/wiki/River_(typography)">River (typography)</a> of white”  making it difficult to track along a line of text, or less space between words makes it difficult to distinguish separate words. Some people find it easier to track from the end of one line to the next with full justification, and others prefer left justification (for left-to-right scripts). </p>
+        <p>Justification impacts readability and tracking. Sometimes full justification makes reading more difficult because extra space between words causes “<ins>@@<a href="https://en.wikipedia.org/wiki/River_(typography)">Rivers</a> </ins> of white”  making it difficult to track along a line of text, or less space between words makes it difficult to distinguish separate words. Some people find it easier to track from the end of one line to the next with full justification, and others prefer left justification (for left-to-right scripts). <del>@@[<em>Draft Note:</em> The Task Force plans to add a glossary definition for “river” or “river of white”. For now, here's an explanation and example: <a href="https://en.wikipedia.org/wiki/River_(typography)">River (typography)</a>.]</del></p>
         <div class="advisement">
               <h4>User Need - Justification:</h4>
               <p>Users can change the justification / alignment (left, right, full/both, centered) of blocks of text.</p>
@@ -546,6 +557,9 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">WCAG 1.4.8:  Visual Presentation</a><br>
+                </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG 1.4.12:  Text Spacing</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_143">UAAG 1.4.3 Blocks of text (Globally)</a></li>
           </ul>
             </section>
@@ -561,6 +575,9 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">WCAG 1.4.8:  Visual Presentation</a><br>
+                </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG 1.4.12:  Text Spacing</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic text formatting (by Element)</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_143">UAAG 1.4.3 Blocks of text (Globally)</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_187">UAAG 1.8.7 Customize Viewport Highlighting</a></li>
@@ -578,8 +595,13 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
-                <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic text formatting (by Element)</a></li>
-                <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_143">UAAG 1.4.3 Blocks of text (Globally)</a></li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html">WCAG 1.4.5:  Images of Text</a></li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">WCAG 1.4.8:  Visual Presentation</a><br>
+                </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html">WCAG 1.4.9:  Images of Text</a></li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG 1.4.12:  Text Spacing</a></li>
+            <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic text formatting (by Element)</a></li>
+            <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_143">UAAG 1.4.3 Blocks of text (Globally)</a></li>
           </ul>
             </section>
       </section>
@@ -622,6 +644,13 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
+            <li> <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">WCAG1.4.3:  Contrast (Minimum)</a></li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">WCAG 1.4.4:  Resize Text</a> </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html">WCAG 1.4.5:  Images of Text</a> </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html">WCAG 1.4.6:  Contrast (Enhanced)</a> </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">WCAG 1.4.8:  Visual Presentation</a>            </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html">WCAG 1.4.9:  Images of Text</a> </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG 1.4.12:  Text Spacing</a> </li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_142">UAAG 1.4.2 Basic text formatting (by Element)</a></li>
           </ul>
             </section>
@@ -629,7 +658,7 @@
         </section>
     <section>
           <h2>Point of Regard and Proximity </h2>
-          <p>The point of regard is the area that the user is viewing.<!-- @@clean up --> [<em>Draft Note:</em> More info is available in: <a href="https://www.w3.org/TR/UAAG20/#def-point-of-regard">UAAG 2 Glossary</a> and IndieUI wiki. The Task Force will probably add a glossary definition to this document.] Proximity is the space between items. In user interface generally, proximity is about using space to group related content and separate unrelated content.</p>
+          <p>The point of regard is the area that the user is viewing.<!-- @@clean up --> @@this need clean up. [<em>Draft Note:</em> More info is available in: <a href="https://www.w3.org/TR/UAAG20/#def-point-of-regard">UAAG 2 Glossary</a> and IndieUI wiki. The Task Force will probably add a glossary definition to this document.] Proximity is the space between items. In user interface generally, proximity is about using space to group related content and separate unrelated content.</p>
           <p>As discussed in the <a href="#visfie">Field of Vision</a> section, some people with low vision see only a small amount of content and/or the user interface at a time.</p>
           <p class="issue">The Task Force plans to add additional information in this section related to point of regard and proximity.</p>
           <section>
@@ -646,8 +675,11 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
+            <li> <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">WCAG 1.4.8:  Visual Presentation</a> </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow">WCAG 1.4.10: Reflow</a> </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus">WCAG 1.4.13:  Content on Hover or Focus</a> </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html">WCAG 2.4.3:  Focus Order</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_186">UAAG 1.8.6 Maintain Point of Regard</a></li>
-            
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_189">UAAG 1.8.9 Provide Viewport History</a></li>
           </ul>
             </section>
@@ -668,12 +700,18 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
+            <li> <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">WCAG 1.3.1:  Info and Relationships</a> </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus">WCAG 1.4.13:  Content on Hover or Focus</a> </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">WCAG 2.4.6:  Headings and Labels</a> </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html">WCAG 2.4.8:  Location</a> </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html">WCAG 3.2.5:  Change on Request</a> </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html">WCAG 3.3.2:  Labels or Instructions</a> </li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_182">UAAG 1.8.2 Move Viewport to Selection and Focus</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_1810">UAAG 1.8.10 Allow Top-Level Viewport Open on Request</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_1811">UAAG 1.8.11 Allow Top-Level Viewport Focus Control</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_11019">UAAG 1.10.1 Show Related Elements</a></li>
           </ul>
-</section>
+            </section>
       </section>
         </section>
     <section>
@@ -696,8 +734,14 @@
               <p>Users can see all  interface elements that are intended for users to see, including when users have changed display settings such as text size.</p>
             </div>
         <section class="related">
-          <h4>Related Requirements</h4>
+              <h4>Related Requirements</h4>
               <ul>
+            <li>
+             <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">WCAG 1.4.4:  Resize Text</a>                </li>
+            <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">WCAG 1.4.8:  Visual Presentation</a>              </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow">WCAG 1.4.10: Reflow</a>              </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG 1.4.12:  Text Spacing</a>              </li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus">WCAG 1.4.13:  Content on Hover or Focus</a>              </li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_271">UAAG 2.7.1 Customize Display of Controls for User Interface Commands, Functions, and Add-ons</a></li>
             <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_511">UAAG 5.1.1 Comply with WCAG</a></li>
           </ul>
@@ -718,7 +762,11 @@
         <section class="related">
               <h4>Related Requirements</h4>
               <ul>
-            <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_144">UAAG 1.4.4 Configured and Reflowed Text Printing</a></li>
+                <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">WCAG 1.4.4:  Resize Text</a></li>
+                <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">WCAG 1.4.8:  Visual Presentation</a></li>
+                <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow">WCAG 1.4.10: Reflow</a></li>
+                <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG 1.4.12:  Text Spacing</a></li>
+                <li><a href="http://www.w3.org/TR/2015/NOTE-UAAG20-20151215/#sc_144">UAAG 1.4.4 Configured and Reflowed Text Printing</a></li>
           </ul>
             </section>
       </section>
@@ -740,10 +788,11 @@
       </section>
         </section>
   </section>
-    <section class='appendix'>
-	    <p>@@ removed Glossary</p>
+      <section class='appendix'></section>
+      <section class='appendix'>
+      <p>@@Removed Glossary - only had 1 item, blocks of text. now defined in text.</p>
     <h2>Image Descriptions</h2>
-    <p>@@</p>
+    <p>@@add these or not?</p>
   </section>
       <section class='appendix'>
     <h2>Acknowledgments</h2>
