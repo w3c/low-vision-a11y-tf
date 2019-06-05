@@ -328,14 +328,14 @@
       <p>Tracking is following along lines of text, including getting from the end of one line to the beginning of the next line of text.</p>
       <p>This section includes reflow, reflow, line length,  and hyphenation. Tracking is also impacted by <a href="#linespacing">line spacing</a>, <a href="#justification">justification</a>, and <a href="#margins-and-borders">margins and borders</a>, especially when blocks of text are in columns or near other text.</p>
       <section>
-    <h3>Reflow for One Direction Scrolling/h3>
-    <p>For many people, with and without disabilities, it is difficult to read when they have to scroll back and forth to read a line of text. When people with low vision increase the text size and the text doesn't “reflow”, they sometimes have to scroll horizontally several screens to read a single line of text. Additionally, the scrollbar and cursor are harder to find for some. Getting from the end of a line of text, scrolling back left, and then finding the beginning of the next line can take considerable attention. This degrades reading flow and comprehension, sometimes significantly enough that effective reading is not possible when horizontal scrolling is required.</p>
-    <div class="advisement">
-          <h4>User Need - Reflow</h4>
-          <p>Blocks of text reflow so that only one direction of scrolling is needed, e.g., for left-right and right-left scripts (languages), usually vertical scrolling and not horizontal scrolling.<ins>For vertical scripts (top-bottom) usually horizontal scrolling and not vertical scrolling. </ins></p>
-        </div>
-    <p class="issue" id="script-direction">@@ remove this issue. see above insert?  Script direction: Reflow above and Single Column below are written for left-right and right-left scripts for now for simplicity. @@We'll edit it to make it generic to apply also vertically to top-to-bottom scripts as appropriate — if we can without complicating it too much, or change it to example only.<br />
-          <a href="https://www.w3.org/International/questions/qa-scripts#which">script vs. language reference</a> says “Languages don't have a direction. Scripts have a writing direction”.@@ should this go in the references?</p>
+ <h3>Rewrap for One Direction Scrolling</h3>
+          <p>For many people, with and without disabilities, it is difficult to read when they have to scroll back and forth to read a line of text. When people with low vision increase the text size and the text doesn't “reflow”, they sometimes have to scroll horizontally several screens to read a single line of text. Additionally, the scrollbar and cursor are harder to find for some. Getting from the end of a line of text, scrolling back left, and then finding the beginning of the next line can take considerable attention. This degrades reading flow and comprehension, sometimes significantly enough that effective reading is not possible when horizontal scrolling is required.</p>
+          <div class="advisement">
+        <h4>User Need - Rewrap:</h4>
+        <p>Blocks of text rewrap so that only one direction of scrolling is needed, e.g., for left-right and right-left scripts (languages), usually vertical scrolling and not horizontal scrolling.</p>
+      </div>
+        <p class="issue" id="script-direction">Script direction: Rewrap above and Reflow below are written for left-right and right-left scripts for now for simplicity. We'll edit it to make it generic to apply also vertically to top-to-bottom scripts as appropriate — if we can without complicating it too much, or change it to example only.<br />
+              <a href="https://www.w3.org/International/questions/qa-scripts#which">script vs. language reference</a> says “Languages don't have a direction. Scripts have a writing direction”.</p>
     <section class="related">
           <h4>Related Requirements</h4>
           <ul>
