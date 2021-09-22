@@ -45,23 +45,10 @@ ul {
 <th title="Field #8">Primary author</th>
 <th title="Field #9">Link to draft document</th>
 <th title="Field #10">Status</th>
-<th title="Field #11">FIELD11</th>
+<th title="Field #11">Priority</th>
 </tr></thead>
 <tbody><tr>
-<td>Proximity of interaction relationships</td>
-<td>This covers proximity of labels and controls  as well as proximity of on-screen keyboard to input fields - e.g. Desmos on iPad where these two things are not near each other.</td>
-<td>Proximity</td>
-<td>Currently label and control proximity is an advisory technique) to make sure fields and labels are in same magnified viewport and in predictable locations such as checkbox to left of label.</td>
-<td>Authors</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>none</td>
-<td>none</td>
-<td>unassigned</td>
-<td> </td>
-</tr>
-<tr>
-<td>Disabled Components have sufficient  contrast</td>
+<td>Disabled Components have sufficient contrast</td>
 <td>Provide icons for disabled UI interface elements and ensure disabled/inactive elements have sufficient contrast.</td>
 <td>Contrast</td>
 <td>(AG GitHub Issue 661 and suggested 2.2 SC. <br/>* https://github.com/w3c/wcag/issues/661<br/>* https://docs.google.com/spreadsheets/d/11IKqjRFvkRd2dAfUiyc5whhB3yIYXvSiirWct7KQIB0/edit#gid=0</td>
@@ -74,37 +61,63 @@ ul {
 <td> </td>
 </tr>
 <tr>
-<td>Minimum viewport and text input size </td>
-<td>Use of sticky headers  and other layout containers  can cause a small area for reading, especially with zoomed in content.<br/><br/>Input fields and other content areas that when zoomed are very short - for example that only show less than 3 lines of content but when not zoomed show many lines.</td>
+<td>Enhanced Contrast</td>
+<td>Minimum contrast for body text needs to be above at 7:1 (11:1 preferred). Body text defined as more than two lines of related text in a block or column.</td>
+<td>Contrast</td>
+<td>Related to SC 1.4.6 (but not fully covered by)</td>
+<td>Authors</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>none</td>
+<td>none</td>
+<td>unassigned</td>
+<td> </td>
+</tr>
+<tr>
+<td>Minimum background brightness</td>
+<td>Minimum background brightness for dark text on a light background</td>
+<td>Contrast</td>
+<td>Related to SC 1.4.3 and 1.4.6</td>
+<td>Authors</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>none</td>
+<td>none</td>
+<td>unassigned</td>
+<td> </td>
+</tr>
+<tr>
+<td>Support Local adaptation</td>
+<td>Minimum padding around text of 1em, *if* the text container’s background (div) is more than 2:1 contrast with the larger surrounding background. (addresses local adaptation issues)</td>
+<td>Contrast</td>
+<td>Related to SC 1.4.3 and 1.4.6</td>
+<td>Authors</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>none</td>
+<td>none</td>
+<td>unassigned</td>
+<td> </td>
+</tr>
+<tr>
+<td>Proximity of interaction relationships</td>
+<td>This covers proximity of labels and controls as well as proximity of on-screen keyboard to input fields - e.g. Desmos on iPad where these two things are not near each other.</td>
+<td>Proximity</td>
+<td>Currently label and control proximity is an advisory technique) to make sure fields and labels are in same magnified viewport and in predictable locations such as checkbox to left of label.</td>
+<td>Authors</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>none</td>
+<td>none</td>
+<td>unassigned</td>
+<td> </td>
+</tr>
+<tr>
+<td>Minimum viewport and text input size</td>
+<td>Use of sticky headers and other layout containers can cause a small area for reading, especially with zoomed in content.<br/><br/>Input fields and other content areas that when zoomed are very short - for example that only show less than 3 lines of content but when not zoomed show many lines.</td>
 <td>Viewport</td>
 <td>Related to SC 1.4.10 but not directly covered.</td>
 <td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>none</td>
-<td>none</td>
-<td>unassigned</td>
-<td> </td>
-</tr>
-<tr>
-<td>Loss of focus on form submit</td>
-<td>When a page is submitted the page may reload the focus is returned to the body of the page changing the context of the magnified area.</td>
-<td>Focus</td>
-<td>Related to SC 2.4.3  but not directly covered.</td>
-<td>Authors</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>none</td>
-<td>none</td>
-<td>unassigned</td>
-<td> </td>
-</tr>
-<tr>
-<td>Use of Affordance (including sufficient contrast of affordance) for UI Components</td>
-<td>Affordance communicates that something has a particular function.  When there is no affordance users need to scan, read, and interpret what the text or icons mean to determine functionality.</td>
-<td>Affordance</td>
-<td>Related to 3.2.7 Visible Controls.</td>
-<td>Authors</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>none</td>
@@ -126,8 +139,73 @@ ul {
 <td> </td>
 </tr>
 <tr>
+<td>Limit large areas of white space -</td>
+<td>Extra white spacing can mean only a few items are visible at a time on a website requiring vertical scrolling reducing the information available at a given time to users who are zoomed in. This removes context from controls and information.</td>
+<td>Viewport</td>
+<td>Related to targe spacing.</td>
+<td>Authors</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>none</td>
+<td>none</td>
+<td>unassigned</td>
+<td> </td>
+</tr>
+<tr>
+<td>Content over other content.</td>
+<td>Situations where content such as a passive cookie notice doesn&#39;t obstruct access to a site when not zoomed in but obstructs site when zoomed in - but the notice can be accepted. This isn&#39;t so much as fail under current requirements as it can be accepted and dismissed but requiring low vision users to accept something that a non-disabled user can choose not to seems un equal. <br/>This issue also occurs with videos that cover text when zoomed in or when controls cover text when zoomed in but the text can be scrolled.</td>
+<td>Viewport</td>
+<td>TBD</td>
+<td>Authors</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>none</td>
+<td>none</td>
+<td>unassigned</td>
+<td> </td>
+</tr>
+<tr>
+<td>Maximize use of viewport</td>
+<td>Sometimes panels or other UI elements take up valuable real estate but can&#39;t be collapsed/closed forcing content into small areas. (e.g. Google slides with fixed width slides on left side).</td>
+<td>Viewport</td>
+<td>None</td>
+<td>TBD</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>none</td>
+<td>none</td>
+<td>unassigned</td>
+<td> </td>
+</tr>
+<tr>
+<td>Loss of focus on form submit</td>
+<td>When a page is submitted the page may reload the focus is returned to the body of the page changing the context of the magnified area.</td>
+<td>Focus</td>
+<td>Related to SC 2.4.3 but not directly covered.</td>
+<td>Authors</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>none</td>
+<td>none</td>
+<td>unassigned</td>
+<td> </td>
+</tr>
+<tr>
+<td>Use of Affordance (including sufficient contrast of affordance) for UI Components</td>
+<td>Affordance communicates that something has a particular function. When there is no affordance users need to scan, read, and interpret what the text or icons mean to determine functionality.</td>
+<td>Affordance</td>
+<td>Related to 3.2.7 Visible Controls.</td>
+<td>Authors</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>none</td>
+<td>none</td>
+<td>unassigned</td>
+<td> </td>
+</tr>
+<tr>
 <td>Visual access to alternative text</td>
-<td>Users with low vision and other disabilities may benefit from access to alternative text on non-text elements.  </td>
+<td>Users with low vision and other disabilities may benefit from access to alternative text on non-text elements.</td>
 <td>Alternative Text</td>
 <td>Related to but not required for SC 1.1.1</td>
 <td>UAAG</td>
@@ -152,50 +230,11 @@ ul {
 <td> </td>
 </tr>
 <tr>
-<td>Scaling for resize of text for large type  elements</td>
-<td>Large headings may already be 200% the body size of text. Responsive design reduces amount of content on screen taking away context and surrounding context.  Requiring all text to scale by 200% may not be practical or help.  Text needs to scale in proportion so relationships can still be determined.</td>
-<td>Resize Text</td>
-<td>Not addressed by SC 1.4.4</td>
-<td>Authors</td>
-<td>TBD</td>
-<td>Yes</td>
-<td>none</td>
-<td>none</td>
-<td>unassigned</td>
-<td> </td>
-</tr>
-<tr>
-<td>Limit large areas of white space -</td>
-<td>Extra white spacing can mean only a few items are visible at a time on a website requiring vertical scrolling reducing the information available at a given time to users who are zoomed in.  This removes context from controls and information.</td>
-<td>Viewport</td>
-<td>Related to targe spacing.</td>
-<td>Authors</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>none</td>
-<td>none</td>
-<td>unassigned</td>
-<td> </td>
-</tr>
-<tr>
 <td>Text alignment on edge of viewport</td>
-<td>When text is aligned on the left edge it can make it difficult to read the first characters and thus the first word of text.  A small amount of padding on the edges of text that adjoins the edge of the screen can assist some users.</td>
-<td>Text</td>
+<td>When text is aligned on the left edge it can make it difficult to read the first characters and thus the first word of text. A small amount of padding on the edges of text that adjoins the edge of the screen can assist some users.</td>
+<td>Font</td>
 <td>none</td>
 <td>TBD</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>none</td>
-<td>none</td>
-<td>unassigned</td>
-<td> </td>
-</tr>
-<tr>
-<td>Content over other content.</td>
-<td>Situations where content such as a passive cookie notice doesn&#39;t obstruct access to a site when not zoomed in but obstructs site when zoomed in - but the notice can be accepted. This isn&#39;t so much as fail under current requirements as it can be accepted and dismissed but requiring low vision users to accept something that a non-disabled user can choose not to seems un equal.  <br/>This issue also occurs with videos that cover text when zoomed in or when controls cover text when zoomed in but the text can be scrolled.</td>
-<td>Viewport</td>
-<td>TBD</td>
-<td>Authors</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>none</td>
@@ -231,7 +270,7 @@ ul {
 </tr>
 <tr>
 <td>Font replacement</td>
-<td>Ability to change fonts without font icons disappearing </td>
+<td>Ability to change fonts without font icons disappearing</td>
 <td>Font</td>
 <td>While we do have role img techniques in WCAG 2.1 that can be used this is not addressed adequately.</td>
 <td>TBD</td>
@@ -245,7 +284,7 @@ ul {
 <tr>
 <td>Alternative themes</td>
 <td>Support for high contrast/dark mode and alternative themes</td>
-<td>Typography</td>
+<td>Personalization</td>
 <td>Related to SC 1.4.8</td>
 <td>TBD</td>
 <td>Yes</td>
@@ -270,7 +309,7 @@ ul {
 </tr>
 <tr>
 <td>Text resize greater than 200% of default</td>
-<td>SC 1.4.10 only requires that text not scroll in two direction at 320CSS pixels (horizontally). This means text can becomes smaller when you zoom in as long as at some point it can be 200% of the default.  Some users need text to become larger than 200%.</td>
+<td>SC 1.4.10 only requires that text not scroll in two direction at 320CSS pixels (horizontally). This means text can becomes smaller when you zoom in as long as at some point it can be 200% of the default. Some users need text to become larger than 200%.</td>
 <td>Resize Text</td>
 <td>Related to SC 1.4.10 but not directly covered.</td>
 <td>TBD</td>
@@ -282,57 +321,20 @@ ul {
 <td> </td>
 </tr>
 <tr>
-<td>Maximize use of viewport</td>
-<td>Sometimes panels or other UI elements take up valuable real estate but can&#39;t be collapsed/closed forcing content into small areas.  (e.g. Google slides with fixed width slides on left side).<br/></td>
-<td>Viewport</td>
-<td>None</td>
+<td>Scaling for resize of text for large type elements</td>
+<td>Large headings may already be 200% the body size of text. Responsive design reduces amount of content on screen taking away context and surrounding context. Requiring all text to scale by 200% may not be practical or help. Text needs to scale in proportion so relationships can still be determined.</td>
+<td>Resize Text</td>
+<td>Not addressed by SC 1.4.4</td>
+<td>Authors</td>
 <td>TBD</td>
 <td>Yes</td>
-<td>Yes</td>
 <td>none</td>
 <td>none</td>
 <td>unassigned</td>
 <td> </td>
 </tr>
-<tr>
-<td>Enhanced Contrast</td>
-<td>Minimum contrast for body text needs to be above at 7:1 (11:1 preferred).  Body text defined as more than two lines of related text in a block or column.</td>
-<td>Contrast</td>
-<td>Related to SC 1.4.6 (but not fully covered by)</td>
-<td>Authors</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>none</td>
-<td>none</td>
-<td>unassigned</td>
-<td> </td>
-</tr>
-<tr>
-<td>Minimum background brightness</td>
-<td>Minimum background brightness for dark text on a light background</td>
-<td>Contrast</td>
-<td>Related to SC 1.4.3 and 1.4.6</td>
-<td>Authors</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>none</td>
-<td>none</td>
-<td>unassigned</td>
-<td> </td>
-</tr>
-<tr>
-<td>Support Local adaptation </td>
-<td>Minimum padding around text of 1em, *if* the text container’s background (div) is more than 2:1 contrast with the larger surrounding background. (addresses local adaptation issues)</td>
-<td>Contrast</td>
-<td>Related to SC 1.4.3 and 1.4.6</td>
-<td>Authors</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>none</td>
-<td>none</td>
-<td>unassigned</td>
-<td> </td>
-</tr>
-</tbody></table>
+</tbody>
+  </table>
+  
   </body>
 </html>
