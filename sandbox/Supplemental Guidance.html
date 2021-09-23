@@ -29,6 +29,9 @@ ul {
 margin left: 0;
     line-height: 123%;
 }
+a, a:link, a:visited {
+    color: bisque;
+}
 </style>
 </head>
 <body>
@@ -38,16 +41,76 @@ margin left: 0;
   <thead>
     <tr>
       <th>Short Name</th>
-      <th>Guidance description</th>
+      <th>Brief Description with Link to Discussion &amp;/or Draft</th>
       <th>Category</th>
-      <th>Relationship to WCAG 2.2 guidelines</th>
-      <th>Applicability to technology, user agents, or authors</th>
-      <th>Potential for WCAG 2.3</th>
-      <th>Potential for WCAG 3</th>
-      <th>Primary author</th>
-      <th>Link to draft document</th>
+      <th>2.2 Relationship</th>
+      <th>User Agents? Authors? Technology?</th>
+      <th>WCAG 2.3 ?</th>
+      <th>WCAG 3 ?</th>
+      <th>Lead Editors</th>
       <th>Status</th>
       <th>Priority</th>
+    </tr>
+    <tr>
+      <td>Visual access to alternative text</td>
+      <td>Users with low vision and other disabilities may benefit from access to alternative text on non-text elements. They may also need to change the style.</td>
+      <td>Alternative Text</td>
+      <td>Related to but not required for SC 1.1.1</td>
+      <td>UAAG</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>none</td>
+      <td>unassigned</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Alternative themes</td>
+      <td>Support for high contrast/dark mode and alternative themes</td>
+      <td>Personalization</td>
+      <td>Related to SC 1.4.8</td>
+      <td>TBD</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>none</td>
+      <td>unassigned</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Proximity</td>
+      <td>Related info is close to each other, e.g., labels and controls.<br>
+        <a href="https://github.com/w3c/low-vision-a11y-tf/discussions/108"><strong>Discussion 108</strong></a></td>
+      <td>Layout Design</td>
+      <td><p>WCAG Advisory Technique @@link, <a href="https://www.w3.org/TR/UAAG20/#sc_1101">UAAG        1.10.1 </a></p></td>
+      <td>Authors</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>none</td>
+      <td>unassigned</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Loss of focus on form submit</td>
+      <td>When a page is submitted the page may reload the focus is returned to the body of the page changing the context of the magnified area.</td>
+      <td>Focus</td>
+      <td>Related to SC 2.4.3 but not directly covered.</td>
+      <td>Authors</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>none</td>
+      <td>unassigned</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UI components have clear affordance</td>
+      <td>Users can recognize UI components by how they look. (e.g., a form field has a plain border). Overlaps with COGA, e.g., <a href="https://wai-wcag-supplemental.netlify.app/wcag-supplemental/supplemental-guidance/">Objective 1</a> and <a href="https://www.w3.org/WAI/tips/designing/#ensure-that-interactive-elements-are-easy-to-identify">Ensure that interactive elements are easy to identify</a> <br></td>
+      <td>Affordance, Contrast</td>
+      <td>Related to 3.2.7 Visible Controls &amp; <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-text Contrast </a></td>
+      <td>Authors</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>none</td>
+      <td>unassigned</td>
+      <td></td>
     </tr>
   </thead>
   <tbody>
@@ -55,15 +118,10 @@ margin left: 0;
       <td>Disabled Components have sufficient contrast</td>
       <td>Provide icons for disabled UI interface elements and ensure disabled/inactive elements have sufficient contrast.</td>
       <td>Contrast</td>
-      <td>(AG GitHub Issue 661 and suggested 2.2 SC. <br/>
-        *<a href="https://github.com/w3c/wcag/issues/661">github.com/w3c/wcag/issues/661</a><br/>
-        * <br>
-        <a href="https://docs.google.com/spreadsheets/d/11IKqjRFvkRd2dAfUiyc5whhB3yIYXvSiirWct7KQIB0/edit#gid=0">Google Spreadsheet</a> <br>
-        This is also a part of APCA for WCAG 3</td>
+      <td><a href="https://github.com/w3c/wcag/issues/661">AG GitHub Issue 661</a> and <a href="https://docs.google.com/spreadsheets/d/11IKqjRFvkRd2dAfUiyc5whhB3yIYXvSiirWct7KQIB0/edit#gid=0">suggested 2.2 SC (Sheet)</a></td>
       <td>TBD</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>none</td>
       <td>none</td>
       <td>unassigned</td>
       <td></td>
@@ -77,7 +135,6 @@ margin left: 0;
       <td>Yes</td>
       <td>Yes</td>
       <td>none</td>
-      <td>none</td>
       <td>unassigned</td>
       <td></td>
     </tr>
@@ -89,7 +146,6 @@ margin left: 0;
       <td>Authors</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>none</td>
       <td>none</td>
       <td>unassigned</td>
       <td></td>
@@ -103,34 +159,18 @@ margin left: 0;
       <td>Yes</td>
       <td>Yes</td>
       <td>none</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Proximity of interaction relationships</td>
-      <td>This covers proximity of labels and controls as well as proximity of on-screen keyboard to input fields - e.g. Desmos on iPad where these two things are not near each other.</td>
-      <td>Proximity</td>
-      <td>Currently label and control proximity is an advisory technique) to make sure fields and labels are in same magnified viewport and in predictable locations such as checkbox to left of label.</td>
-      <td>Authors</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>none</td>
       <td>unassigned</td>
       <td></td>
     </tr>
     <tr>
       <td>Minimum viewport and text input size</td>
-      <td>Use of sticky headers and other layout containers can cause a small area for reading, especially with zoomed in content.<br/>
-        <br/>
+      <td>Use of sticky headers and other layout containers can cause a small area for reading, especially with zoomed in content. <br/>
         Input fields and other content areas that when zoomed are very short - for example that only show less than 3 lines of content but when not zoomed show many lines.</td>
       <td>Viewport</td>
       <td>Related to SC 1.4.10 but not directly covered.</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>none</td>
       <td>none</td>
       <td>unassigned</td>
       <td></td>
@@ -144,7 +184,6 @@ margin left: 0;
       <td>Yes</td>
       <td>Yes</td>
       <td>none</td>
-      <td>none</td>
       <td>unassigned</td>
       <td></td>
     </tr>
@@ -156,7 +195,6 @@ margin left: 0;
       <td>Authors</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>none</td>
       <td>none</td>
       <td>unassigned</td>
       <td></td>
@@ -171,7 +209,6 @@ margin left: 0;
       <td>Yes</td>
       <td>Yes</td>
       <td>none</td>
-      <td>none</td>
       <td>unassigned</td>
       <td></td>
     </tr>
@@ -183,59 +220,6 @@ margin left: 0;
       <td>TBD</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>none</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Loss of focus on form submit</td>
-      <td>When a page is submitted the page may reload the focus is returned to the body of the page changing the context of the magnified area.</td>
-      <td>Focus</td>
-      <td>Related to SC 2.4.3 but not directly covered.</td>
-      <td>Authors</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Use of Affordance (including sufficient contrast of affordance) for UI Components</td>
-      <td>Affordance communicates that something has a particular function. When there is no affordance users need to scan, read, and interpret what the text or icons mean to determine functionality. Overlaps with COGA, for example <a href="https://wai-wcag-supplemental.netlify.app/wcag-supplemental/supplemental-guidance/">Objective 1</a></td>
-      <td>Affordance</td>
-      <td>Related to 3.2.7 Visible Controls.</td>
-      <td>Authors</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Visual access to alternative text</td>
-      <td>Users with low vision and other disabilities may benefit from access to alternative text on non-text elements. They may also need to change the style.</td>
-      <td>Alternative Text</td>
-      <td>Related to but not required for SC 1.1.1</td>
-      <td>UAAG</td>
-      <td>No</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Printing customized text</td>
-      <td>Users with low vision may want to print using a custom style sheet or print based on their visual settings - but often print style sheets are different and print small size text despite the zoom settings in the browser.</td>
-      <td>Print</td>
-      <td>Discussed in Low Vision User Requirements</td>
-      <td>UAAG</td>
-      <td>No</td>
-      <td>Yes</td>
-      <td>none</td>
       <td>none</td>
       <td>unassigned</td>
       <td></td>
@@ -249,7 +233,6 @@ margin left: 0;
       <td>Yes</td>
       <td>Yes</td>
       <td>none</td>
-      <td>none</td>
       <td>unassigned</td>
       <td></td>
     </tr>
@@ -261,7 +244,6 @@ margin left: 0;
       <td>Authors</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>none</td>
       <td>none</td>
       <td>unassigned</td>
       <td></td>
@@ -275,7 +257,6 @@ margin left: 0;
       <td>Yes</td>
       <td>Yes</td>
       <td>none</td>
-      <td>none</td>
       <td>unassigned</td>
       <td></td>
     </tr>
@@ -283,37 +264,10 @@ margin left: 0;
       <td>Font replacement</td>
       <td>Ability to change fonts without font icons disappearing</td>
       <td>Font</td>
-      <td>While we do have role img techniques in WCAG 2.1 that can be used this is not addressed adequately.</td>
+      <td>role img techniques</td>
       <td>TBD</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>none</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Alternative themes</td>
-      <td>Support for high contrast/dark mode and alternative themes</td>
-      <td>Personalization</td>
-      <td>Related to SC 1.4.8</td>
-      <td>TBD</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Disambiguation of icons</td>
-      <td>Provide a text label for non-standard icons to communicate their purpose.</td>
-      <td>Icons</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
       <td>none</td>
       <td>unassigned</td>
       <td></td>
@@ -327,7 +281,6 @@ margin left: 0;
       <td>TBD</td>
       <td>Yes</td>
       <td>none</td>
-      <td>none</td>
       <td>unassigned</td>
       <td></td>
     </tr>
@@ -340,8 +293,32 @@ margin left: 0;
       <td>TBD</td>
       <td>Yes</td>
       <td>none</td>
+      <td>unassigned</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Disambiguation of icons</td>
+      <td>Provide a text label for non-standard icons to communicate their purpose. Maybe leave to COGA?</td>
+      <td>Icons</td>
+      <td>TBD</td>
+      <td>TBD</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>none</td>
       <td>unassigned</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Print customized text</td>
+      <td>Users need to be able to print content with customized text, e.g., larget font.<br>
+        <a href="https://github.com/w3c/low-vision-a11y-tf/discussions/107"><strong>Discussion 107</strong></a></td>
+      <td>Print</td>
+      <td><a href="https://www.w3.org/TR/WCAG22/#text-spacing">1.4.12 Text Spacing</a>, <a href="https://www.w3.org/TR/WCAG22/#visual-presentation">1.4.8 Visual Presentation</a></td>
+      <td>author and user agent</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Shawn</td>
+      <td>just started</td>
       <td></td>
     </tr>
   </tbody>
