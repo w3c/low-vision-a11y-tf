@@ -44,7 +44,7 @@ a, a:link, a:visited {
       <th>Brief Description with Link to Discussion &amp;/or Draft</th>
       <th>Category</th>
       <th>2.2 Relationship</th>
-      <th>User Agents? Authors? Technology?</th>
+      <th>User Agents? Authors?</th>
       <th>WCAG 2.3 ?</th>
       <th>WCAG 3 ?</th>
       <th>Lead Editors</th>
@@ -53,7 +53,7 @@ a, a:link, a:visited {
     </tr>
     <tr>
       <td>Visual access to alternative text</td>
-      <td>Users with low vision and other disabilities may benefit from access to alternative text on non-text elements. They may also need to change the style.</td>
+      <td>Users can access alternative text for images, without a screen reader, formatted as they need (e.g,. size of text).</td>
       <td>Alternative Text</td>
       <td>Related to but not required for SC 1.1.1</td>
       <td>UAAG</td>
@@ -89,6 +89,18 @@ a, a:link, a:visited {
       <td></td>
     </tr>
     <tr>
+      <td>Text at edge of viewport</td>
+      <td><p>There is space/padding between text and the edge of the viewport and other borders.</p></td>
+      <td>Layout Design</td>
+      <td>none</td>
+      <td>TBD</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Andy"Myndex"</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
       <td>Loss of focus on form submit</td>
       <td>When a page is submitted the page may reload the focus is returned to the body of the page changing the context of the magnified area.</td>
       <td>Focus</td>
@@ -101,71 +113,9 @@ a, a:link, a:visited {
       <td></td>
     </tr>
     <tr>
-      <td>UI components have clear affordance</td>
-      <td>Users can recognize UI components by how they look. (e.g., a form field has a plain border). Overlaps with COGA, e.g., <a href="https://wai-wcag-supplemental.netlify.app/wcag-supplemental/supplemental-guidance/">Objective 1</a> and <a href="https://www.w3.org/WAI/tips/designing/#ensure-that-interactive-elements-are-easy-to-identify">Ensure that interactive elements are easy to identify</a> <br></td>
-      <td>Affordance, Contrast</td>
-      <td>Related to 3.2.7 Visible Controls &amp; <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-text Contrast </a></td>
-      <td>Authors</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Disabled Components have sufficient contrast</td>
-      <td>Provide icons for disabled UI interface elements and ensure disabled/inactive elements have sufficient contrast.</td>
-      <td>Contrast</td>
-      <td><a href="https://github.com/w3c/wcag/issues/661">AG GitHub Issue 661</a> and <a href="https://docs.google.com/spreadsheets/d/11IKqjRFvkRd2dAfUiyc5whhB3yIYXvSiirWct7KQIB0/edit#gid=0">suggested 2.2 SC (Sheet)</a></td>
-      <td>TBD</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Enhanced Contrast</td>
-      <td>Minimum contrast for body text needs to be above at 7:1 (11:1 preferred). Body text defined as more than two lines of related text in a block or column.</td>
-      <td>Contrast</td>
-      <td>Related to SC 1.4.6 (but not fully covered by)</td>
-      <td>Authors</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Minimum background brightness</td>
-      <td>Minimum background brightness for dark text on a light background</td>
-      <td>Contrast</td>
-      <td>Related to SC 1.4.3 and 1.4.6</td>
-      <td>Authors</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Support Local adaptation</td>
-      <td>Minimum padding around text of 1em, *if* the text container’s background (div) is more than 2:1 contrast with the larger surrounding background. (addresses local adaptation issues)</td>
-      <td>Contrast</td>
-      <td>Related to SC 1.4.3 and 1.4.6</td>
-      <td>Authors</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
       <td>Minimum viewport and text input size</td>
       <td>Use of sticky headers and other layout containers can cause a small area for reading, especially with zoomed in content. <br/>
-        Input fields and other content areas that when zoomed are very short - for example that only show less than 3 lines of content but when not zoomed show many lines.</td>
+        Input fields and other content areas that when zoomed are very short.</td>
       <td>Viewport</td>
       <td>Related to SC 1.4.10 but not directly covered.</td>
       <td>Yes</td>
@@ -225,15 +175,65 @@ a, a:link, a:visited {
       <td></td>
     </tr>
     <tr>
-      <td>Text alignment on edge of viewport</td>
-      <td>When text is aligned on the left edge it can make it difficult to read the first characters and thus the first word of text. A small amount of padding on the edges of text that adjoins the edge of the screen can assist some users.</td>
-      <td>Font</td>
-      <td>none</td>
-      <td>TBD</td>
+      <td>UI components have clear affordance</td>
+      <td>Users can recognize UI components by how they look. (e.g., a form field has a plain border). Overlaps with COGA, e.g., <a href="https://wai-wcag-supplemental.netlify.app/wcag-supplemental/supplemental-guidance/">Objective 1</a> and <a href="https://www.w3.org/WAI/tips/designing/#ensure-that-interactive-elements-are-easy-to-identify">Ensure that interactive elements are easy to identify</a> <br></td>
+      <td>Affordance, Contrast</td>
+      <td>Related to 3.2.7 Visible Controls &amp; <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-text Contrast </a></td>
+      <td>Authors</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>none</td>
       <td>unassigned</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Disabled Components have sufficient contrast</td>
+      <td>Provide icons for disabled UI interface elements and ensure disabled/inactive elements have sufficient contrast.</td>
+      <td>Contrast</td>
+      <td><a href="https://github.com/w3c/wcag/issues/661">AG GitHub Issue 661</a> and <a href="https://docs.google.com/spreadsheets/d/11IKqjRFvkRd2dAfUiyc5whhB3yIYXvSiirWct7KQIB0/edit#gid=0">suggested 2.2 SC (Sheet)</a></td>
+      <td>TBD</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Andy"Myndex"</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Enhanced Contrast</td>
+      <td>Minimum contrast for body text needs to be above at 7:1 (11:1 preferred). Body text defined as more than two lines of related text in a block or column.</td>
+      <td>Contrast</td>
+      <td>Related to SC 1.4.6 (but not fully covered by)</td>
+      <td>Authors</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Andy"Myndex"</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Minimum background brightness</td>
+      <td>Minimum background brightness for dark text on a light background</td>
+      <td>Contrast</td>
+      <td>Related to SC 1.4.3 and 1.4.6</td>
+      <td>Authors</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Andy"Myndex"</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Support Local adaptation</td>
+      <td>Minimum padding around text of 1em, *if* the text container’s background (div) is more than 2:1 contrast with the larger surrounding background. (addresses local adaptation issues)</td>
+      <td>Contrast</td>
+      <td>Related to SC 1.4.3 and 1.4.6</td>
+      <td>Authors</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Andy"Myndex"</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -292,13 +292,13 @@ a, a:link, a:visited {
       <td>Authors</td>
       <td>TBD</td>
       <td>Yes</td>
-      <td>none</td>
-      <td>unassigned</td>
+      <td>Andy"Myndex"</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Disambiguation of icons</td>
-      <td>Provide a text label for non-standard icons to communicate their purpose. Maybe leave to COGA?</td>
+      <td>Provide a text label for non-standard icons to communicate their purpose. Related to COGA: <a href="https://wai-wcag-supplemental.netlify.app/patterns/o1p07-icons-used/">Use Icons that Help the User</a></td>
       <td>Icons</td>
       <td>TBD</td>
       <td>TBD</td>
