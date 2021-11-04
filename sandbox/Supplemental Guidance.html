@@ -52,40 +52,79 @@ a, a:link, a:visited {
       <th>Priority</th>
     </tr>
     <tr>
-      <td>Visual access to alternative text</td>
-      <td>Users can access alternative text for images, without a screen reader, formatted as they need (e.g,. size of text).</td>
-      <td>Alternative Text</td>
-      <td>Related to but not required for SC 1.1.1</td>
-      <td>UAAG</td>
-      <td>No</td>
+      <td><strong>Proximity<br>
+        <a href="https://github.com/w3c/low-vision-a11y-tf/discussions/108">Discussion 108</a></strong></td>
+      <td>Related info is close to each other, e.g., labels and controls.</td>
+      <td>Layout Design</td>
+      <td><p>WCAG Advisory Technique, <a href="https://www.w3.org/TR/UAAG20/#sc_1101">UAAG 1.10.1 </a></p></td>
+      <td>Authors</td>
       <td>Yes</td>
-      <td>none</td>
-      <td>unassigned</td>
+      <td>Yes</td>
+      <td>@lauracarlson</td>
+      <td>first draft ready for comments</td>
       <td></td>
     </tr>
     <tr>
-      <td>Alternative themes</td>
-      <td>Support for high contrast/dark mode and alternative themes</td>
+      <td><strong>Print customized text<br>
+        <a href="https://github.com/w3c/low-vision-a11y-tf/discussions/107">Discussion 107</a></strong></td>
+      <td>Users need to be able to print content with customized text, e.g., larget font.</td>
+      <td>Print</td>
+      <td><a href="https://www.w3.org/TR/WCAG22/#text-spacing">1.4.12 Text Spacing</a>, <a href="https://www.w3.org/TR/WCAG22/#visual-presentation">1.4.8 Visual Presentation</a></td>
+      <td>author and user agent</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Shawn, Bruce</td>
+      <td>just started, background listed</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Alternative themes<br>
+      <a href="https://github.com/w3c/low-vision-a11y-tf/discussions/139">Discussion 139</a></strong></td>
+      <td>Support for high contrast, dark mode, other themes</td>
       <td>Personalization</td>
       <td>Related to SC 1.4.8</td>
       <td>TBD</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>none</td>
-      <td>unassigned</td>
+      <td>Bhoomika</td>
+      <td>getting started</td>
       <td></td>
     </tr>
     <tr>
-      <td>Proximity</td>
-      <td>Related info is close to each other, e.g., labels and controls.<br>
-        <a href="https://github.com/w3c/low-vision-a11y-tf/discussions/108"><strong>Discussion 108</strong></a></td>
-      <td>Layout Design</td>
-      <td><p>WCAG Advisory Technique @@link, <a href="https://www.w3.org/TR/UAAG20/#sc_1101">UAAG        1.10.1 </a></p></td>
+      <td>Limit large areas of white space</td>
+      <td>Extra white spacing can mean only a few items are visible at a time on a website requiring vertical scrolling reducing the information available at a given time to users who are zoomed in. This removes context from controls and information.</td>
+      <td>Viewport</td>
+      <td>Related to targe spacing.</td>
       <td>Authors</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>none</td>
-      <td>@lauracarlson</td>
+      <td>Jon Avila</td>
+      <td>getting started</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Body Text Fluent Readability<br>
+        <a href="https://github.com/w3c/low-vision-a11y-tf/discussions/129">Discussion 129</a></strong></td>
+      <td>draft idea to group related supplemental guidance</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Disabled components and contrast</td>
+      <td>How to communicate disabled components and provide sufficient contrast?</td>
+      <td>Contrast</td>
+      <td><a href="https://github.com/w3c/wcag/issues/661">AG GitHub Issue 661</a></td>
+      <td>TBD</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Andy"Myndex", Bruce</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -94,6 +133,54 @@ a, a:link, a:visited {
       <td>Layout Design</td>
       <td>none</td>
       <td>TBD</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Andy"Myndex"</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Scaling for resize of text for large type elements</td>
+      <td>Large headings may already be 200% the body size of text. Responsive design reduces amount of content on screen taking away context and surrounding context. Requiring all text to scale by 200% may not be practical or help. Text needs to scale in proportion so relationships can still be determined.</td>
+      <td>Resize Text</td>
+      <td>Not addressed by SC 1.4.4</td>
+      <td>Authors</td>
+      <td>TBD</td>
+      <td>Yes</td>
+      <td>Andy"Myndex"</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Enhanced Contrast</td>
+      <td>Minimum contrast for body text needs to be above at 7:1 (11:1 preferred). Body text defined as more than two lines of related text in a block or column.</td>
+      <td>Contrast</td>
+      <td>Related to SC 1.4.6 (but not fully covered by)</td>
+      <td>Authors</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Andy"Myndex"</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Minimum background brightness</td>
+      <td>Minimum background brightness for dark text on a light background</td>
+      <td>Contrast</td>
+      <td>Related to SC 1.4.3 and 1.4.6</td>
+      <td>Authors</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Andy"Myndex"</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Support Local adaptation</td>
+      <td>Minimum padding around text of 1em, *if* the text container's background (div) is more than 2:1 contrast with the larger surrounding background. (addresses local adaptation issues)</td>
+      <td>Contrast</td>
+      <td>Related to SC 1.4.3 and 1.4.6</td>
+      <td>Authors</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Andy"Myndex"</td>
@@ -131,18 +218,6 @@ a, a:link, a:visited {
       <td>Viewport</td>
       <td>Related to SC 4.1.3</td>
       <td>TBD</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>none</td>
-      <td>unassigned</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Limit large areas of white space -</td>
-      <td>Extra white spacing can mean only a few items are visible at a time on a website requiring vertical scrolling reducing the information available at a given time to users who are zoomed in. This removes context from controls and information.</td>
-      <td>Viewport</td>
-      <td>Related to targe spacing.</td>
-      <td>Authors</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>none</td>
@@ -188,54 +263,6 @@ a, a:link, a:visited {
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Disabled Components have sufficient contrast</td>
-      <td>Provide icons for disabled UI interface elements and ensure disabled/inactive elements have sufficient contrast.</td>
-      <td>Contrast</td>
-      <td><a href="https://github.com/w3c/wcag/issues/661">AG GitHub Issue 661</a> and <a href="https://docs.google.com/spreadsheets/d/11IKqjRFvkRd2dAfUiyc5whhB3yIYXvSiirWct7KQIB0/edit#gid=0">suggested 2.2 SC (Sheet)</a></td>
-      <td>TBD</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Andy"Myndex"</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Enhanced Contrast</td>
-      <td>Minimum contrast for body text needs to be above at 7:1 (11:1 preferred). Body text defined as more than two lines of related text in a block or column.</td>
-      <td>Contrast</td>
-      <td>Related to SC 1.4.6 (but not fully covered by)</td>
-      <td>Authors</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Andy"Myndex"</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Minimum background brightness</td>
-      <td>Minimum background brightness for dark text on a light background</td>
-      <td>Contrast</td>
-      <td>Related to SC 1.4.3 and 1.4.6</td>
-      <td>Authors</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Andy"Myndex"</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Support Local adaptation</td>
-      <td>Minimum padding around text of 1em, *if* the text container's background (div) is more than 2:1 contrast with the larger surrounding background. (addresses local adaptation issues)</td>
-      <td>Contrast</td>
-      <td>Related to SC 1.4.3 and 1.4.6</td>
-      <td>Authors</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Andy"Myndex"</td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <td>Thick fonts</td>
       <td>Chunky text that is too bold and affects reading/recognition of characters/words</td>
@@ -285,18 +312,6 @@ a, a:link, a:visited {
       <td></td>
     </tr>
     <tr>
-      <td>Scaling for resize of text for large type elements</td>
-      <td>Large headings may already be 200% the body size of text. Responsive design reduces amount of content on screen taking away context and surrounding context. Requiring all text to scale by 200% may not be practical or help. Text needs to scale in proportion so relationships can still be determined.</td>
-      <td>Resize Text</td>
-      <td>Not addressed by SC 1.4.4</td>
-      <td>Authors</td>
-      <td>TBD</td>
-      <td>Yes</td>
-      <td>Andy"Myndex"</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
       <td>Disambiguation of icons</td>
       <td>Provide a text label for non-standard icons to communicate their purpose. Related to COGA: <a href="https://wai-wcag-supplemental.netlify.app/patterns/o1p07-icons-used/">Use Icons that Help the User</a></td>
       <td>Icons</td>
@@ -308,20 +323,8 @@ a, a:link, a:visited {
       <td>unassigned</td>
       <td></td>
     </tr>
-    <tr>
-      <td>Print customized text</td>
-      <td>Users need to be able to print content with customized text, e.g., larget font.<br>
-        <a href="https://github.com/w3c/low-vision-a11y-tf/discussions/107"><strong>Discussion 107</strong></a></td>
-      <td>Print</td>
-      <td><a href="https://www.w3.org/TR/WCAG22/#text-spacing">1.4.12 Text Spacing</a>, <a href="https://www.w3.org/TR/WCAG22/#visual-presentation">1.4.8 Visual Presentation</a></td>
-      <td>author and user agent</td>
-      <td>No</td>
-      <td>Yes</td>
-      <td>Shawn</td>
-      <td>just started</td>
-      <td></td>
-    </tr>
   </tbody>
 </table>
 </body>
 </html>
+\
